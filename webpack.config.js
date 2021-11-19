@@ -8,7 +8,7 @@ const { DefinePlugin, ProvidePlugin } = require('webpack')
 module.exports = { 
   entry: {
     home: './src/js/home.js',
-    about: './src/js/about.js'
+    // about: './src/js/about.js'
   },
 
   mode: 'development',
@@ -19,7 +19,7 @@ module.exports = {
   },
 
   output: {
-    filename: '[name]/js/index.js',
+    filename: 'js/index.js',
     path: path.resolve(__dirname, 'docs'),
     clean: true
   },
@@ -85,20 +85,20 @@ module.exports = {
   plugins: [
 
     new HtmlWebpackPlugin({
-      filename: "home/index.html",
+      filename: "index.html",
       template: `./src/views/home.html`,
       title: 'home',
       chunks: ["home"],
       hash: true
     }),
 
-    new HtmlWebpackPlugin({
-      filename: "about/index.html",
-      template: `./src/views/about.html`,
-      title: 'about',
-      chunks: ["about"],
-      hash: true
-    }),
+    // new HtmlWebpackPlugin({
+    //   filename: "about/index.html",
+    //   template: `./src/views/about.html`,
+    //   title: 'about',
+    //   chunks: ["about"],
+    //   hash: true
+    // }),
 
     new CssMinimizerPlugin(),
 
@@ -111,7 +111,7 @@ module.exports = {
     }),
 
     new MiniCssExtractPlugin({
-      filename: '[name]/css/index.css'
+      filename: 'css/index.css'
     }),
 
     new CopyWebpackPlugin({
