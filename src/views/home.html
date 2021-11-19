@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+  <!-- featuresTemp -->
+  <script id="featuresTemp" type="text/html">
+    {{each}}
+    <div class="col">
+      <div class="card border-white display-f">
+        <div class="display-f">
+          <img src="{{$value.image}}" width="46px" height="46px" class="rounded-circle"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{$value.title}}</h5>
+            <p class="card-text">{{$value.text}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+
+  <!-- advisorsTemp -->
+  <script id="advisorsTemp" type="text/html">
+    {{each}}
+      <div class="col px-md-5">
+        <div class="title text-c">{{$value.title}}</div>
+        <div class="row row-cols-3">
+          {{each $value.list as item}}
+          <div class="col">
+            <div class="card border-white mb-3 align-c">
+              <img src="{{item.image}}" width="95px" class="rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-c">{{item.title}}</h5>
+                <p class="card-text text-c"><small class="text-muted">{{item.text}}</small></p>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    {{/each}}
+  </script>
+
+</head>
+
+<body>
+  <div class="app">
+    <!-- menu -->
+    <div class="menu-box display-f align-fe justify-fe">
+      <div class="menu">
+        <ul class="menu-container display-f">
+          <li class="menu-list">
+            <a class="scroll" href="#Features">Features</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#M1">M1</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#WhitePaper">WhitePaper</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#Advisors">Team&Advisors</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#RoadMap">RoadMap</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#Documents">Documents</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-link display-f flex-cc">
+        <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
+        <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
+        <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
+        <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
+        <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
+        <button type="button" class="btn btn-secondary menu-btn">Portal</button>
+      </div>
+    </div>
+    <!-- dropmenu -->
+    <div class="dropmenu-box display-f justify-fe">
+      <div class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="#242B35" class="uEUoE">
+          <path fill-rule="evenodd" d="M12,20 L22,20 C22.5522847,20 23,20.4477153 23,21 C23,21.5522847 22.5522847,22 22,22 L12,22 C11.4477153,22 11,21.5522847 11,21 C11,20.4477153 11.4477153,20 12,20 Z M12,16 L22,16 C22.5522847,16 23,16.4477153 23,17 C23,17.5522847 22.5522847,18 22,18 L12,18 C11.4477153,18 11,17.5522847 11,17 C11,16.4477153 11.4477153,16 12,16 Z M12,12 L22,12 C22.5522847,12 23,12.4477153 23,13 C23,13.5522847 22.5522847,14 22,14 L12,14 C11.4477153,14 11,13.5522847 11,13 C11,12.4477153 11.4477153,12 12,12 Z" transform="translate(-11 -12)"></path>
+        </svg>
+      </div>
+    </div> 
+
+    <!-- header -->
+    <div class="header">
+      <div class="h-top">
+        <div class="title display-f flex-col justify-c">
+          <h2>M1 Network</h2>
+          <h4>Decentralized Cloud Game Platform</h4>
+        </div>
+        <div class="h-top-btn display-f flex-cc">Subscribed</div>
+      </div>
+      <!-- <div class="h-bottom display-f align-c justify-fe">
+        <span>Subscribe to M1-Network for updates</span>
+        <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="h-bottom-btn display-f flex-cc">Subscribed</div>
+      </div> -->
+    </div>
+
+    <!-- section-1 -->
+    <div id="Features" class="section section-1">
+      <div class="title">M1 Network Features</div>
+      <div class="container">
+        <div id="features-list" class="row row-cols-md-2 row-cols-1"></div>
+      </div>
+    </div>
+
+
+
+    <!-- section-2 -->
+    <div id="M1" class="section section-2">
+      <div class="container">
+        <div class="row row-cols-md-2 row-cols-1">
+          <div class="col display-f justify-c">
+            <div class="video"></div>
+          </div>
+          <div class="col">
+            <div class="card border-white display-f">
+              <div class="card-body">
+                <h5 class="card-title text-c">M1 Introduction</h5>
+                <p class="card-text text-c">M1N Network is a decentralized networked metaverse rendering platform based
+                  on blockchain technology, 3D asset rendering technology, and edge container scheduling technology. It
+                  focuses on serving the game tribes and virtual people in the metaverse. By building a decentralized
+                  cloud rendering platform to serve the rendering of the three-dimensional assets of the metaverse, ​it
+                  solves the problem of the underlying rendering resources and the problem of the virtual character UGC
+                  in the development of the metaverse, and promotes the deployment and development of metaverse
+                  application, builds a decentralized infrastructure for the metaverse.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-3 -->
+    <div id="WhitePaper" class="section section-3">
+      <div class="container">
+        <div class="row row-cols-md-2 row-cols-1">
+          <div class="col">
+
+          </div>
+          <div class="col text-c">
+            <div class="btn">Download WhitePaper</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-4 -->
+    <div id="Advisors" class="section section-4">
+      <div class="container">
+        <div id="advisorAndTeam" class="row row-cols-md-2 row-cols-1"></div>
+      </div>
+    </div>
+
+    <!-- section-5 -->
+    <div id="RoadMap" class="section section-5">
+      <div class="container">
+        <div class="title">Blockchain Technology Partners</div>
+        <div class="row row-cols-md-4 row-cols-sm-2">
+          <div class="col text-c">
+            <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
+          </div>
+          <div class="col text-c">
+            <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
+          </div>
+          <div class="col text-c">
+            <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
+          </div>
+          <div class="col text-c">
+            <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-6 -->
+    <div id="Documents" class="section section-6">
+      <div class="title text-c">Project Road Map</div>
+      <div class="container">
+        <div class="row row-cols-lg-4 row-cols-1 tt">
+          <div class="col d-flex justify-content-center">
+            <div class="map mb-3"></div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="map mb-3"></div>
+          </div>
+          <div class="co d-flex justify-content-center">
+            <div class="map mb-3"></div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="map mb-3"></div>
+          </div>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-1">
+          <div class="col d-flex justify-content-center">
+            <div class="map mb-3"></div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="map mb-3"></div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="map mb-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-7 -->
+    <div  class="section section-7">
+      <!-- <div class="h-bottom display-f align-c justify-fe">
+        <span>Subscribe to M1-Network for updates</span>
+        <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="h-bottom-btn display-f flex-cc">Subscribed</div>
+      </div> -->
+    </div>
+
+    <!-- section-8 -->
+    <div class="section section-8">
+      <div class="container">
+        <div class="row row-cols-lg-2 row-cols-1">
+          <div class="col">
+            <div class="card border-white mb-3 justify-c align-c">
+              <img src="<%= require('../images/avatar.jpeg') %>" width="145px" class="rounded-circle mb-4" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-c">M1 Network</h5>
+                <p class="card-text text-c"><small class="text-muted">Decentralized Cloud Game Platform</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-2">
+              <div class="col display-f justify-fe">
+                <ul class="list-group list-group-flush">
+                  <p>Tell Me</p>
+                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Twitter</li>
+                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Facebook</li>
+                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Telegram</li>
+                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Reddit</li>
+                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Medium</li>
+                </ul>
+              </div>
+              <div class="col display-f justify-fs">
+                <ul class="list-group list-group-flush">
+                  <p>M1 Network</p>
+                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">About</li>
+                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">WhitePaper</li>
+                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Watch Video</li>
+                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Team</li>
+                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Documents</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

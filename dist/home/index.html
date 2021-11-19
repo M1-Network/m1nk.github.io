@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../favicon.ico">
+  <title>home</title>
+
+  <!-- featuresTemp -->
+  <script id="featuresTemp" type="text/html">
+    {{each}}
+    <div class="col">
+      <div class="card border-white display-f">
+        <div class="display-f">
+          <img src="../image/avatar.448.jpeg" width="46px" height="46px" class="rounded-circle"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{$value.title}}</h5>
+            <p class="card-text">{{$value.text}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+
+  <!-- advisorsTemp -->
+  <script id="advisorsTemp" type="text/html">
+    {{each}}
+      <div class="col px-md-5">
+        <div class="title text-c">{{$value.title}}</div>
+        <div class="row row-cols-3">
+          {{each $value.list as item}}
+          <div class="col">
+            <div class="card border-white mb-3 align-c">
+              <img src="../image/avatar.448.jpeg" width="95px" class="rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-c">{{item.title}}</h5>
+                <p class="card-text text-c"><small class="text-muted">{{item.text}}</small></p>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    {{/each}}
+  </script>
+
+<script defer src="../home/js/index.js?7bdb1ab32eb8cae394cc"></script><link href="../home/css/index.css?7bdb1ab32eb8cae394cc" rel="stylesheet"></head>
+
+<body>
+  <div class="app">
+    <!-- <img src="../image/avatar.448.jpeg" alt=""> -->
+
+    <!-- menu -->
+    <div class="menu-box display-f align-fe">
+      <div class="menu">
+        <ul class="menu-container display-f">
+          <li class="menu-list">
+            <a class="scroll" href="#Features">Features</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#M1">M1</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#WhitePaper">WhitePaper</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#Advisors">Team&Advisors</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#RoadMap">RoadMap</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#Documents">Documents</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header">
+
+    </div>
+
+    <!-- section-1 -->
+    <div id="Features" class="section section-1">
+      <div class="title">M1 Network Features</div>
+      <div class="container">
+        <div id="features-list" class="row row-cols-md-2 row-cols-1"></div>
+      </div>
+    </div>
+
+
+
+    <!-- section-2 -->
+    <div id="M1" class="section section-2">
+      <div class="container">
+        <div class="row row-cols-md-2 row-cols-1">
+          <div class="col">
+            <div class="video"></div>
+          </div>
+          <div class="col">
+            <div class="card border-white display-f">
+              <div class="card-body">
+                <h5 class="card-title text-c">M1 Introduction</h5>
+                <p class="card-text text-c">M1N Network is a decentralized networked metaverse rendering platform based
+                  on blockchain technology, 3D asset rendering technology, and edge container scheduling technology. It
+                  focuses on serving the game tribes and virtual people in the metaverse. By building a decentralized
+                  cloud rendering platform to serve the rendering of the three-dimensional assets of the metaverse, ​it
+                  solves the problem of the underlying rendering resources and the problem of the virtual character UGC
+                  in the development of the metaverse, and promotes the deployment and development of metaverse
+                  application, builds a decentralized infrastructure for the metaverse.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-3 -->
+    <div id="WhitePaper" class="section section-3">
+      <div class="container">
+        <div class="row row-cols-md-2 row-cols-1">
+          <div class="col">
+
+          </div>
+          <div class="col text-c">
+            <div class="btn">Download WhitePaper</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-4 -->
+    <div id="Advisors" class="section section-4">
+      <div class="container">
+        <div id="advisorAndTeam" class="row row-cols-md-2 row-cols-1"></div>
+      </div>
+    </div>
+
+    <!-- section-5 -->
+    <div id="RoadMap" class="section section-5">
+      <div class="container">
+        <div class="title">Blockchain Technology Partners</div>
+        <div class="row row-cols-md-4 row-cols-sm-2">
+          <div class="col text-c">
+            <img src="../image/avatar.448.jpeg" width="170px" class="rounded-circle mb-4" alt="...">
+          </div>
+          <div class="col text-c">
+            <img src="../image/avatar.448.jpeg" width="170px" class="rounded-circle mb-4" alt="...">
+          </div>
+          <div class="col text-c">
+            <img src="../image/avatar.448.jpeg" width="170px" class="rounded-circle mb-4" alt="...">
+          </div>
+          <div class="col text-c">
+            <img src="../image/avatar.448.jpeg" width="170px" class="rounded-circle mb-4" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-6 -->
+    <div id="Documents" class="section section-6">6</div>
+  </div>
+</body>
+
+</html>
