@@ -15,8 +15,7 @@
     <div class="col">
       <div class="card border-white display-f">
         <div class="display-f">
-          <img src="{{$value.image}}" width="46px" height="46px" class="rounded-circle"
-            alt="...">
+          <img src="{{$value.image}}" width="46px" height="46px" class="rounded-circle" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{$value.title}}</h5>
             <p class="card-text">{{$value.text}}</p>
@@ -30,243 +29,332 @@
   <!-- advisorsTemp -->
   <script id="advisorsTemp" type="text/html">
     {{each}}
-      <div class="col px-md-5">
-        <div class="title text-c">{{$value.title}}</div>
-        <div class="row row-cols-3">
-          {{each $value.list as item}}
-          <div class="col">
-            <div class="card border-white mb-3 align-c">
-              <img src="{{item.image}}" width="95px" class="rounded" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-c">{{item.title}}</h5>
-                <p class="card-text text-c"><small class="text-muted">{{item.text}}</small></p>
-              </div>
+    <div class="col px-md-5">
+      <div class="title text-c">{{$value.title}}</div>
+      <div class="row row-cols-3">
+        {{each $value.list as item}}
+        <div class="col">
+          <div class="card border-white mb-3 align-c">
+            <img src="{{item.image}}" width="95px" class="rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-c">{{item.title}}</h5>
+              <p class="card-text text-c"><small class="text-muted">{{item.text}}</small></p>
             </div>
           </div>
-          {{/each}}
         </div>
+        {{/each}}
       </div>
+    </div>
     {{/each}}
   </script>
 
 </head>
 
 <body>
-  <div class="app">
-    <!-- menu -->
-    <div class="menu-box display-f align-fe justify-fe">
-      <div class="menu">
-        <ul class="menu-container display-f">
-          <li class="menu-list">
-            <a class="scroll" href="#Features">Features</a>
-          </li>
-          <li class="menu-list">
-            <a class="scroll" href="#M1">M1</a>
-          </li>
-          <li class="menu-list">
-            <a class="scroll" href="#WhitePaper">WhitePaper</a>
-          </li>
-          <li class="menu-list">
-            <a class="scroll" href="#Advisors">Team&Advisors</a>
-          </li>
-          <li class="menu-list">
-            <a class="scroll" href="#RoadMap">RoadMap</a>
-          </li>
-          <li class="menu-list">
-            <a class="scroll" href="#Documents">Documents</a>
-          </li>
-        </ul>
+  <!-- menu -->
+  <div class="menu-box display-f align-fe justify-fe">
+    <div class="menu">
+      <ul class="menu-container display-f">
+        <li class="menu-list">
+          <a class="scroll" href="#Features">Features</a>
+        </li>
+        <li class="menu-list">
+          <a class="scroll" href="#M1">M1</a>
+        </li>
+        <li class="menu-list">
+          <a class="scroll" href="#WhitePaper">WhitePaper</a>
+        </li>
+        <li class="menu-list">
+          <a class="scroll" href="#Advisors">Team&Advisors</a>
+        </li>
+        <li class="menu-list">
+          <a class="scroll" href="#RoadMap">RoadMap</a>
+        </li>
+        <li class="menu-list">
+          <a class="scroll" href="#Documents">Documents</a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu-link display-f flex-cc">
+      <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
+      <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
+      <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
+      <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
+      <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
+      <button type="button" class="btn btn-secondary menu-btn">Portal</button>
+    </div>
+  </div>
+
+  <!-- dropmenu -->
+  <div class="dropmenu-box display-f justify-fe">
+    <div class="btn dropmenuOpen">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="#242B35" class="uEUoE">
+        <path fill-rule="evenodd"
+          d="M12,20 L22,20 C22.5522847,20 23,20.4477153 23,21 C23,21.5522847 22.5522847,22 22,22 L12,22 C11.4477153,22 11,21.5522847 11,21 C11,20.4477153 11.4477153,20 12,20 Z M12,16 L22,16 C22.5522847,16 23,16.4477153 23,17 C23,17.5522847 22.5522847,18 22,18 L12,18 C11.4477153,18 11,17.5522847 11,17 C11,16.4477153 11.4477153,16 12,16 Z M12,12 L22,12 C22.5522847,12 23,12.4477153 23,13 C23,13.5522847 22.5522847,14 22,14 L12,14 C11.4477153,14 11,13.5522847 11,13 C11,12.4477153 11.4477153,12 12,12 Z"
+          transform="translate(-11 -12)"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- header -->
+  <div class="header">
+    <div class="h-top">
+      <div class="title display-f flex-col justify-c">
+        <h2>M1 Network</h2>
+        <h4>Decentralized Cloud Game Platform</h4>
       </div>
-      <div class="menu-link display-f flex-cc">
-        <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
-        <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
-        <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
-        <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
-        <img width="20px" height="20px" src="<%= require('../images/avatar.jpeg') %>" alt="">
-        <button type="button" class="btn btn-secondary menu-btn">Portal</button>
+      <div class="h-top-btn display-f flex-cc">Subscribed</div>
+    </div>
+    <!-- <div class="h-bottom display-f align-c justify-fe">
+        <span>Subscribe to M1-Network for updates</span>
+        <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="h-bottom-btn display-f flex-cc">Subscribed</div>
+      </div> -->
+  </div>
+
+  <!-- section-1 -->
+  <div id="Features" class="section section-1">
+    <div class="title">M1 Network Features</div>
+    <div class="container">
+      <div id="features-list" class="row row-cols-md-2 row-cols-1"></div>
+    </div>
+  </div>
+
+
+
+  <!-- section-2 -->
+  <div id="M1" class="section section-2">
+    <div class="container">
+      <div class="row row-cols-md-2 row-cols-1">
+        <div class="col display-f justify-c">
+          <div class="video"></div>
+        </div>
+        <div class="col">
+          <div class="card border-white display-f">
+            <div class="card-body">
+              <h5 class="card-title text-c">M1 Introduction</h5>
+              <p class="card-text text-c">M1N Network is a decentralized networked metaverse rendering platform based
+                on blockchain technology, 3D asset rendering technology, and edge container scheduling technology. It
+                focuses on serving the game tribes and virtual people in the metaverse. By building a decentralized
+                cloud rendering platform to serve the rendering of the three-dimensional assets of the metaverse, ​it
+                solves the problem of the underlying rendering resources and the problem of the virtual character UGC
+                in the development of the metaverse, and promotes the deployment and development of metaverse
+                application, builds a decentralized infrastructure for the metaverse.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- dropmenu -->
-    <div class="dropmenu-box display-f justify-fe">
-      <div class="btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="#242B35" class="uEUoE">
-          <path fill-rule="evenodd" d="M12,20 L22,20 C22.5522847,20 23,20.4477153 23,21 C23,21.5522847 22.5522847,22 22,22 L12,22 C11.4477153,22 11,21.5522847 11,21 C11,20.4477153 11.4477153,20 12,20 Z M12,16 L22,16 C22.5522847,16 23,16.4477153 23,17 C23,17.5522847 22.5522847,18 22,18 L12,18 C11.4477153,18 11,17.5522847 11,17 C11,16.4477153 11.4477153,16 12,16 Z M12,12 L22,12 C22.5522847,12 23,12.4477153 23,13 C23,13.5522847 22.5522847,14 22,14 L12,14 C11.4477153,14 11,13.5522847 11,13 C11,12.4477153 11.4477153,12 12,12 Z" transform="translate(-11 -12)"></path>
+  </div>
+
+  <!-- section-3 -->
+  <div id="WhitePaper" class="section section-3">
+    <div class="container">
+      <div class="row row-cols-md-2 row-cols-1">
+        <div class="col">
+
+        </div>
+        <div class="col text-c">
+          <div class="btn display-f align-c">Download WhitePaper</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section-4 -->
+  <div id="Advisors" class="section section-4">
+    <div class="container">
+      <div id="advisorAndTeam" class="row row-cols-md-2 row-cols-1"></div>
+    </div>
+  </div>
+
+  <!-- section-5 -->
+  <div id="RoadMap" class="section section-5">
+    <div class="container">
+      <div class="title">Blockchain Technology Partners</div>
+      <div class="row row-cols-md-4 row-cols-sm-2">
+        <div class="col text-c">
+          <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
+        </div>
+        <div class="col text-c">
+          <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
+        </div>
+        <div class="col text-c">
+          <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
+        </div>
+        <div class="col text-c">
+          <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section-6 -->
+  <div id="Documents" class="section section-6">
+    <div class="title text-c">Project Road Map</div>
+    <div class="container">
+      <div class="row row-cols-lg-4 row-cols-1 tt">
+        <div class="col d-flex justify-content-center">
+          <div class="map mb-3"></div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="map mb-3"></div>
+        </div>
+        <div class="co d-flex justify-content-center">
+          <div class="map mb-3"></div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="map mb-3"></div>
+        </div>
+      </div>
+      <div class="row row-cols-lg-3 row-cols-1">
+        <div class="col d-flex justify-content-center">
+          <div class="map mb-3"></div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="map mb-3"></div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="map mb-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section-7 -->
+  <div class="section section-7">
+    <!-- <div class="h-bottom display-f align-c justify-fe">
+        <span>Subscribe to M1-Network for updates</span>
+        <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="h-bottom-btn display-f flex-cc">Subscribed</div>
+      </div> -->
+  </div>
+
+  <!-- section-8 -->
+  <div class="section section-8">
+    <div class="container">
+      <div class="row row-cols-lg-2 row-cols-1">
+        <div class="col">
+          <div class="card border-white mb-3 justify-c align-c">
+            <img src="<%= require('../images/avatar.jpeg') %>" width="145px" class="rounded-circle mb-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-c">M1 Network</h5>
+              <p class="card-text text-c"><small class="text-muted">Decentralized Cloud Game Platform</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row row-cols-2">
+            <div class="col display-f justify-fe">
+              <ul class="list-group list-group-flush">
+                <p>Tell Me</p>
+                <li class="list-group-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+                    <path fill="#8493A8" fill-rule="evenodd"
+                      d="M16,2.65803121 C15.4028527,2.94236896 14.7668748,3.1293778 14.1145876,3.21243535 C14.8054674,2.76156797 15.3167089,2.0682177 15.5549026,1.2590675 C14.9140831,1.6697037 14.2079678,1.95917212 13.4694464,2.11398977 C12.8618184,1.40519484 11.990439,0.999723663 11.0754227,1.00000014 C9.2276372,1.03741133 7.75878367,2.61928027 7.79420498,4.53367886 C7.79372027,4.80381937 7.82223506,5.07317786 7.87922358,5.33678766 C5.21325014,5.18115473 2.7441198,3.83298206 1.11324352,1.64248718 C0.820608499,2.18752651 0.667710169,2.80118379 0.669146376,3.42487058 C0.662223262,4.59280897 1.20773107,5.69024407 2.12946582,6.36269439 C1.60610146,6.34600373 1.09497069,6.19465191 0.642140468,5.92227988 L0.642140468,5.96891201 C0.621711801,7.62302076 1.71901709,9.06729746 3.27571656,9.43523322 C2.99462019,9.51887461 2.70348513,9.56074321 2.41102741,9.55958555 C2.2036746,9.55999399 1.99679051,9.53916735 1.7933923,9.49740938 C2.19685509,10.9147724 3.4334125,11.9033087 4.85906292,11.9481866 C3.71004584,12.9257599 2.26946442,13.4604319 0.782671209,13.4611399 C0.521128135,13.4613549 0.259795051,13.4457845 0,13.4145078 C1.488762,14.446914 3.23961989,14.9986763 5.03110055,15 C11.0689213,15 14.3696434,9.61658037 14.3696434,4.94300528 C14.3696434,4.79274622 14.3646423,4.6373058 14.3596412,4.48704674 C15.0057298,3.98176163 15.5609789,3.36265367 16,2.65803121 Z"
+                      transform="translate(0 -1)"></path>
+                  </svg>Twitter</li>
+                <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="16"
+                    viewBox="0 0 9 16">
+                    <path fill="#8493A8" fill-rule="evenodd"
+                      d="M44.4808889,16 L44.4808889,8.70222222 L46.9697778,8.70222222 L47.3422222,5.85777778 L44.48,5.85777778 L44.48,4.04 C44.48,3.21777778 44.7124444,2.65777778 45.9124444,2.65777778 L47.4444444,2.65777778 L47.4444444,0.111111111 C46.7035863,0.033861549 45.9590899,-0.00322974567 45.2142222,-1.00265499e-13 C43.0071111,-1.00265499e-13 41.4964444,1.32444444 41.4964444,3.76 L41.4964444,5.85777778 L39,5.85777778 L39,8.70222222 L41.496,8.70222222 L41.496,16 L44.4808889,16 Z"
+                      transform="translate(-39)"></path>
+                  </svg>Facebook</li>
+                <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15"
+                    viewBox="0 0 16 15">
+                    <path fill="#8493A8"
+                      d="M15.9542857,0.914285714 L13.44,13.4857143 C13.44,13.4857143 13.0742857,14.3542857 12.1142857,13.9428571 L6.4,9.55428571 L4.29714286,8.54857143 L0.822857143,7.31428571 C0.822857143,7.31428571 0.274285714,7.13142857 0.228571429,6.72 C0.182857143,6.30857143 0.822857143,6.08 0.822857143,6.08 L14.8114286,0.594285714 C14.8114286,0.594285714 15.9542857,0.0914285714 15.9542857,0.914285714 Z">
+                    </path>
+                    <path class="paper" fill="#AFB8C5"
+                      d="M5.98857143,13.3485714 C5.98857143,13.3485714 5.80571429,13.3485714 5.62285714,12.6628571 C5.39428571,12.0228571 4.34285714,8.50285714 4.34285714,8.50285714 L12.8,3.15428571 C12.8,3.15428571 13.3028571,2.88 13.2571429,3.15428571 C13.2571429,3.15428571 13.3485714,3.2 13.0742857,3.42857143 C12.8,3.65714286 6.44571429,9.50857143 6.44571429,9.50857143">
+                    </path>
+                    <path fill="#8493A8"
+                      d="M8.64,11.2457143 L6.35428571,13.3028571 C6.35428571,13.3028571 6.17142857,13.44 5.98857143,13.3485714 L6.44571429,9.50857143">
+                    </path>
+                  </svg>Telegram</li>
+                <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="13"
+                    viewBox="0 0 16 13">
+                    <path fill="#8493A8" fill-rule="evenodd"
+                      d="M126.583158,8.18105263 C126.561739,7.1660781 125.724552,6.35899218 124.709474,6.37473684 C124.282354,6.37388659 123.86727,6.516201 123.530526,6.77894737 C122.265815,6.05277095 120.844523,5.64256051 119.387368,5.58315789 L120.195789,3.11578947 L122.423158,3.62105263 C122.453835,4.47782838 123.168123,5.15045186 124.025195,5.12964298 C124.882267,5.10883411 125.563071,4.40233915 125.552134,3.54508416 C125.541196,2.68782917 124.842587,1.99893448 123.985263,2 C123.407447,1.99721206 122.874359,2.31060303 122.595789,2.81684211 L120.006316,2.22736842 C119.792595,2.17670653 119.575455,2.29713731 119.505263,2.50526316 L118.498947,5.57052632 C116.931598,5.57884218 115.392375,5.9875624 114.027368,6.75789474 C113.694543,6.50842658 113.289624,6.37394624 112.873684,6.37473684 C111.859413,6.35924574 111.023573,7.16684752 111.004211,8.18105263 C111.007126,8.78077799 111.310763,9.339028 111.812632,9.66736842 C111.7922,9.81101304 111.782349,9.95596453 111.783158,10.1010526 C111.783158,11.3431579 112.532632,12.5010526 113.892632,13.36 C116.914617,15.0610319 120.605383,15.0610319 123.627368,13.36 C124.991579,12.5010526 125.741053,11.3431579 125.741053,10.1010526 C125.741161,9.96871652 125.732722,9.83651157 125.715789,9.70526316 C126.25112,9.38339845 126.579874,8.80568403 126.583158,8.18105263 Z M123.985263,2.82105263 C124.36162,2.83578887 124.656361,3.15007265 124.646939,3.52660016 C124.637516,3.90312767 124.327424,4.20227552 123.950801,4.19816846 C123.574178,4.1940614 123.270683,3.8882224 123.269474,3.51157895 C123.272459,3.32497123 123.349641,3.14723606 123.483959,3.01765918 C123.618276,2.88808231 123.798669,2.81733418 123.985263,2.82105263 Z M115.421053,9.29684211 C115.438415,8.71968134 115.913115,8.26180178 116.490526,8.26526316 C117.065392,8.26284879 117.535876,8.72208607 117.547368,9.29684211 C117.536308,9.86979553 117.063502,10.3256485 116.490526,10.3157895 C115.915021,10.3266565 115.438029,9.87219972 115.421053,9.29684211 Z M121.357895,12.2905263 C120.814737,12.8126316 119.976842,13.0652632 118.802105,13.0652632 L118.785263,13.0652632 C117.606316,13.0652632 116.768421,12.8126316 116.229474,12.2905263 C116.148849,12.2154203 116.10306,12.1101877 116.10306,12 C116.10306,11.8898123 116.148849,11.7845797 116.229474,11.7094737 C116.398255,11.5493918 116.662798,11.5493918 116.831579,11.7094737 C117.202105,12.0673684 117.842105,12.2442105 118.785263,12.2442105 L118.802105,12.2442105 C119.741053,12.2442105 120.381053,12.0673684 120.755789,11.7094737 C120.92457,11.5493918 121.189114,11.5493918 121.357895,11.7094737 C121.43662,11.7856272 121.48107,11.890469 121.48107,12 C121.48107,12.109531 121.43662,12.2143728 121.357895,12.2905263 Z M121.109474,10.3157895 C120.533968,10.3266565 120.056976,9.87219972 120.04,9.29684211 C120.057363,8.71968134 120.532062,8.26180178 121.109474,8.26526316 C121.68434,8.26284879 122.154823,8.72208607 122.166316,9.29684211 C122.155255,9.86979553 121.682449,10.3256485 121.109474,10.3157895 Z"
+                      transform="translate(-111 -2)"></path>
+                  </svg>Reddit</li>
+                <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="13"
+                    viewBox="0 0 16 13">
+                    <path fill="#8493A8"
+                      d="M156.897292,4.65196943 C156.917171,4.45095715 156.842272,4.25227888 156.695612,4.11699 L155.201681,2.27513227 L155.201681,2 L159.840336,2 L163.42577,10.047619 L166.577965,2 L171,2 L171,2.27513227 L169.722689,3.52851264 C169.612571,3.61441846 169.557947,3.75561078 169.580766,3.89535568 L169.580766,13.1046444 C169.557947,13.2443893 169.612571,13.3855815 169.722689,13.4714874 L170.970121,14.7248678 L170.970121,15 L164.695612,15 L164.695612,14.7248678 L165.987862,13.4409171 C166.114846,13.3109935 166.114846,13.2727807 166.114846,13.0740741 L166.114846,5.63021753 L162.521942,14.9694297 L162.036415,14.9694297 L157.853408,5.63021753 L157.853408,11.8894768 C157.818532,12.1526336 157.903929,12.417575 158.084967,12.6078778 L159.76564,14.6942975 L159.76564,14.9694297 L155,14.9694297 L155,14.6942975 L156.680672,12.6078778 C156.860392,12.4172595 156.94081,12.1505606 156.897292,11.8894768 L156.897292,4.65196943 Z"
+                      transform="translate(-155 -2)"></path>
+                  </svg>Medium</li>
+              </ul>
+            </div>
+            <div class="col display-f justify-fs">
+              <ul class="list-group list-group-flush">
+                <p>M1 Network</p>
+                <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px"
+                    class="rounded-circle" alt="...">About</li>
+                <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px"
+                    class="rounded-circle" alt="...">WhitePaper</li>
+                <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px"
+                    class="rounded-circle" alt="...">Watch Video</li>
+                <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px"
+                    class="rounded-circle" alt="...">Team</li>
+                <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px"
+                    class="rounded-circle" alt="...">Documents</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- model -->
+  <div class="model">
+    <div class="container display-f flex-col justify-c">
+      <div class="display-f justify-sb">
+        <button type="button" class="btn btn-outline-light">Subscribe</button>
+        <button type="button" class="btn btn-outline-light close-btn">+</button>
+      </div>
+      <ul class="model-ul">
+        <li>
+          <a class="scroll" href="#Features">Features</a>
+        </li>
+        <li><a class="scroll" href="#M1">M1</a></li>
+        <li><a class="scroll" href="#WhitePaper">WhitePaper</a></li>
+        <li><a class="scroll" href="#Advisors">Team&Advisors</a></li>
+        <li><a class="scroll" href="#RoadMap">RoadMap</a></li>
+        <li><a class="scroll" href="#Documents">Documents</a></li>
+      </ul>
+      <div class="link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+          <path fill="#fff" fill-rule="evenodd"
+            d="M16,2.65803121 C15.4028527,2.94236896 14.7668748,3.1293778 14.1145876,3.21243535 C14.8054674,2.76156797 15.3167089,2.0682177 15.5549026,1.2590675 C14.9140831,1.6697037 14.2079678,1.95917212 13.4694464,2.11398977 C12.8618184,1.40519484 11.990439,0.999723663 11.0754227,1.00000014 C9.2276372,1.03741133 7.75878367,2.61928027 7.79420498,4.53367886 C7.79372027,4.80381937 7.82223506,5.07317786 7.87922358,5.33678766 C5.21325014,5.18115473 2.7441198,3.83298206 1.11324352,1.64248718 C0.820608499,2.18752651 0.667710169,2.80118379 0.669146376,3.42487058 C0.662223262,4.59280897 1.20773107,5.69024407 2.12946582,6.36269439 C1.60610146,6.34600373 1.09497069,6.19465191 0.642140468,5.92227988 L0.642140468,5.96891201 C0.621711801,7.62302076 1.71901709,9.06729746 3.27571656,9.43523322 C2.99462019,9.51887461 2.70348513,9.56074321 2.41102741,9.55958555 C2.2036746,9.55999399 1.99679051,9.53916735 1.7933923,9.49740938 C2.19685509,10.9147724 3.4334125,11.9033087 4.85906292,11.9481866 C3.71004584,12.9257599 2.26946442,13.4604319 0.782671209,13.4611399 C0.521128135,13.4613549 0.259795051,13.4457845 0,13.4145078 C1.488762,14.446914 3.23961989,14.9986763 5.03110055,15 C11.0689213,15 14.3696434,9.61658037 14.3696434,4.94300528 C14.3696434,4.79274622 14.3646423,4.6373058 14.3596412,4.48704674 C15.0057298,3.98176163 15.5609789,3.36265367 16,2.65803121 Z"
+            transform="translate(0 -1)"></path>
         </svg>
-      </div>
-    </div> 
-
-    <!-- header -->
-    <div class="header">
-      <div class="h-top">
-        <div class="title display-f flex-col justify-c">
-          <h2>M1 Network</h2>
-          <h4>Decentralized Cloud Game Platform</h4>
-        </div>
-        <div class="h-top-btn display-f flex-cc">Subscribed</div>
-      </div>
-      <!-- <div class="h-bottom display-f align-c justify-fe">
-        <span>Subscribe to M1-Network for updates</span>
-        <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="h-bottom-btn display-f flex-cc">Subscribed</div>
-      </div> -->
-    </div>
-
-    <!-- section-1 -->
-    <div id="Features" class="section section-1">
-      <div class="title">M1 Network Features</div>
-      <div class="container">
-        <div id="features-list" class="row row-cols-md-2 row-cols-1"></div>
-      </div>
-    </div>
-
-
-
-    <!-- section-2 -->
-    <div id="M1" class="section section-2">
-      <div class="container">
-        <div class="row row-cols-md-2 row-cols-1">
-          <div class="col display-f justify-c">
-            <div class="video"></div>
-          </div>
-          <div class="col">
-            <div class="card border-white display-f">
-              <div class="card-body">
-                <h5 class="card-title text-c">M1 Introduction</h5>
-                <p class="card-text text-c">M1N Network is a decentralized networked metaverse rendering platform based
-                  on blockchain technology, 3D asset rendering technology, and edge container scheduling technology. It
-                  focuses on serving the game tribes and virtual people in the metaverse. By building a decentralized
-                  cloud rendering platform to serve the rendering of the three-dimensional assets of the metaverse, ​it
-                  solves the problem of the underlying rendering resources and the problem of the virtual character UGC
-                  in the development of the metaverse, and promotes the deployment and development of metaverse
-                  application, builds a decentralized infrastructure for the metaverse.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- section-3 -->
-    <div id="WhitePaper" class="section section-3">
-      <div class="container">
-        <div class="row row-cols-md-2 row-cols-1">
-          <div class="col">
-
-          </div>
-          <div class="col text-c">
-            <div class="btn">Download WhitePaper</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- section-4 -->
-    <div id="Advisors" class="section section-4">
-      <div class="container">
-        <div id="advisorAndTeam" class="row row-cols-md-2 row-cols-1"></div>
-      </div>
-    </div>
-
-    <!-- section-5 -->
-    <div id="RoadMap" class="section section-5">
-      <div class="container">
-        <div class="title">Blockchain Technology Partners</div>
-        <div class="row row-cols-md-4 row-cols-sm-2">
-          <div class="col text-c">
-            <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
-          </div>
-          <div class="col text-c">
-            <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
-          </div>
-          <div class="col text-c">
-            <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
-          </div>
-          <div class="col text-c">
-            <img src="<%= require('../images/avatar.jpeg') %>" width="170px" class="rounded-circle mb-4" alt="...">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- section-6 -->
-    <div id="Documents" class="section section-6">
-      <div class="title text-c">Project Road Map</div>
-      <div class="container">
-        <div class="row row-cols-lg-4 row-cols-1 tt">
-          <div class="col d-flex justify-content-center">
-            <div class="map mb-3"></div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="map mb-3"></div>
-          </div>
-          <div class="co d-flex justify-content-center">
-            <div class="map mb-3"></div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="map mb-3"></div>
-          </div>
-        </div>
-        <div class="row row-cols-lg-3 row-cols-1">
-          <div class="col d-flex justify-content-center">
-            <div class="map mb-3"></div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="map mb-3"></div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="map mb-3"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- section-7 -->
-    <div  class="section section-7">
-      <!-- <div class="h-bottom display-f align-c justify-fe">
-        <span>Subscribe to M1-Network for updates</span>
-        <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="h-bottom-btn display-f flex-cc">Subscribed</div>
-      </div> -->
-    </div>
-
-    <!-- section-8 -->
-    <div class="section section-8">
-      <div class="container">
-        <div class="row row-cols-lg-2 row-cols-1">
-          <div class="col">
-            <div class="card border-white mb-3 justify-c align-c">
-              <img src="<%= require('../images/avatar.jpeg') %>" width="145px" class="rounded-circle mb-4" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-c">M1 Network</h5>
-                <p class="card-text text-c"><small class="text-muted">Decentralized Cloud Game Platform</small></p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="row row-cols-2">
-              <div class="col display-f justify-fe">
-                <ul class="list-group list-group-flush">
-                  <p>Tell Me</p>
-                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Twitter</li>
-                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Facebook</li>
-                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Telegram</li>
-                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Reddit</li>
-                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Medium</li>
-                </ul>
-              </div>
-              <div class="col display-f justify-fs">
-                <ul class="list-group list-group-flush">
-                  <p>M1 Network</p>
-                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">About</li>
-                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">WhitePaper</li>
-                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Watch Video</li>
-                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Team</li>
-                  <li class="list-group-item"><img src="<%= require('../images/avatar.jpeg') %>" width="19px" class="rounded-circle" alt="...">Documents</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16">
+          <path fill="#fff" fill-rule="evenodd"
+            d="M44.4808889,16 L44.4808889,8.70222222 L46.9697778,8.70222222 L47.3422222,5.85777778 L44.48,5.85777778 L44.48,4.04 C44.48,3.21777778 44.7124444,2.65777778 45.9124444,2.65777778 L47.4444444,2.65777778 L47.4444444,0.111111111 C46.7035863,0.033861549 45.9590899,-0.00322974567 45.2142222,-1.00265499e-13 C43.0071111,-1.00265499e-13 41.4964444,1.32444444 41.4964444,3.76 L41.4964444,5.85777778 L39,5.85777778 L39,8.70222222 L41.496,8.70222222 L41.496,16 L44.4808889,16 Z"
+            transform="translate(-39)"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
+          <path fill="#fff"
+            d="M15.9542857,0.914285714 L13.44,13.4857143 C13.44,13.4857143 13.0742857,14.3542857 12.1142857,13.9428571 L6.4,9.55428571 L4.29714286,8.54857143 L0.822857143,7.31428571 C0.822857143,7.31428571 0.274285714,7.13142857 0.228571429,6.72 C0.182857143,6.30857143 0.822857143,6.08 0.822857143,6.08 L14.8114286,0.594285714 C14.8114286,0.594285714 15.9542857,0.0914285714 15.9542857,0.914285714 Z">
+          </path>
+          <path class="paper" fill="#fff"
+            d="M5.98857143,13.3485714 C5.98857143,13.3485714 5.80571429,13.3485714 5.62285714,12.6628571 C5.39428571,12.0228571 4.34285714,8.50285714 4.34285714,8.50285714 L12.8,3.15428571 C12.8,3.15428571 13.3028571,2.88 13.2571429,3.15428571 C13.2571429,3.15428571 13.3485714,3.2 13.0742857,3.42857143 C12.8,3.65714286 6.44571429,9.50857143 6.44571429,9.50857143">
+          </path>
+          <path fill="#fff"
+            d="M8.64,11.2457143 L6.35428571,13.3028571 C6.35428571,13.3028571 6.17142857,13.44 5.98857143,13.3485714 L6.44571429,9.50857143">
+          </path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13">
+          <path fill="#fff" fill-rule="evenodd"
+            d="M126.583158,8.18105263 C126.561739,7.1660781 125.724552,6.35899218 124.709474,6.37473684 C124.282354,6.37388659 123.86727,6.516201 123.530526,6.77894737 C122.265815,6.05277095 120.844523,5.64256051 119.387368,5.58315789 L120.195789,3.11578947 L122.423158,3.62105263 C122.453835,4.47782838 123.168123,5.15045186 124.025195,5.12964298 C124.882267,5.10883411 125.563071,4.40233915 125.552134,3.54508416 C125.541196,2.68782917 124.842587,1.99893448 123.985263,2 C123.407447,1.99721206 122.874359,2.31060303 122.595789,2.81684211 L120.006316,2.22736842 C119.792595,2.17670653 119.575455,2.29713731 119.505263,2.50526316 L118.498947,5.57052632 C116.931598,5.57884218 115.392375,5.9875624 114.027368,6.75789474 C113.694543,6.50842658 113.289624,6.37394624 112.873684,6.37473684 C111.859413,6.35924574 111.023573,7.16684752 111.004211,8.18105263 C111.007126,8.78077799 111.310763,9.339028 111.812632,9.66736842 C111.7922,9.81101304 111.782349,9.95596453 111.783158,10.1010526 C111.783158,11.3431579 112.532632,12.5010526 113.892632,13.36 C116.914617,15.0610319 120.605383,15.0610319 123.627368,13.36 C124.991579,12.5010526 125.741053,11.3431579 125.741053,10.1010526 C125.741161,9.96871652 125.732722,9.83651157 125.715789,9.70526316 C126.25112,9.38339845 126.579874,8.80568403 126.583158,8.18105263 Z M123.985263,2.82105263 C124.36162,2.83578887 124.656361,3.15007265 124.646939,3.52660016 C124.637516,3.90312767 124.327424,4.20227552 123.950801,4.19816846 C123.574178,4.1940614 123.270683,3.8882224 123.269474,3.51157895 C123.272459,3.32497123 123.349641,3.14723606 123.483959,3.01765918 C123.618276,2.88808231 123.798669,2.81733418 123.985263,2.82105263 Z M115.421053,9.29684211 C115.438415,8.71968134 115.913115,8.26180178 116.490526,8.26526316 C117.065392,8.26284879 117.535876,8.72208607 117.547368,9.29684211 C117.536308,9.86979553 117.063502,10.3256485 116.490526,10.3157895 C115.915021,10.3266565 115.438029,9.87219972 115.421053,9.29684211 Z M121.357895,12.2905263 C120.814737,12.8126316 119.976842,13.0652632 118.802105,13.0652632 L118.785263,13.0652632 C117.606316,13.0652632 116.768421,12.8126316 116.229474,12.2905263 C116.148849,12.2154203 116.10306,12.1101877 116.10306,12 C116.10306,11.8898123 116.148849,11.7845797 116.229474,11.7094737 C116.398255,11.5493918 116.662798,11.5493918 116.831579,11.7094737 C117.202105,12.0673684 117.842105,12.2442105 118.785263,12.2442105 L118.802105,12.2442105 C119.741053,12.2442105 120.381053,12.0673684 120.755789,11.7094737 C120.92457,11.5493918 121.189114,11.5493918 121.357895,11.7094737 C121.43662,11.7856272 121.48107,11.890469 121.48107,12 C121.48107,12.109531 121.43662,12.2143728 121.357895,12.2905263 Z M121.109474,10.3157895 C120.533968,10.3266565 120.056976,9.87219972 120.04,9.29684211 C120.057363,8.71968134 120.532062,8.26180178 121.109474,8.26526316 C121.68434,8.26284879 122.154823,8.72208607 122.166316,9.29684211 C122.155255,9.86979553 121.682449,10.3256485 121.109474,10.3157895 Z"
+            transform="translate(-111 -2)"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13">
+          <path fill="#fff"
+            d="M156.897292,4.65196943 C156.917171,4.45095715 156.842272,4.25227888 156.695612,4.11699 L155.201681,2.27513227 L155.201681,2 L159.840336,2 L163.42577,10.047619 L166.577965,2 L171,2 L171,2.27513227 L169.722689,3.52851264 C169.612571,3.61441846 169.557947,3.75561078 169.580766,3.89535568 L169.580766,13.1046444 C169.557947,13.2443893 169.612571,13.3855815 169.722689,13.4714874 L170.970121,14.7248678 L170.970121,15 L164.695612,15 L164.695612,14.7248678 L165.987862,13.4409171 C166.114846,13.3109935 166.114846,13.2727807 166.114846,13.0740741 L166.114846,5.63021753 L162.521942,14.9694297 L162.036415,14.9694297 L157.853408,5.63021753 L157.853408,11.8894768 C157.818532,12.1526336 157.903929,12.417575 158.084967,12.6078778 L159.76564,14.6942975 L159.76564,14.9694297 L155,14.9694297 L155,14.6942975 L156.680672,12.6078778 C156.860392,12.4172595 156.94081,12.1505606 156.897292,11.8894768 L156.897292,4.65196943 Z"
+            transform="translate(-155 -2)"></path>
+        </svg>
       </div>
     </div>
   </div>

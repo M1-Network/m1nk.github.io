@@ -138,3 +138,15 @@ $(window).scroll(function (event) {
   setTimeout(function () { t = p; }, 0);
 
 })
+
+$('.dropmenuOpen').click(function() {
+  $('.model').fadeIn()
+})
+
+$('.close-btn').click(function() {
+  $('.model').fadeOut()
+})
+
+$('.scroll').click(function() {
+  $('.model').fadeOut()
+})
