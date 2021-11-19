@@ -14,13 +14,13 @@ module.exports = {
   mode: 'development',
 
   devServer: {
-    static: './dist',
+    static: './docs',
     hot: true
   },
 
   output: {
     filename: '[name]/js/index.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     clean: true
   },
 
