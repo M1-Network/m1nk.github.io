@@ -174,7 +174,8 @@
   }
 }
 
-.h-bottom {
+// email
+.email {
   height: 71px;
   background-color: rgba(202, 202, 202, 1);
   .form-control {
@@ -183,7 +184,7 @@
     border-radius: 16px;
     margin: 0 22px 0 14px;
   }
-  .h-bottom-btn {
+  .email-btn {
     width: 161px;
     height: 44px;
     color: rgba(231, 225, 225, 1);
@@ -196,6 +197,9 @@
     cursor: pointer;
   }
 }
+
+
+
 @media screen and (min-width: 800px) {
   // header
   .header {
@@ -256,6 +260,32 @@
 }
 
 @media screen and (max-width: 800px) {
+  .email {
+    span {
+      display: none;
+    }
+  }
+
+  .a-container {
+    flex-direction: column;
+    width: 100% !important;
+    .content {
+      width: 100% !important;
+    }
+    .a-row {
+      width: 100% !important;
+      flex-flow: wrap !important;
+      justify-content: space-between;
+      overflow: scroll !important;
+      .card {
+        margin: 0 10px 10px !important;
+      }
+    }
+    .target {
+      display: none !important;
+    }
+  }
+
   .header {
     width: 100%;
     height: 480px;
@@ -311,8 +341,7 @@
   }
 }
 
-
-// model 
+// model
 .model {
   display: none;
   position: fixed;
@@ -325,7 +354,7 @@
   padding: 40px 0;
   text-align: center;
   color: #fff;
-  background: rgba(230,34,73,.97);
+  background: rgba(230, 34, 73, 0.97);
   .container {
     height: 100%;
   }
@@ -349,7 +378,6 @@
       margin: 0 12px;
       cursor: pointer;
     }
-    
   }
 
   .close-btn {
@@ -357,4 +385,61 @@
     height: 40px;
     border-radius: 50%;
   }
+}
+
+// swiper
+.slide {
+  width: 100%;
+  height: 400px;
+}
+
+.a-container {
+  width: 1017px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.2s;
+  margin: 0 auto;
+  .content {
+    width: 45%;
+    transition: all 0.2s;
+  }
+  .a-row {
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: hidden;
+    .card {
+      height: 182px;
+      width: 97px;
+      margin: 0 30px;
+      border: 1px solid antiquewhite;
+      margin-bottom: 20px;
+      .card-title {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  .target {
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+
+#photoview {
+  display: none;
+  position: fixed;
+  z-index: 10001;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.97);
 }

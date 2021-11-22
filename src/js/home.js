@@ -1,9 +1,8 @@
 
 import '../css/home.less';
 import $ from 'jquery';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import artTemplate from 'art-template/lib/template-web'
+import './swiper.js'
 
 let featuresList = [
   {
@@ -32,6 +31,26 @@ let advisorAndTeam = {
   team: {
     title: 'Team',
     list: [
+      {
+        title: 'loewion',
+        text: 'University of Oxford',
+        image: require('../images/avatar.jpeg')
+      },
+      {
+        title: 'loewion',
+        text: 'University of Oxford',
+        image: require('../images/avatar.jpeg')
+      },
+      {
+        title: 'loewion',
+        text: 'University of Oxford',
+        image: require('../images/avatar.jpeg')
+      },
+      {
+        title: 'loewion',
+        text: 'University of Oxford',
+        image: require('../images/avatar.jpeg')
+      },
       {
         title: 'loewion',
         text: 'University of Oxford',
@@ -96,6 +115,26 @@ let advisorAndTeam = {
         title: 'loewion',
         text: 'University of Oxford',
         image: require('../images/avatar.jpeg')
+      },
+      {
+        title: 'loewion',
+        text: 'University of Oxford',
+        image: require('../images/avatar.jpeg')
+      },
+      {
+        title: 'loewion',
+        text: 'University of Oxford',
+        image: require('../images/avatar.jpeg')
+      },
+      {
+        title: 'loewion',
+        text: 'University of Oxford',
+        image: require('../images/avatar.jpeg')
+      },
+      {
+        title: 'loewion',
+        text: 'University of Oxford',
+        image: require('../images/avatar.jpeg')
       }
     ]
   }
@@ -107,6 +146,31 @@ document.getElementById('features-list').innerHTML = html;
 let advisorsTemp = artTemplate('advisorsTemp', advisorAndTeam);
 document.getElementById('advisorAndTeam').innerHTML = advisorsTemp;
 
+
+// 点击按钮 平滑滚动
+$(".scroll").click(function (event) {
+
+  event.preventDefault();
+
+  //calculate destination place 
+
+  var dest = 0;
+
+  if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+
+    dest = $(document).height() - $(window).height();
+
+  } else {
+
+    dest = $(this.hash).offset().top;
+
+  }
+
+  //go to destination 
+
+  $('html,body').animate({ scrollTop: dest }, 100, 'linear');
+
+});
 
 // 监听浏览器滚动 menu 的样式处理
 let p = 0, t = 0;
@@ -149,4 +213,40 @@ $('.close-btn').click(function() {
 
 $('.scroll').click(function() {
   $('.model').fadeOut()
+})
+
+let a = false
+$('.target').click(() => {
+  a = !a
+  if(a) {
+    $('.a-1').css({
+      "width": '85%'
+    })
+
+    $('.a-2').css({
+      "width": '15%'
+    })
+  } else {
+    $('.a-2').css({
+      "width": '85%'
+    })
+
+    $('.a-1').css({
+      "width": '15%'
+    })
+  }
+  
+})
+
+// 图片预览
+$('.slide>img').click((event) => {
+  let src = event.currentTarget.currentSrc
+  $("#imgid").attr("src",src)
+
+  event.preventDefault()
+  $('#photoview').fadeIn()
+})
+
+$('.photoview-close-btn').click(() => {
+  $('#photoview').fadeOut()
 })

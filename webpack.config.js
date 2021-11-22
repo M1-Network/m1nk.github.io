@@ -92,14 +92,6 @@ module.exports = {
       hash: true
     }),
 
-    // new HtmlWebpackPlugin({
-    //   filename: "about/index.html",
-    //   template: `./src/views/about.html`,
-    //   title: 'about',
-    //   chunks: ["about"],
-    //   hash: true
-    // }),
-
     new CssMinimizerPlugin(),
 
     new DefinePlugin({
@@ -126,6 +118,11 @@ module.exports = {
         }
       ]
     })
-  ]
+  ],
+
+  externals: {
+    jquery: 'jQuery',
+    bootstrap: 'bootstrap'
+  },
 
 }

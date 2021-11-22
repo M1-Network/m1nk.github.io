@@ -36,6 +36,7 @@
     "art-template": "^4.13.2",
     "art-template-loader": "^1.4.3",
     "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "swiper": "^6.8.4"
   }
 }

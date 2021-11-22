@@ -8,7 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <title><%= htmlWebpackPlugin.options.title %></title>
-
+  <script
+    src="https://code.jquery.com/jquery-3.1.0.js"
+    integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- featuresTemp -->
   <script id="featuresTemp" type="text/html">
     {{each}}
@@ -27,9 +33,9 @@
   </script>
 
   <!-- advisorsTemp -->
-  <script id="advisorsTemp" type="text/html">
+  <!-- <script id="advisorsTemp" type="text/html">
     {{each}}
-    <div class="col px-md-5">
+    <div class="col px-md-5 teamAdvisors">
       <div class="title text-c">{{$value.title}}</div>
       <div class="row row-cols-3">
         {{each $value.list as item}}
@@ -46,6 +52,39 @@
       </div>
     </div>
     {{/each}}
+  </script> -->
+
+  <script id="advisorsTemp" type="text/html">
+    <div class="content a-1">
+      <div class="title text-c">{{team.title}}</div>
+      <div class="a-row">
+        {{each team.list as item}}
+          <div class="card border-white mb-3 align-c">
+            <img src="{{item.image}}" width="95px" class="rounded" alt="...">
+            <div>
+              <h5 class="card-title text-c">{{item.title}}</h5>
+              <p class="card-text text-c"><small class="text-muted">{{item.text}}</small></p>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="target display-f flex-cc">>></div>
+    <div class="content  a-2">
+      <div class="title text-c">{{advisors.title}}</div>
+      <div class="a-row">
+          {{each advisors.list as item}}
+            <div class="card border-white mb-3 align-c">
+              <img src="{{item.image}}" width="95px" class="rounded" alt="...">
+              <div>
+                <h5 class="card-title text-c">{{item.title}}</h5>
+                <p class="card-text text-c"><small class="text-muted">{{item.text}}</small></p>
+              </div>
+            </div>
+          {{/each}}
+      </div>
+    </div>
+    
   </script>
 
 </head>
@@ -105,11 +144,11 @@
       </div>
       <div class="h-top-btn display-f flex-cc">Subscribed</div>
     </div>
-    <!-- <div class="h-bottom display-f align-c justify-fe">
-        <span>Subscribe to M1-Network for updates</span>
-        <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="h-bottom-btn display-f flex-cc">Subscribed</div>
-      </div> -->
+    <div class="email display-f align-c justify-fe">
+      <span>Subscribe to M1-Network for updates</span>
+      <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div class="email-btn display-f flex-cc">Subscribed</div>
+    </div>
   </div>
 
   <!-- section-1 -->
@@ -152,10 +191,31 @@
     <div class="container">
       <div class="row row-cols-md-2 row-cols-1">
         <div class="col">
-
+          <!-- swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide text-c">
+                  <img width="80%" src="<%= require('../images/avatar.jpeg') %>" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide text-c">
+                  <img width="80%" src="<%= require('../images/banner.png') %>" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide text-c">
+                  <img width="80%" src="<%= require('../images/avatar.jpeg') %>" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
-        <div class="col text-c">
-          <div class="btn display-f align-c">Download WhitePaper</div>
+        <div class="col text-c display-f flex-cc">
+          <div class="btn display-f flex-cc">Download WhitePaper</div>
         </div>
       </div>
     </div>
@@ -163,9 +223,7 @@
 
   <!-- section-4 -->
   <div id="Advisors" class="section section-4">
-    <div class="container">
-      <div id="advisorAndTeam" class="row row-cols-md-2 row-cols-1"></div>
-    </div>
+    <div id="advisorAndTeam" class="a-container"></div>
   </div>
 
   <!-- section-5 -->
@@ -223,11 +281,11 @@
 
   <!-- section-7 -->
   <div class="section section-7">
-    <!-- <div class="h-bottom display-f align-c justify-fe">
-        <span>Subscribe to M1-Network for updates</span>
-        <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="h-bottom-btn display-f flex-cc">Subscribed</div>
-      </div> -->
+    <div class="email display-f align-c justify-fe">
+      <span>Subscribe to M1-Network for updates</span>
+      <input type="email" placeholder="Enter your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div class="email-btn display-f flex-cc">Subscribed</div>
+    </div>
   </div>
 
   <!-- section-8 -->
@@ -306,6 +364,17 @@
       </div>
     </div>
   </div>
+
+  <!-- 图片预览 -->
+  <div style="display:none;" id="photoview">
+    <div class="container display-f flex-col justify-c">
+      <div class="display-f justify-fe">
+        <button type="button" class="btn btn-outline-light photoview-close-btn mb-3">+</button>
+      </div>
+      <img id="imgid" alt="..." />
+    </div>
+  </div>
+  
   <!-- model -->
   <div class="model">
     <div class="container display-f flex-col justify-c">
