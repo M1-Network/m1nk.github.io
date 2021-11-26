@@ -11,7 +11,7 @@ module.exports = {
     // about: './src/js/about.js'
   },
 
-  mode: 'development',
+  mode: 'production',
 
   devServer: {
     static: './docs',

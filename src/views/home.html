@@ -14,6 +14,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
   <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- featuresTemp -->
   <script id="featuresTemp" type="text/html">
@@ -165,8 +166,8 @@
   <div id="M1" class="section section-2">
     <div class="container">
       <div class="row row-cols-md-2 row-cols-1">
-        <div class="col display-f justify-c">
-          <div class="video"></div>
+        <div class="col display-f justify-c align-c">
+          <div id="videoplayer"></div>
         </div>
         <div class="col">
           <div class="card border-white display-f">
@@ -227,7 +228,7 @@
   </div>
 
   <!-- section-5 -->
-  <div id="RoadMap" class="section section-5">
+  <div id="Documents" class="section section-5">
     <div class="container">
       <div class="title">Blockchain Technology Partners</div>
       <div class="row row-cols-md-4 row-cols-sm-2">
@@ -248,9 +249,9 @@
   </div>
 
   <!-- section-6 -->
-  <div id="Documents" class="section section-6">
+  <div id="RoadMap" class="section section-6">
     <div class="title text-c">Project Road Map</div>
-    <div class="container">
+    <div class="container RoadMap-container">
       <div class="row row-cols-lg-4 row-cols-1 tt">
         <div class="col d-flex justify-content-center">
           <div class="map mb-3"></div>
@@ -374,7 +375,7 @@
       <img id="imgid" alt="..." />
     </div>
   </div>
-  
+
   <!-- model -->
   <div class="model">
     <div class="container display-f flex-col justify-c">

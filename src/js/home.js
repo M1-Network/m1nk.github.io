@@ -3,6 +3,7 @@ import '../css/home.less';
 import $ from 'jquery';
 import artTemplate from 'art-template/lib/template-web'
 import './swiper.js'
+import './video.js'
 
 let featuresList = [
   {
@@ -169,6 +170,7 @@ $(".scroll").click(function (event) {
   //go to destination 
 
   $('html,body').animate({ scrollTop: dest }, 100, 'linear');
+
 
 });
 
