@@ -21,12 +21,12 @@
         <div class="display-f align-c">
           <!-- <img src="{{$value.image}}" width="104" height="104" class="rounded" alt="..."> -->
           <div class="card-body">
-            <p class="card-title" style="margin-left: 133px;">{{$value.title}}</p>
-            <div class="display-f">
-              <img src="{{$value.image}}" width="104" height="104" style="margin-right: 29px;" class="rounded" alt="...">
+            <p class="card-title">{{$value.title}}</p>
+            <div class="display-f imgt">
+              <img src="{{$value.image}}" width="104" height="104" class="rounded" alt="...">
               <p class="card-text">{{$value.text}}</p>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -76,8 +76,9 @@
 <body>
   <!-- menu -->
   <div class="menu-box display-f align-c justify-sb">
-    <img class="logo" src="<%= require('../images/logo.png') %>" alt="">
-    <div class="menu">
+
+    <div class="menu display-f align-c">
+      <img class="logo" src="<%= require('../images/logo.png') %>" alt="">
       <ul class="menu-container display-f">
         <li class="menu-list">
           <a class="scroll" href="#Features">Features</a>
@@ -92,19 +93,24 @@
           <a class="scroll" href="#Advisors">Team&Advisors</a>
         </li>
         <li class="menu-list">
-          <a class="scroll" href="#RoadMap">RoadMap</a>
+          <a class="scroll" href="#Documents">Documents</a>
         </li>
         <li class="menu-list">
-          <a class="scroll" href="#Documents">Documents</a>
+          <a class="scroll" href="#RoadMap">RoadMap</a>
         </li>
       </ul>
     </div>
     <div class="menu-link display-f flex-cc">
-      <img width="30px" height="30px" src="<%= require('../images/T.svg') %>" alt="">
-      <img width="30px" height="30px" src="<%= require('../images/F.svg') %>" alt="">
-      <img width="30px" height="30px" src="<%= require('../images/te.svg') %>" alt="">
-      <img width="30px" height="30px" src="<%= require('../images/r.svg') %>" alt="">
-      <img width="30px" height="30px" src="<%= require('../images/m.svg') %>" alt="">
+      <a href="https://twitter.com/M1_Network"><img width="30px" height="30px" src="<%= require('../images/T.svg') %>"
+          alt=""></a>
+      <a href="https://www.facebook.com/M1Network1"><img width="30px" height="30px"
+          src="<%= require('../images/F.svg') %>" alt=""></a>
+      <a href="https://t.me/M1Network_official"><img width="30px" height="30px" src="<%= require('../images/te.svg') %>"
+          alt=""></a>
+      <a href="https://www.reddit.com/user/M1Network"><img width="30px" height="30px"
+          src="<%= require('../images/r.svg') %>" alt=""></a>
+      <a href="https://medium.com/@M1Network"><img width="30px" height="30px" src="<%= require('../images/m.svg') %>"
+          alt=""></a>
       <p class="menu-btn display-f flex-cc">Portal</p>
     </div>
   </div>
@@ -130,7 +136,8 @@
           <p>Cloud Game Platform</p>
         </div>
         <div class="h-left_b display-f aling-c">
-          <img class="play-icon" src="<%= require('../images/play-icon.png') %>" alt="...">
+          <a class="scroll" href="#M1"><img class="play-icon" src="<%= require('../images/play-icon.png') %>"
+              alt="..."></a>
           <div class="h-b-info display-f flex-col justify-c">
             <p>ABOUT US</p>
             <p>Promotion video</p>
@@ -360,25 +367,47 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item list-title">Tell Me</li>
               <li class="list-group-item">
-                <img width="30px" height="30px" src="<%= require('../images/T.svg') %>" alt="">Twitter</li>
-              <li class="list-group-item"><img width="30px" height="30px" src="<%= require('../images/F.svg') %>"
-                  alt="">Facebook</li>
-              <li class="list-group-item"><img width="30px" height="30px" src="<%= require('../images/te.svg') %>"
-                  alt="">Telegram</li>
-              <li class="list-group-item"><img width="30px" height="30px" src="<%= require('../images/r.svg') %>"
-                  alt="">Reddit</li>
-              <li class="list-group-item"> <img width="30px" height="30px" src="<%= require('../images/m.svg') %>"
-                  alt="">Medium</li>
+                <a href="https://twitter.com/M1_Network"><img width="30px" height="30px"
+                    src="<%= require('../images/T.svg') %>" alt="">Twitter</a>
+              </li>
+              <li class="list-group-item">
+                <a href="https://www.facebook.com/M1Network1"><img width="30px" height="30px"
+                    src="<%= require('../images/F.svg') %>" alt="">Facebook</a>
+              </li>
+              <li class="list-group-item">
+                <a href="https://t.me/M1Network_official">
+                  <img width="30px" height="30px" src="<%= require('../images/te.svg') %>" alt="">Telegram
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="https://www.reddit.com/user/M1Network"><img width="30px" height="30px"
+                    src="<%= require('../images/r.svg') %>" alt="">Reddit</a>
+              </li>
+              <li class="list-group-item">
+                <a href="https://medium.com/@M1Network">
+                  <img width="30px" height="30px" src="<%= require('../images/m.svg') %>" alt="">Medium
+                </a>
+              </li>
             </ul>
           </div>
           <div class="col display-f justify-fs">
             <ul class="list-group list-group-flush">
               <li class="list-group-item list-title">M1 Network</li>
-              <li class="list-group-item">About</li>
-              <li class="list-group-item">WhitePaper</li>
-              <li class="list-group-item">Watch Video</li>
-              <li class="list-group-item">Team</li>
-              <li class="list-group-item">Documents</li>
+              <li class="list-group-item">
+                <a class="scroll" href="#M1">About</a>
+              </li>
+              <li class="list-group-item">
+                <a class="scroll" href="#WhitePaper">WhitePaper</a>
+              </li>
+              <li class="list-group-item">
+                <a class="scroll" href="#M1">Watch Video</a>
+              </li>
+              <li class="list-group-item">
+                <a class="scroll" href="#Advisors">Team</a>
+              </li>
+              <li class="list-group-item">
+                <a class="scroll" href="#Documents">Documents</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -411,7 +440,7 @@
     </div>
     <div class="swiper-close"></div>
   </div>
-      
+
   <!-- model -->
   <div class="model">
     <div class="container display-f flex-col justify-c">

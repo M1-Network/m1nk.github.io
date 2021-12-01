@@ -160,35 +160,48 @@ $(".scroll").click(function (event) {
 });
 
 // 监听浏览器滚动 menu 的样式处理
-// let p = 0, t = 0;
-// $(window).scroll(function (event) {
+function handleMenuActive(t, p, callback) {
+  let top = $(t).offset().top
+  let H = $(t).height()
+  if(top - p < 100  && top - p > -H) {
+    callback()
+  }
+}
+let p = 0, t = 0;
+$(window).scroll(function (event) {
 
-//   event.preventDefault();
+  event.preventDefault();
 
-//   p = $(this).scrollTop();
+  $('.menu-list').each(function(idx, $sec) {
+    handleMenuActive(`.section-${idx+1}`, $(window).scrollTop(), function() {
+      $($sec).addClass("current").siblings().removeClass("current");
+    })
+  })
 
-//   let ScrVal = $(window).scrollTop();
+  // p = $(this).scrollTop();
 
-//   let McrVal = $(".section-1").offset().top
+  // let ScrVal = $(window).scrollTop();
 
-//   let Mhval = $(".menu").height()
+  // let McrVal = $(".section-1").offset().top
 
-//   if (ScrVal >= McrVal - Mhval) {
-//     if (t <= p) {
-//       //向下滚
-//       $('.menu').addClass('menu-fixed menu-translate-hide')
+  // let Mhval = $(".menu").height()
 
-//     } else {
-//       //向上滚
-//       $('.menu').removeClass('menu-translate-hide')
-//     }
-//   } else {
-//     $('.menu').removeClass('menu-fixed')
-//   }
+  // if (ScrVal >= McrVal - Mhval) {
+  //   if (t <= p) {
+  //     //向下滚
+  //     $('.menu').addClass('menu-fixed menu-translate-hide')
 
-//   setTimeout(function () { t = p; }, 0);
+  //   } else {
+  //     //向上滚
+  //     $('.menu').removeClass('menu-translate-hide')
+  //   }
+  // } else {
+  //   $('.menu').removeClass('menu-fixed')
+  // }
 
-// })
+  // setTimeout(function () { t = p; }, 0);
+
+})
 
 let dropState = false
 $('.dropmenuOpen').click(function () {

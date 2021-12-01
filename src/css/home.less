@@ -1,3 +1,4 @@
+@import "./fonts.less";
 @import "./index.less";
 @import "./menu.less";
 @import "./email.less";
@@ -33,6 +34,7 @@
       font-family: Objectivity-Medium, Objectivity;
       font-weight: 500;
       color: #FFFFFF;
+      margin-left: 133px;
     }
     .card-text {
       font-size: 18px;
@@ -40,9 +42,35 @@
       font-weight: 300;
       color: #B9B6DB;
     }
+    .imgt { 
+      img {
+        margin-right: 29px;
+      }
+    }
   }
+}
 
-  
+@media screen and (max-width: 800px) {
+  .section-1  {
+    .title {
+      font-size: 30px;
+    }
+    .card {
+      .card-title {
+        margin-left: 0;
+        text-align: center;
+      }
+      .card-text {
+        text-align: center;
+      }
+      .imgt {
+        flex-flow: column;
+        img {
+          margin: 0 auto;
+        } 
+      }
+    }
+  }
 }
 
 // .section-2
@@ -201,6 +229,12 @@
     cursor: pointer;
     img {
       margin-right: 10px;
+    }
+
+    a {
+      color: rgba(185, 182, 219, 1);
+      display: flex;
+      align-items: center;
     }
 
     &.list-title {

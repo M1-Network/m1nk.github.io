@@ -22,7 +22,7 @@
   visibility: visible;
   transition: 0.4s;
   transform: translateY(0%);
-  height: 64px;
+  // height: 64px;
   &.menu-fixed {
     position: fixed;
     z-index: 100;
@@ -41,8 +41,10 @@
   .menu-container {
     position: relative;
     width: 95%;
-    margin: 0 auto;
+    margin-left: 90px;
     padding: 0 10px;
+    
+    
     .menu-list {
       padding: 23px 0;
       & + .menu-list {
@@ -52,6 +54,7 @@
         color: #edf1ff;
         font-size: 18px;
         text-decoration: none;
+        transition: all 0.4s;
       }
     }
     .current {
@@ -99,9 +102,17 @@
   }
   
 }
-
+// 小于800px
 @media screen and (max-width: 800px) {
   .menu-box {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .menu {
+    .menu-container {
+      margin-left: 40px;
+    }
   }
 }
