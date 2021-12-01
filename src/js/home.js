@@ -190,12 +190,14 @@ $(".scroll").click(function (event) {
 
 // })
 
+let dropState = false
 $('.dropmenuOpen').click(function () {
-  $('.model').fadeIn()
-})
-
-$('.close-btn').click(function () {
-  $('.model').fadeOut()
+  dropState = !dropState
+  if(dropState) {
+    $('.model').fadeIn()
+  } else {
+    $('.model').fadeOut()
+  }
 })
 
 $('.scroll').click(function () {
