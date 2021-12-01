@@ -49,7 +49,7 @@
       .map-content_t, .map-content_b {
         .content-list {
           position: relative;
-          margin: 68px 206px 68px 0px;
+          margin: 50px 80px 56px 0px;
           .label {
             width: 157px;
             height: 57px;
@@ -61,6 +61,7 @@
             color: #FFFFFF;
             margin-right: 24px;
             cursor: pointer;
+            transition: all 0.4s;
           }
           .content-text {
             width: 400px;
@@ -68,7 +69,9 @@
             font-family: PingFangSC-Light, PingFang SC;
             font-weight: 300;
             color: #B9B6DB;
+            transition: all 0.4s;
           }
+          
           &.current {
             .label {
               background: #777EFF;
@@ -76,6 +79,12 @@
             }
             .content-text {
               color: #777EFF;
+            }
+            svg {
+              g{
+                transition: all 0.4s;
+                stroke :  #777EFF !important;
+              }
             }
           }
         }
@@ -92,16 +101,14 @@
           background: #3C3789;
           position: absolute;
           bottom: 0;
+          z-index: 999;
         }
         .content-list {
           &:nth-child(1) {
-            margin-left: 240px;
+            margin-left: 65px;
           }
           .line {
-            position: absolute;
-            top: 36px;
-            left: -190px;
-            transform: rotateX(180deg);
+            transform: rotateX(180deg) translateY(-55px);
           }
         }
       }
@@ -109,12 +116,10 @@
       .map-content_b {
         .content-list {
           &:nth-child(1) {
-            margin-left: 430px;
+            margin-left: 270px;
           }
           .line {
-            position: absolute;
-            top: -70px;
-            left: -190px;
+            transform: translateY(-55px);
           }
         }
       }

@@ -34,6 +34,55 @@
     {{/each}}
   </script>
 
+  <!-- roadMap -->
+  <script id="roadMapListTemp" type="text/html">
+    <div class="map-content_t map-content_box display-f">
+      {{each top}}
+      <div class="content-list display-f flex-cc">
+        <svg class="line" width="192px" height="113px" viewBox="0 0 192 113" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>直线 2备份 2</title>
+          <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+            <g transform="translate(-483.000000, -4658.000000)" id="编组-29" stroke="#3C3789" stroke-width="5">
+              <g transform="translate(109.170455, 4382.000000)">
+                <path
+                  d="M377.627051,386.5 L484.192741,294.822269 C495.623085,284.988822 510.201151,279.581014 525.279262,279.581014 L562.409091,279.581014 L562.409091,279.581014"
+                  id="直线-2备份-2"
+                  transform="translate(470.018071, 333.040507) scale(1, -1) translate(-470.018071, -333.040507) ">
+                </path>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <p class="label display-f flex-cc">{{$value.label}}</p>
+        <p class="content-text">{{$value.info}}</p>
+      </div>
+      {{/each}}
+    </div>
+    <div class="map-content_b map-content_box display-f">
+      {{each bot}}
+      <div class="content-list display-f flex-cc">
+        <svg class="line" width="192px" height="113px" viewBox="0 0 192 113" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>直线 2备份 2</title>
+          <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+            <g transform="translate(-483.000000, -4658.000000)" id="编组-29" stroke="#3C3789" stroke-width="5">
+              <g transform="translate(109.170455, 4382.000000)">
+                <path
+                  d="M377.627051,386.5 L484.192741,294.822269 C495.623085,284.988822 510.201151,279.581014 525.279262,279.581014 L562.409091,279.581014 L562.409091,279.581014"
+                  id="直线-2备份-2"
+                  transform="translate(470.018071, 333.040507) scale(1, -1) translate(-470.018071, -333.040507) ">
+                </path>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <p class="label display-f flex-cc">{{$value.label}}</p>
+        <p class="content-text">{{$value.info}}</p>
+      </div>
+      {{/each}}
+    </div>
+  </script>
 
   <!-- team -->
   <script id="advisorsTemp" type="text/html">
@@ -101,16 +150,16 @@
       </ul>
     </div>
     <div class="menu-link display-f flex-cc">
-      <a href="https://twitter.com/M1_Network"><img width="30px" height="30px" src="<%= require('../images/T.svg') %>"
-          alt=""></a>
-      <a href="https://www.facebook.com/M1Network1"><img width="30px" height="30px"
+      <a target="_black" href="https://twitter.com/M1_Network"><img width="30px" height="30px"
+          src="<%= require('../images/T.svg') %>" alt=""></a>
+      <a target="_black" href="https://www.facebook.com/M1Network1"><img width="30px" height="30px"
           src="<%= require('../images/F.svg') %>" alt=""></a>
-      <a href="https://t.me/M1Network_official"><img width="30px" height="30px" src="<%= require('../images/te.svg') %>"
-          alt=""></a>
-      <a href="https://www.reddit.com/user/M1Network"><img width="30px" height="30px"
+      <a target="_black" href="https://t.me/M1Network_official"><img width="30px" height="30px"
+          src="<%= require('../images/te.svg') %>" alt=""></a>
+      <a target="_black" href="https://www.reddit.com/user/M1Network"><img width="30px" height="30px"
           src="<%= require('../images/r.svg') %>" alt=""></a>
-      <a href="https://medium.com/@M1Network"><img width="30px" height="30px" src="<%= require('../images/m.svg') %>"
-          alt=""></a>
+      <a target="_black" href="https://medium.com/@M1Network"><img width="30px" height="30px"
+          src="<%= require('../images/m.svg') %>" alt=""></a>
       <p class="menu-btn display-f flex-cc">Portal</p>
     </div>
   </div>
@@ -166,6 +215,7 @@
   <div id="Features" class="section section-1">
     <div class="title">M1 Network Features</div>
     <div class="container">
+      <!-- art -->
       <div id="features-list" class="row row-cols-md-2 row-cols-1"></div>
     </div>
   </div>
@@ -234,6 +284,7 @@
 
   <!-- section-4 -->
   <div id="Advisors" class="section section-4">
+    <!-- art -->
     <div id="advisorAndTeam" class="a-container"></div>
   </div>
 
@@ -294,54 +345,8 @@
     <div class="title text-c">Project Road Map</div>
     <div class="roadMap-container display-f align-c">
       <div class="start display-f flex-cc">START</div>
-      <div class="map-content">
-        <div class="map-content_t map-content_box display-f">
-          <div class="content-list display-f flex-cc">
-            <img class="line" width="192" src="<%= require('../images/line.svg') %>" alt="">
-            <p class="label display-f flex-cc">2021 Q1</p>
-            <p class="content-text">Any game distributed in M1 project can not only provide distribution efficiency, but
-              also players can experience the game without installation</p>
-
-          </div>
-          <div class="content-list display-f flex-cc">
-            <img class="line" src="<%= require('../images/line.svg') %>" alt="">
-            <p class="label display-f flex-cc">2021 Q1</p>
-            <p class="content-text">Any game distributed in M1 project can not only provide distribution efficiency, but
-              also players can experience the game without installation</p>
-
-          </div>
-          <div class="content-list display-f flex-cc">
-            <img class="line" width="192" src="<%= require('../images/line.svg') %>" alt="">
-            <p class="label display-f flex-cc">2021 Q1</p>
-            <p class="content-text">Any game distributed in M1 project can not only provide distribution efficiency, but
-              also players can experience the game without installation</p>
-
-          </div>
-        </div>
-        <div class="map-content_b map-content_box display-f">
-          <div class="content-list display-f flex-cc">
-            <img class="line" width="192" src="<%= require('../images/line.svg') %>" alt="">
-            <p class="label display-f flex-cc">2021 Q1</p>
-            <p class="content-text">Any game distributed in M1 project can not only provide distribution efficiency, but
-              also players can experience the game without installation</p>
-
-          </div>
-          <div class="content-list display-f flex-cc">
-            <img class="line" src="<%= require('../images/line.svg') %>" alt="">
-            <p class="label display-f flex-cc">2021 Q1</p>
-            <p class="content-text">Any game distributed in M1 project can not only provide distribution efficiency, but
-              also players can experience the game without installation</p>
-
-          </div>
-          <div class="content-list display-f flex-cc">
-            <img class="line" width="192" src="<%= require('../images/line.svg') %>" alt="">
-            <p class="label display-f flex-cc">2021 Q1</p>
-            <p class="content-text">Any game distributed in M1 project can not only provide distribution efficiency, but
-              also players can experience the game without installation</p>
-
-          </div>
-        </div>
-      </div>
+      <!-- art -->
+      <div id="roadMapList" class="map-content"></div>
     </div>
   </div>
 
@@ -367,24 +372,24 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item list-title">Tell Me</li>
               <li class="list-group-item">
-                <a href="https://twitter.com/M1_Network"><img width="30px" height="30px"
+                <a target="_black" href="https://twitter.com/M1_Network"><img width="30px" height="30px"
                     src="<%= require('../images/T.svg') %>" alt="">Twitter</a>
               </li>
               <li class="list-group-item">
-                <a href="https://www.facebook.com/M1Network1"><img width="30px" height="30px"
+                <a target="_black" href="https://www.facebook.com/M1Network1"><img width="30px" height="30px"
                     src="<%= require('../images/F.svg') %>" alt="">Facebook</a>
               </li>
               <li class="list-group-item">
-                <a href="https://t.me/M1Network_official">
+                <a target="_black" href="https://t.me/M1Network_official">
                   <img width="30px" height="30px" src="<%= require('../images/te.svg') %>" alt="">Telegram
                 </a>
               </li>
               <li class="list-group-item">
-                <a href="https://www.reddit.com/user/M1Network"><img width="30px" height="30px"
+                <a target="_black" href="https://www.reddit.com/user/M1Network"><img width="30px" height="30px"
                     src="<%= require('../images/r.svg') %>" alt="">Reddit</a>
               </li>
               <li class="list-group-item">
-                <a href="https://medium.com/@M1Network">
+                <a target="_black" href="https://medium.com/@M1Network">
                   <img width="30px" height="30px" src="<%= require('../images/m.svg') %>" alt="">Medium
                 </a>
               </li>
@@ -394,7 +399,7 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item list-title">M1 Network</li>
               <li class="list-group-item">
-                <a class="scroll" href="#M1">About</a>
+                <a class="scroll" href="#Features">About</a>
               </li>
               <li class="list-group-item">
                 <a class="scroll" href="#WhitePaper">WhitePaper</a>
@@ -455,11 +460,17 @@
         <li><a class="scroll" href="#Documents">Documents</a></li>
       </ul>
       <div class="link">
-        <img width="30px" height="30px" src="<%= require('../images/T.svg') %>" alt="">
-        <img width="30px" height="30px" src="<%= require('../images/F.svg') %>" alt="">
-        <img width="30px" height="30px" src="<%= require('../images/te.svg') %>" alt="">
-        <img width="30px" height="30px" src="<%= require('../images/r.svg') %>" alt="">
-        <img width="30px" height="30px" src="<%= require('../images/m.svg') %>" alt="">
+
+        <a target="_black" href="https://twitter.com/M1_Network"><img width="30px" height="30px"
+            src="<%= require('../images/T.svg') %>" alt=""></a>
+        <a target="_black" href="https://www.facebook.com/M1Network1"><img width="30px" height="30px"
+            src="<%= require('../images/F.svg') %>" alt=""></a>
+        <a target="_black" href="https://t.me/M1Network_official"><img width="30px" height="30px"
+            src="<%= require('../images/te.svg') %>" alt=""></a>
+        <a target="_black" href="https://www.reddit.com/user/M1Network"><img width="30px" height="30px"
+            src="<%= require('../images/r.svg') %>" alt=""></a>
+        <a target="_black" href="https://medium.com/@M1Network"><img width="30px" height="30px"
+            src="<%= require('../images/m.svg') %>" alt=""></a>
       </div>
     </div>
   </div>

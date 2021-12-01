@@ -122,11 +122,47 @@ let advisorAndTeam = {
   }
 }
 
+let roadMapList = {
+  top: [
+    {
+      label: '2021 Q1',
+      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+    },
+    {
+      label: '2021 Q3',
+      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+    },
+    {
+      label: '2021 Q5',
+      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+    }
+  ],
+  bot: [
+    {
+      label: '2021 Q2',
+      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+    },
+    {
+      label: '2021 Q4',
+      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+    },
+    {
+      label: '2021 Q6',
+      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+    }
+  ]
+}
+// features
 let html = artTemplate('featuresTemp', featuresList);
 document.getElementById('features-list').innerHTML = html;
 
+// advisorsTeam
 let advisorsTemp = artTemplate('advisorsTemp', advisorAndTeam);
 document.getElementById('advisorAndTeam').innerHTML = advisorsTemp;
+
+// roadMap
+let roadMapListTemp = artTemplate('roadMapListTemp', roadMapList);
+document.getElementById('roadMapList').innerHTML = roadMapListTemp;
 
 // menu active class style
 $('.menu-container').on('click', '.menu-list', function () {
