@@ -82,7 +82,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: `./src/views/home.html`,
-      title: 'home',
+      title: 'M1 Network',
       chunks: ["home"],
       hash: true
     }),
@@ -90,7 +90,7 @@ module.exports = {
     new CssMinimizerPlugin(),
 
     new DefinePlugin({
-      BASE_URL: '"../"'
+      BASE_URL: '"./"'
     }),
 
     new ProvidePlugin({
