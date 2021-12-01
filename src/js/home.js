@@ -4,27 +4,28 @@ import $ from 'jquery';
 import artTemplate from 'art-template/lib/template-web'
 import './swiper.js'
 import './video.js'
+import './drag.js'
 
 let featuresList = [
   {
     title: 'Installation Free',
-    text: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation',
-    image: require('../images/avatar.jpeg')
+    text: 'Users can play games without installing APP through the M1 project.',
+    image: require('../images/icon-1.png')
   },
   {
     title: ' Low-Delay',
     text: 'M1 platform provides low latency rendering services for games, allowing users to play 3A games at top speed',
-    image: require('../images/avatar.jpeg')
+    image: require('../images/icon-2.png')
   },
   {
     title: 'Superior Quality',
-    text: 'The M1 project would stream the game, so that the users could experience the 1080P ultra clear and high-quality game with more than 60 frames. At the same time, the users could pay the money to the PC Mobile TV and distribute it to the other end of the line',
-    image: require('../images/avatar.jpeg')
+    text: 'The M1 project provides game streaming service, so that the users could experience the 1080P ultra clear and high-quality game with more than 60 frames. At the same time, users can pay for mobile, PC and TV games through data channels.',
+    image: require('../images/icon-3.png')
   },
   {
     title: 'Decentralization',
     text: 'M1 project realizes decentralized container management based on blockchain technology, and provides a convenient digital currency payment method for games',
-    image: require('../images/avatar.jpeg')
+    image: require('../images/icon-4.png')
   }
 ]
 
@@ -35,52 +36,42 @@ let advisorAndTeam = {
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar-1.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar-1.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar-1.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar-1.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar.png')
       }
     ]
   },
@@ -90,52 +81,42 @@ let advisorAndTeam = {
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar-1.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar-1.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar-1.png')
       },
       {
         title: 'loewion',
         text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.jpeg')
+        image: require('../images/avatar.png')
       }
     ]
   }
@@ -147,6 +128,10 @@ document.getElementById('features-list').innerHTML = html;
 let advisorsTemp = artTemplate('advisorsTemp', advisorAndTeam);
 document.getElementById('advisorAndTeam').innerHTML = advisorsTemp;
 
+// menu active class style
+$('.menu-container').on('click', '.menu-list', function () {
+  $(this).addClass("current").siblings().removeClass("current");
+});
 
 // 点击按钮 平滑滚动
 $(".scroll").click(function (event) {
@@ -175,80 +160,87 @@ $(".scroll").click(function (event) {
 });
 
 // 监听浏览器滚动 menu 的样式处理
-let p = 0, t = 0;
-$(window).scroll(function (event) {
+// let p = 0, t = 0;
+// $(window).scroll(function (event) {
 
-  event.preventDefault();
+//   event.preventDefault();
 
-  p = $(this).scrollTop();
+//   p = $(this).scrollTop();
 
-  let ScrVal = $(window).scrollTop();
+//   let ScrVal = $(window).scrollTop();
 
-  let McrVal = $(".section-1").offset().top
+//   let McrVal = $(".section-1").offset().top
 
-  let Mhval = $(".menu").height()
+//   let Mhval = $(".menu").height()
 
-  if (ScrVal >= McrVal - Mhval) {
-    if (t <= p) {
-      //向下滚
-      $('.menu').addClass('menu-fixed menu-translate-hide')
+//   if (ScrVal >= McrVal - Mhval) {
+//     if (t <= p) {
+//       //向下滚
+//       $('.menu').addClass('menu-fixed menu-translate-hide')
 
-    } else {
-      //向上滚
-      $('.menu').removeClass('menu-translate-hide')
-    }
-  } else {
-    $('.menu').removeClass('menu-fixed')
-  }
+//     } else {
+//       //向上滚
+//       $('.menu').removeClass('menu-translate-hide')
+//     }
+//   } else {
+//     $('.menu').removeClass('menu-fixed')
+//   }
 
-  setTimeout(function () { t = p; }, 0);
+//   setTimeout(function () { t = p; }, 0);
 
-})
+// })
 
-$('.dropmenuOpen').click(function() {
+$('.dropmenuOpen').click(function () {
   $('.model').fadeIn()
 })
 
-$('.close-btn').click(function() {
+$('.close-btn').click(function () {
   $('.model').fadeOut()
 })
 
-$('.scroll').click(function() {
+$('.scroll').click(function () {
   $('.model').fadeOut()
 })
 
 let a = false
 $('.target').click(() => {
   a = !a
-  if(a) {
-    $('.a-1').css({
-      "width": '85%'
+  if (a) {
+
+    $('.target').addClass('target-rotateY')
+    $('.a-2').css({
+      "width": '62%',
+      "opacity": 1
     })
 
-    $('.a-2').css({
-      "width": '15%'
+    $('.a-1').css({
+      "width": '32%',
+      "opacity": 0.4
     })
   } else {
-    $('.a-2').css({
-      "width": '85%'
-    })
+    $('.target').removeClass('target-rotateY')
 
     $('.a-1').css({
-      "width": '15%'
+      "width": '62%',
+      "opacity": 1
     })
+
+    $('.a-2').css({
+      "width": '32%',
+      "opacity": 0.4
+    })
+
   }
-  
+
 })
 
-// 图片预览
-$('.slide>img').click((event) => {
-  let src = event.currentTarget.currentSrc
-  $("#imgid").attr("src",src)
 
-  event.preventDefault()
-  $('#photoview').fadeIn()
+$('.content-list').click(function () {
+  $('.content-list').removeClass('current')
+  $(this).addClass("current")
 })
 
-$('.photoview-close-btn').click(() => {
-  $('#photoview').fadeOut()
+$('.email-btn').click(() => {
+  // $("head").append("<script src='http://81.70.97.21/report?callback=11'><\/script>");
 })
+

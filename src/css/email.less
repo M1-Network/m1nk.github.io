@@ -1,0 +1,72 @@
+// email
+.email {
+  height: 100px;
+  background-color: rgba(17, 7, 49, 1);
+  position: relative;
+  span {
+    font-size: 20px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #EDF1FF;
+  }
+  .form-control {
+    width: 325px;
+    height: 44px;
+    border-radius: 16px;
+    margin: 0 22px 0 14px;
+  }
+  .email-inp {
+    width: 364px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #777EFF;
+    color: #777EFF;
+    outline: none;
+    margin:0 49px 0 45px;
+    &::-webkit-input-placeholder {
+      color: #777EFF;
+    }
+  }
+  .email-btn {
+    width: 164px;
+    height: 57px;
+    background: #777EFF;
+    border-radius: 29px;
+    color: rgba(231, 225, 225, 1);
+    margin-right: 49px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .before, .header-before {
+    position: absolute;
+    bottom: -58px;
+    left: 0;
+    height: 58px;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .before {
+    height: 20px;
+    bottom: -20px;
+  }
+}
+// 小于 800px
+@media screen and (max-width: 800px) {
+  .email {
+    justify-content: space-around;
+    .email-btn {
+      font-size: 16px;
+      margin: 0;
+    }
+    span {
+      display: none;
+    }
+    .email-inp {
+      width: 200px;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+// 大于 800px
+@media screen and (min-width: 800px) {
+  // header
+  .header {
+    width: 100%;
+    height: 801px;
+    padding-top: 180px;
+    position: relative;
+    // position: relative;
+    background-image: url("../images/banner-bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    overflow: hidden;
+    .h-top {
+      width: 100%;
+      position: relative;
+      margin-top: 39px;
+      .title {
+        z-index: 100;
+        width: 553px;
+        height: 163px;
+        margin-left: 90px;
+        color: rgba(56, 56, 56, 1);
+        background-color: rgba(153, 153, 153, 0.5);
+        padding: 16px 20px;
+        border-radius: 16px;
+        h4 {
+          margin-top: 16px;
+        }
+      }
+      .h-left {
+        margin-top: 60px;
+        .h-left_t {
+          margin-bottom: 130px;
+          p {
+            font-size: 42px;
+            font-family: Objectivity-Medium, Objectivity;
+            font-weight: 500;
+            color: #FFFFFF;
+          }
+        }
+        .h-left_b {
+          .play-icon {
+            width: 141px;
+          }
+          .h-b-info {
+            p:nth-child(1) {
+              font-size: 18px;
+              font-family: Objectivity-Medium, Objectivity;
+              font-weight: 500;
+              color: #FFFFFF;
+              
+            }
+            p:nth-child(2) {
+              border-top: 1px solid #FFFFFF;
+              font-size: 18px;
+              font-family: Objectivity-Light, Objectivity;
+              font-weight: 300;
+              color: #777EFF;
+            }
+          }
+        } 
+      }
+      .h-right {
+        width: 697px;
+        .banner-logo {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .header-after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+  }
+}
+
+
+// 小于 800px
+@media screen and (max-width: 800px) {
+  .header {
+    width: 100%;
+    position: relative;
+    background-image: url("../images/banner-bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    overflow: hidden;
+    .h-top {
+      width: 100%;
+      position: relative;
+      flex-flow: column;
+      align-items: flex-start;
+      .title {
+        z-index: 100;
+        width: 553px;
+        height: 163px;
+        margin-left: 90px;
+        color: rgba(56, 56, 56, 1);
+        background-color: rgba(153, 153, 153, 0.5);
+        padding: 16px 20px;
+        border-radius: 16px;
+        h4 {
+          margin-top: 16px;
+        }
+      }
+      .h-left {
+        margin-top: 60px;
+        .h-left_t {
+          margin-bottom: 0px;
+          padding-left: 24px;
+          p {
+            font-size: 42px;
+            font-family: Objectivity-Medium, Objectivity;
+            font-weight: 500;
+            color: #FFFFFF;
+          }
+        }
+        .h-left_b {
+          .play-icon {
+            width: 141px;
+          }
+          .h-b-info {
+            p:nth-child(1) {
+              font-size: 18px;
+              font-family: Objectivity-Medium, Objectivity;
+              font-weight: 500;
+              color: #FFFFFF;
+              
+            }
+            p:nth-child(2) {
+              border-top: 1px solid #FFFFFF;
+              font-size: 18px;
+              font-family: Objectivity-Light, Objectivity;
+              font-weight: 300;
+              color: #777EFF;
+            }
+          }
+        } 
+      }
+      .h-right {
+        padding-top: 20px;
+        width: 100%;
+        .banner-logo {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Right_icon</title>
+    <g id="切图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-812.000000, -2550.000000)" id="WhitePaper-内容">
+            <g transform="translate(364.000000, 2385.000000)">
+                <g id="右翻页icon" transform="translate(448.000000, 165.000000)">
+                    <g id="编组-3" transform="translate(19.947010, 10.567951)" fill="#45487A">
+                        <rect id="矩形" transform="translate(5.730268, 31.207244) rotate(-45.000000) translate(-5.730268, -31.207244) " x="1.73026753" y="27.2072437" width="8" height="8"></rect>
+                        <rect id="矩形备份" transform="translate(12.099512, 24.838000) rotate(-45.000000) translate(-12.099512, -24.838000) " x="8.09951158" y="20.8379997" width="8" height="8"></rect>
+                        <rect id="矩形备份-2" transform="translate(18.468756, 18.468756) rotate(-45.000000) translate(-18.468756, -18.468756) " x="14.4687556" y="14.4687556" width="8" height="8"></rect>
+                        <rect id="矩形备份-3" transform="translate(12.062805, 12.062805) rotate(-45.000000) translate(-12.062805, -12.062805) " x="8.06280494" y="8.06280494" width="8" height="8"></rect>
+                        <rect id="矩形备份-4" transform="translate(5.656854, 5.656854) rotate(-45.000000) translate(-5.656854, -5.656854) " x="1.65685425" y="1.65685425" width="8" height="8"></rect>
+                    </g>
+                    <circle id="椭圆形备份" stroke="#45487A" stroke-width="2" cx="29.1198768" cy="29.7490964" r="27.8790499"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

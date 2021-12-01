@@ -11,11 +11,13 @@ module.exports = {
     // about: './src/js/about.js'
   },
 
-  mode: 'production',
+  mode: 'development',
 
   devServer: {
     static: './docs',
-    hot: true
+    hot: true,
+    compress: true,
+    port: 9000
   },
 
   output: {
@@ -36,6 +38,7 @@ module.exports = {
             esModule: false
           }
         }, 'postcss-loader', 'less-loader']
+        // 'postcss-loader'
       },
 
       {
@@ -47,14 +50,6 @@ module.exports = {
         test: /\.art$/i,
         use: 'art-template-loader'
       },
-
-      // {
-      //   test: /\.html$/,
-      //   loader: 'html-loader',
-      //   options:{
-      //     esModule:false,
-      //   }
-      // },
 
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,

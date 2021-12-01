@@ -1,0 +1,123 @@
+#RoadMap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #110731, rgba(17, 7, 49, 0));
+    opacity: 0.7;
+    z-index: 99;
+    pointer-events: none;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, #110731, rgba(17, 7, 49, 0));
+    opacity: 0.7;
+    z-index: 99;
+    pointer-events: none;
+  }
+
+  .roadMap-container {
+    overflow: scroll;
+    &::-webkit-scrollbar {display: none;}
+    padding: 0 109px;
+    cursor: grab;
+    &:active {
+      cursor: grabbing;
+    }
+    .start {
+      min-width: 125px;
+      height: 57px;
+      border-radius: 29px;
+      border: 4px solid #3C3789;
+      font-size: 24px;
+      font-family: Objectivity-Medium, Objectivity;
+      font-weight: 500;
+      color: #FFFFFF;
+    }
+    .map-content {
+      .map-content_t, .map-content_b {
+        .content-list {
+          position: relative;
+          margin: 68px 206px 68px 0px;
+          .label {
+            width: 157px;
+            height: 57px;
+            border-radius: 29px;
+            border: 4px solid #3C3789;
+            font-size: 24px;
+            font-family: Objectivity-Medium, Objectivity;
+            font-weight: 500;
+            color: #FFFFFF;
+            margin-right: 24px;
+            cursor: pointer;
+          }
+          .content-text {
+            width: 400px;
+            font-size: 18px;
+            font-family: PingFangSC-Light, PingFang SC;
+            font-weight: 300;
+            color: #B9B6DB;
+          }
+          &.current {
+            .label {
+              background: #777EFF;
+              color: #1D124B;
+            }
+            .content-text {
+              color: #777EFF;
+            }
+          }
+        }
+
+        
+      }
+
+      .map-content_t {
+        position: relative;
+        &::after {
+          content: " ";
+          width: 100%;
+          height: 5px;
+          background: #3C3789;
+          position: absolute;
+          bottom: 0;
+        }
+        .content-list {
+          &:nth-child(1) {
+            margin-left: 240px;
+          }
+          .line {
+            position: absolute;
+            top: 36px;
+            left: -190px;
+            transform: rotateX(180deg);
+          }
+        }
+      }
+
+      .map-content_b {
+        .content-list {
+          &:nth-child(1) {
+            margin-left: 430px;
+          }
+          .line {
+            position: absolute;
+            top: -70px;
+            left: -190px;
+          }
+        }
+      }
+    }
+  }
+}

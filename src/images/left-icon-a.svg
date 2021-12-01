@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="58px" viewBox="0 0 59 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 5备份</title>
+    <g id="效果图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7WhitePaper" transform="translate(-455.000000, -571.000000)">
+            <g id="编组-5备份" transform="translate(484.834145, 599.879050) scale(-1, 1) translate(-484.834145, -599.879050) translate(456.955095, 572.000000)">
+                <circle id="椭圆形备份" stroke="#777EFF" stroke-width="2" fill="#777EFF" cx="27.8790499" cy="27.8790499" r="27.8790499"></circle>
+                <g id="编组-3" transform="translate(18.706183, 8.697904)" fill="#FFFFFF">
+                    <rect id="矩形" transform="translate(5.730268, 31.207244) rotate(-45.000000) translate(-5.730268, -31.207244) " x="1.73026753" y="27.2072437" width="8" height="8"></rect>
+                    <rect id="矩形备份" transform="translate(12.099512, 24.838000) rotate(-45.000000) translate(-12.099512, -24.838000) " x="8.09951158" y="20.8379997" width="8" height="8"></rect>
+                    <rect id="矩形备份-2" transform="translate(18.468756, 18.468756) rotate(-45.000000) translate(-18.468756, -18.468756) " x="14.4687556" y="14.4687556" width="8" height="8"></rect>
+                    <rect id="矩形备份-3" transform="translate(12.062805, 12.062805) rotate(-45.000000) translate(-12.062805, -12.062805) " x="8.06280494" y="8.06280494" width="8" height="8"></rect>
+                    <rect id="矩形备份-4" transform="translate(5.656854, 5.656854) rotate(-45.000000) translate(-5.656854, -5.656854) " x="1.65685425" y="1.65685425" width="8" height="8"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
