@@ -65,9 +65,14 @@
     transform: rotate(180deg);
   }
 }
-
+@media screen and (max-width: 1024px) {
+  .a-container {
+    width: 100% !important;
+    overflow: hidden;
+  }
+}
 // 小于 800px
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .a-container {
     flex-direction: column;
     width: 100% !important;
@@ -77,7 +82,7 @@
     .a-row {
       width: 100% !important;
       flex-flow: wrap !important;
-      justify-content: space-between;
+      justify-content: space-around;
       overflow: scroll !important;
       .card {
         margin: 0!important;

@@ -38,7 +38,18 @@ const mySwiper = new Swiper('.swiper-container', {
 const BlockchainSwiper = new Swiper('.swiper-Blockchain', {
   loop: false,
   preventClicks : true,
-  slidesPerView : 'auto'
+  slidesPerView : 'auto',
+  breakpoints: { 
+    //当swiper宽度大于等于800
+    800: {
+      slidesPerView : 'auto',
+    },
+    //当swiper宽度大于等于768
+    1: { 
+      slidesPerView: 1,
+      spaceBetween: 50
+    },
+   }
 })
 
 $('.swiper-close').click((event) => {
