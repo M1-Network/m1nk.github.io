@@ -7,6 +7,7 @@ Swiper.use([Navigation]); // 使用需要的功能
 
 // 图片预览
 $('.slide>img').click((event) => {
+  event.stopPropagation()
   let index = parseInt(event.target.dataset.index)
   const modelSwiper = new Swiper('.swiper-model-container', {
     initialSlide: index,
@@ -52,6 +53,13 @@ const BlockchainSwiper = new Swiper('.swiper-Blockchain', {
    }
 })
 
+$('.swiper-wrapper').click((event) => {
+  event.preventDefault(); 
+  $('.swiper-model').css({
+    'opacity': 0,
+    'z-index': -10001
+  })
+})
 $('.swiper-close').click((event) => {
   event.preventDefault(); 
   $('.swiper-model').css({

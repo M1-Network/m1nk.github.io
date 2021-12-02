@@ -5,6 +5,7 @@
   margin: 0 auto;
   .content {
     transition: all 0.4s;
+    &::-webkit-scrollbar {display: none;}
     .title {
       padding-left: 36px;
     }
@@ -23,7 +24,7 @@
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-items: center;
     overflow: hidden;
     &::-webkit-scrollbar {display: none;}
     .card {
@@ -65,24 +66,25 @@
     transform: rotate(180deg);
   }
 }
+// @media screen and (max-width: 1024px) {
+//   .a-container {
+//     width: 100% !important;
+//     overflow: hidden;
+//   }
+// }
+// 小于 800px
 @media screen and (max-width: 1024px) {
   .a-container {
     width: 100% !important;
-    overflow: hidden;
-  }
-}
-// 小于 800px
-@media screen and (max-width: 900px) {
-  .a-container {
     flex-direction: column;
-    width: 100% !important;
+    margin: 0 auto;
     .content {
       width: 100% !important;
+      opacity: 1 !important;
+      overflow: scroll;
     }
     .a-row {
       width: 100% !important;
-      flex-flow: wrap !important;
-      justify-content: space-around;
       overflow: scroll !important;
       .card {
         margin: 0!important;

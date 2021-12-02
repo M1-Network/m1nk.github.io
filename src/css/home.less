@@ -29,6 +29,9 @@
   .card {
     background: transparent;
     border: transparent;
+    p {
+      line-height: 28px;
+    }
     .card-title {
       font-size: 24px;
       font-family: Objectivity-Medium, Objectivity;
@@ -37,7 +40,7 @@
       margin-left: 133px;
     }
     .card-text {
-      font-size: 18px;
+      font-size: 16px;
       font-family: PingFangSC-Light, PingFang SC;
       font-weight: 300;
       color: #B9B6DB;
@@ -93,10 +96,11 @@
       color: #FFFFFF;
     }
     .card-text {
-      font-size: 18px;
+      font-size: 16px;
       font-family: PingFangSC-Light, PingFang SC;
       font-weight: 300;
       color: #B9B6DB;
+      line-height: 28px;
     }
   }
 }
@@ -145,6 +149,12 @@
     font-weight: 500;
     color: #FFFFFF;
     margin-bottom: 54px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section-4 {
+    padding: 50px 0;
   }
 }
 
@@ -296,7 +306,7 @@
     height: 100%;
   }
   .model-ul {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     margin-top: 100px;
     margin-bottom: auto;

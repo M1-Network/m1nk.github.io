@@ -5,6 +5,7 @@ import artTemplate from 'art-template/lib/template-web'
 import './swiper.js'
 import './video.js'
 import './drag.js'
+import utils from './utils.js'
 
 let featuresList = [
   {
@@ -199,7 +200,7 @@ $(".scroll").click(function (event) {
 function handleMenuActive(t, p, callback) {
   let top = $(t).offset().top
   let H = $(t).height()
-  if(top - p < 100  && top - p > -H) {
+  if (top - p < 100 && top - p > -H) {
     callback()
   }
 }
@@ -208,8 +209,8 @@ $(window).scroll(function (event) {
 
   event.preventDefault();
 
-  $('.menu-list').each(function(idx, $sec) {
-    handleMenuActive(`.section-${idx+1}`, $(window).scrollTop(), function() {
+  $('.menu-list').each(function (idx, $sec) {
+    handleMenuActive(`.section-${idx + 1}`, $(window).scrollTop(), function () {
       $($sec).addClass("current").siblings().removeClass("current");
     })
   })
@@ -242,7 +243,7 @@ $(window).scroll(function (event) {
 let dropState = false
 $('.dropmenuOpen').click(function () {
   dropState = !dropState
-  if(dropState) {
+  if (dropState) {
     $('.model').fadeIn()
   } else {
     $('.model').fadeOut()
@@ -280,10 +281,9 @@ $('.target').click(() => {
       "width": '32%',
       "opacity": 0.4
     })
-
   }
-
 })
+
 
 
 $('.content-list').click(function () {
@@ -291,7 +291,24 @@ $('.content-list').click(function () {
   $(this).addClass("current")
 })
 
-$('.email-btn').click(() => {
-  // $("head").append("<script src='http://81.70.97.21/report?callback=11'><\/script>");
-})
+$('.email-btn').click((e) => {
+  let value = $(e.currentTarget).prev()[0].value
+  let myReg = /^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;
+  if (value) {
+    if (myReg.test(value)) {
+      utils.message('success')
+      $("head").append(`<script src='http://81.70.97.21/report?email=${value}'><\/script>`);
+      $.ajax({
+        url: `http://81.70.97.21/report?email=${value}`,
+        type: "GET",
+        dataType: "jsonp"
+      });
+      $(e.currentTarget).prev()[0].value = ''
+    } else {
+      utils.message('Please enter the correct email address', 'warning')
+    }
+  } else {
+    utils.message('Please enter email address', 'warning')
+  }
 
+})
