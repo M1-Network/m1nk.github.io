@@ -16,19 +16,8 @@
     width: 130px;
   }
   z-index: 999999;
-}
-.menu {
-  visibility: visible;
-  transition: 0.4s;
+  transition: all 0.4s;
   transform: translateY(0%);
-  // height: 64px;
-  &.menu-fixed {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
   &.menu-translate-hide {
     transform: translateY(-100%);
     visibility: hidden;
@@ -36,7 +25,12 @@
   &.menu-translate-show {
     transform: translateY(0);
   }
+}
 
+
+
+.menu {
+  visibility: visible;
   .menu-container {
     position: relative;
     width: 95%;

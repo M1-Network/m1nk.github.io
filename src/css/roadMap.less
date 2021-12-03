@@ -127,3 +127,43 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  #RoadMap {
+    .title {
+      margin-bottom: 20px;
+    }
+    &::after{
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+    .roadMap-container {
+      padding: 0;
+      width: 100%;
+      .start {
+        display: none;
+      }
+      .map-content {
+        width: 100%;
+      }
+      .map-content_box {
+        width: 100%;
+        flex-flow: column !important;
+        .content-list {
+          margin: 20px 40px !important;
+          flex-flow: column !important;
+          align-items: flex-start;
+          .content-text {
+            margin: 20px 0;
+            width: 100% !important;
+          }
+          svg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

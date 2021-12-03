@@ -215,28 +215,26 @@ $(window).scroll(function (event) {
     })
   })
 
-  // p = $(this).scrollTop();
+  p = $(this).scrollTop();
 
-  // let ScrVal = $(window).scrollTop();
+  let ScrVal = $(window).scrollTop();
 
-  // let McrVal = $(".section-1").offset().top
+  let McrVal = $(".section-1").offset().top
 
-  // let Mhval = $(".menu").height()
+  let Mhval = $(".menu-box").height()
 
-  // if (ScrVal >= McrVal - Mhval) {
-  //   if (t <= p) {
-  //     //向下滚
-  //     $('.menu').addClass('menu-fixed menu-translate-hide')
+  if (ScrVal >= McrVal - Mhval) {
+    if (t <= p) {
+      //向下滚
+      $('.menu-box').addClass('menu-translate-hide')
 
-  //   } else {
-  //     //向上滚
-  //     $('.menu').removeClass('menu-translate-hide')
-  //   }
-  // } else {
-  //   $('.menu').removeClass('menu-fixed')
-  // }
+    } else {
+      //向上滚
+      $('.menu-box').removeClass('menu-translate-hide')
+    }
+  }
 
-  // setTimeout(function () { t = p; }, 0);
+  setTimeout(function () { t = p; }, 0);
 
 })
 
@@ -309,6 +307,7 @@ $('.email-btn').click((e) => {
     }
   } else {
     utils.message('Please enter email address', 'warning')
+    // $(e.currentTarget).prev().addClass('email-error')
   }
 
 })

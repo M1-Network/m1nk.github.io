@@ -1,3 +1,43 @@
+
+.play-icon-box {
+  position: relative;
+  margin-right: 30px;
+  z-index: 999;
+  div[class^="pulse"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 61px;
+    height: 61px;
+    box-shadow: 0 0 12px #3D1BF0;
+    border-radius: 50%;
+    animation: pulse 1.2s linear infinite;
+  }
+  
+  .pulse2 {
+    animation-delay: 0.6s !important;
+  }
+
+  .pulse3 {
+    animation-delay: 0.8s;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 140px;
+    height: 140px;
+    opacity: 0;
+  }
+}
+
 // 大于 1026px
 @media screen and (min-width: 1028px) {
   // header
@@ -42,7 +82,7 @@
         }
         .h-left_b {
           .play-icon {
-            width: 141px;
+            width: 61px;
           }
           .h-b-info {
             p:nth-child(1) {
@@ -113,21 +153,25 @@
       }
       
       .h-left {
-        margin-top: 20px;
+        margin:20px 0;
         .h-left_t {
           margin-bottom: 0px;
-          padding-left: 24px;
+          // padding-left: 24px;
           p {
             font-size: 32px;
             font-family: Objectivity-Medium, Objectivity;
             font-weight: 500;
             color: #FFFFFF;
+            text-align: center;
           }
         }
         .h-left_b {
           margin: 20px 0;
+          width: 100%;
+          justify-content: center;
+          margin-left: -14px;
           .play-icon {
-            width: 110px;
+            width: 61px;
           }
           .h-b-info {
             p:nth-child(1) {
@@ -149,9 +193,11 @@
       }
       .h-right {
         padding-top: 60px;
-        width: 80%;
+        width: 100%;
+        text-align: center;
         .banner-logo {
-          width: 100%;
+          width: 90%;
+          margin-left: 27px;
         }
       }
     }
