@@ -5,7 +5,6 @@ import artTemplate from 'art-template/lib/template-web'
 import './swiper.js'
 import './video.js'
 import './drag.js'
-import utils from './utils.js'
 
 let featuresList = [
   {
@@ -294,7 +293,7 @@ $('.email-btn').click((e) => {
   let myReg = /^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;
   if (value) {
     if (myReg.test(value)) {
-      utils.message('success')
+      $(e.currentTarget).prev().removeClass('email-error')
       $("head").append(`<script src='http://81.70.97.21/report?email=${value}'><\/script>`);
       $.ajax({
         url: `http://81.70.97.21/report?email=${value}`,
@@ -303,11 +302,8 @@ $('.email-btn').click((e) => {
       });
       $(e.currentTarget).prev()[0].value = ''
     } else {
-      utils.message('Please enter the correct email address', 'warning')
+      $(e.currentTarget).prev().addClass('email-error')
     }
-  } else {
-    utils.message('Please enter email address', 'warning')
-    // $(e.currentTarget).prev().addClass('email-error')
   }
 
 })
