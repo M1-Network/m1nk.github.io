@@ -190,7 +190,7 @@ $(".scroll").click(function (event) {
 
   //go to destination 
 
-  $('html,body').animate({ scrollTop: dest }, 100, 'linear');
+  $('html,body').animate({ scrollTop: dest }, 200, 'linear');
 
 
 });
