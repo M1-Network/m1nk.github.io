@@ -233,7 +233,8 @@ $(window).scroll(function (event) {
     }
   }
 
-  setTimeout(function () { t = p; }, 0);
+  t = p
+  // setTimeout(function () { t = p; }, 0);
 
 })
 
