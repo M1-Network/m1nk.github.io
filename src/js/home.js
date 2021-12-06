@@ -173,7 +173,7 @@ $('.menu-container').on('click', '.menu-list', function () {
 $(".scroll").click(function (event) {
 
   event.preventDefault();
-
+  $('.model').fadeOut()
   //calculate destination place 
 
   var dest = 0;
@@ -247,9 +247,6 @@ $('.dropmenuOpen').click(function () {
   }
 })
 
-$('.scroll').click(function () {
-  $('.model').fadeOut()
-})
 
 let a = false
 $('.target').click(() => {
