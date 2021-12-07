@@ -2,10 +2,10 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 
 
-Swiper.use([Navigation]); // 使用需要的功能
+Swiper.use([Navigation]);
 
 
-// 图片预览
+// img preview
 $('.slide>img').click((event) => {
   event.stopPropagation()
   let index = parseInt(event.target.dataset.index)
@@ -15,7 +15,7 @@ $('.slide>img').click((event) => {
     preventClicks : false,
     preventClicksPropagation: false,
     navigation: {
-      nextEl: '.swiper-button-next', //切换箭头
+      nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   })
@@ -31,7 +31,7 @@ const mySwiper = new Swiper('.swiper-container', {
   loop: false,
   preventClicks : true,
   navigation: {
-    nextEl: '.swiper-button-next', //切换箭头
+    nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 })
@@ -41,11 +41,9 @@ const BlockchainSwiper = new Swiper('.swiper-Blockchain', {
   preventClicks : true,
   slidesPerView : 'auto',
   breakpoints: { 
-    //当swiper宽度大于等于800
     800: {
       slidesPerView : 'auto',
     },
-    //当swiper宽度大于等于768
     1: { 
       slidesPerView: 1,
       spaceBetween: 50

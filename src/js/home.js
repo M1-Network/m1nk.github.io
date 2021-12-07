@@ -133,7 +133,7 @@ let roadMapList = {
       info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
     },
     {
-      label: '2021 Q5',
+      label: '2022 Q',
       info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
     }
   ],
@@ -147,7 +147,7 @@ let roadMapList = {
       info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
     },
     {
-      label: '2021 Q6',
+      label: '2022 Q2',
       info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
     }
   ]
@@ -169,7 +169,6 @@ $('.menu-container').on('click', '.menu-list', function () {
   $(this).addClass("current").siblings().removeClass("current");
 });
 
-// 点击按钮 平滑滚动
 $(".scroll").click(function (event) {
 
   event.preventDefault();
@@ -195,7 +194,7 @@ $(".scroll").click(function (event) {
 
 });
 
-// 监听浏览器滚动 menu 的样式处理
+// watch menu scroll
 function handleMenuActive(t, p, callback) {
   let top = $(t).offset().top
   let H = $(t).height()
@@ -224,11 +223,11 @@ $(window).scroll(function (event) {
 
   if (ScrVal >= McrVal - Mhval) {
     if (t <= p) {
-      //向下滚
+      // bottom
       $('.menu-box').addClass('menu-translate-hide')
 
     } else {
-      //向上滚
+      // top
       $('.menu-box').removeClass('menu-translate-hide')
     }
   }
