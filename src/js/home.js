@@ -133,7 +133,7 @@ let roadMapList = {
       info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
     },
     {
-      label: '2022 Q',
+      label: '2022 Q1',
       info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
     }
   ],
