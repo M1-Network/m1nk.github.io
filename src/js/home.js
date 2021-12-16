@@ -90,15 +90,15 @@ let roadMapList = {
     },
     {
       label: '2021 Q2',
-      info: 'M1 Network Project provides cloud rendering services for many game services.'
+      info: 'M1 Network Project provided cloud rendering services for many game services.'
     },
     {
       label: '2021 Q3',
-      info: 'M1 Network Project build the first decentralized cloud rendering service based on blockchain technology.'
+      info: 'M1 Network Project built the first decentralized cloud rendering service based on blockchain technology.'
     },
     {
       label: '2021 Q4',
-      info: 'M1 Network Project provides rendering services for many blockchain games and complete seed round financing.'
+      info: 'M1 Network Project provided rendering services for many blockchain games and complete seed round financing.'
     }
   ],
   bot: [
