@@ -8,24 +8,34 @@ import './drag.js'
 
 let featuresList = [
   {
+    title: 'High Efficiency',
+    text: 'M1 Network Project is committed to helping any blockchain establish its own metaverse ecology, allowing meta-universe players to quickly enter your metaverse civilization. M1 Network Project provides metaverse players with an interactive video channel that can be connected to metaverse through edge cloud rendering, and provides a basic metaverse ecology for blockchain projects, realizing the rapid development of the blockchain ecology.',
+    image: require('../images/Efficiency_icon.png')
+  },
+  {
     title: 'Installation Free',
-    text: 'Users can play games without installing APP through the M1 project.',
+    text: 'M1 Network Project provides containers for metaverse developers to deploy services. The interaction between the player and the service is realized through an interactive video stream. Therefore, metaverse players can enjoy services without installing any clients. Therefore, M1 Network Project provides free installation for any metaverse.',
     image: require('../images/icon-1.png')
   },
   {
-    title: ' Low-Delay',
-    text: 'M1 platform provides low latency rendering services for games, allowing users to play 3A games at top speed',
+    title: 'Low Delay',
+    text: "M1 Network Project manages metaverse containers through a huge network. When a metaverse player starts to play the metaverse, we will choose the nearest service node to provide the player with the metaverse rendering service. The metaverse player's operation and interaction with the metaverse can be controlled within 30ms. We provide low-latency metaverse services.",
     image: require('../images/icon-2.png')
   },
   {
     title: 'Superior Quality',
-    text: 'The M1 project provides game streaming service, so that the users could experience the 1080P ultra clear and high-quality game with more than 60 frames. At the same time, users can pay for mobile, PC and TV games through data channels.',
+    text: "M1 Network Project mainly realizes metaverse experience and interaction through interactive video streams. M1 Network Project can provide users with 720P, 1080P and 4K resolutions, and can provide different experience versions of 30FPS, 60FPS, 90FPS and 120FPS.",
     image: require('../images/icon-3.png')
   },
   {
     title: 'Decentralization',
-    text: 'M1 project realizes decentralized container management based on blockchain technology, and provides a convenient digital currency payment method for games',
+    text: "M1 Network Project adopts decentralized management. M1 Network Project Container adopts P2P network to manage the edge scheduling of users and metaverse. Users contribute their own computing power to serve many other metaverse users. Combined with P2P scheduling capabilities, it achieves decentralized management of containers. M1 Network Project Token records transactions between containers and users based on blockchain technology.",
     image: require('../images/icon-4.png')
+  },
+  {
+    title: 'High Fusion',
+    text: "M1 Network Project is committed to providing users and metaverse developers with a service to develop and connect to the metaverse. It provides basic visualization and interactive services for every metaverse. Through this service, metaverse developers can easily make their own metaverse ecology develop rapidly, make users try all metaverse services without a specific device.",
+    image: require('../images/Fusion_icon.png')
   }
 ]
 
@@ -34,44 +44,24 @@ let advisorAndTeam = {
     title: 'Team',
     list: [
       {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.png')
+        title: 'Jeff.wu',
+        text: 'Ten years working experience in Bigdata and AI',
+        image: require('../images/avatar1.png')
+      },
+      {
+        title: 'rich',
+        text: 'Ten years working experience in Cloud game platform',
+        image: require('../images/avatar2.png')
       },
       {
         title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar-1.png')
+        text: 'Nine years working experience in Top Video platform',
+        image: require('../images/avatar3.png')
       },
       {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar-1.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar-1.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar-1.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.png')
+        title: 'davkeor',
+        text: 'Ten years working experience in Smart Hardware',
+        image: require('../images/avatar4.png')
       }
     ]
   },
@@ -79,44 +69,14 @@ let advisorAndTeam = {
     title: 'Advisors',
     list: [
       {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.png')
+        title: 'Erik Hoving',
+        text: 'More than 30 years work experience in telecommunications and consulting industries, senior advisor of Monitor Deloitte, member of the supervisory board of myTomorows, former group CTO of KPN, former CEO of Zenitel.',
+        image: require('../images/Eriks.jpg')
       },
       {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar-1.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar-1.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar-1.png')
-      },
-      {
-        title: 'loewion',
-        text: 'University of Oxford',
-        image: require('../images/avatar.png')
+        title: 'Thorsten Dirks',
+        text: '14 years work experience in telecommunications and aviation industries，founder of OIH-One GmbH, former CEO of Eurowings and board member of Lufthansa，former CEO of Telefónica Germany, former CEO of E-Plus Group.',
+        image: require('../images/ThorstenDirks.jpg')
       }
     ]
   }
@@ -126,29 +86,37 @@ let roadMapList = {
   top: [
     {
       label: '2021 Q1',
-      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+      info: 'M1 Network Project officially launched based on cloud rendering.'
+    },
+    {
+      label: '2021 Q2',
+      info: 'M1 Network Project provides cloud rendering services for many game services.'
     },
     {
       label: '2021 Q3',
-      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+      info: 'M1 Network Project build the first decentralized cloud rendering service based on blockchain technology.'
     },
     {
-      label: '2022 Q1',
-      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+      label: '2021 Q4',
+      info: 'M1 Network Project provides rendering services for many blockchain games and complete seed round financing.'
     }
   ],
   bot: [
     {
-      label: '2021 Q2',
-      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
-    },
-    {
-      label: '2021 Q4',
-      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+      label: '2022 Q1',
+      info: 'M1 Network Project publishes the M1 Network Project white paper for metaverse users.'
     },
     {
       label: '2022 Q2',
-      info: 'Any game distributed in M1 project can not only provide distribution efficiency, but also players can experience the game without installation'
+      info: 'M1 Network Project releases a decentralized rendering container for metaverse users.'
+    },
+    {
+      label: '2022 Q3',
+      info: 'M1 Network Project issues M1 Network Project tokens for blockchain users.'
+    },
+    {
+      label: '2022 Q4',
+      info: 'M1 Network Project provides decentralized cloud rendering services for all metaverse service developers.'
     }
   ]
 }
@@ -303,4 +271,9 @@ $('.email-btn').click((e) => {
     }
   }
 
+})
+
+
+$('.download').click(() => {
+  window.open('./M1 Network Project WhitePaper.pdf')
 })

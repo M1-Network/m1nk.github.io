@@ -22,7 +22,7 @@
   .a-row {
     height: 400px;
     display: flex;
-    flex-flow: column;
+    // flex-flow: column;
     flex-wrap: wrap;
     align-items: center;
     overflow: hidden;
@@ -32,7 +32,7 @@
       width: 126px;
       margin: 0 30px;
       border: 1px solid antiquewhite;
-      margin-bottom: 20px;
+      margin-bottom: 30px !important;
       background: transparent;
       border: transparent;
       .card-title {
@@ -66,12 +66,14 @@
     transform: rotate(180deg);
   }
 }
-// @media screen and (max-width: 1024px) {
-//   .a-container {
-//     width: 100% !important;
-//     overflow: hidden;
-//   }
-// }
+@media screen and (min-width: 1024px) {
+  .a-container {
+    .a-row {
+      // fix
+      align-content: flex-start;
+    }
+  }
+}
 // 小于 800px
 @media screen and (max-width: 1024px) {
   .a-container {
@@ -83,11 +85,32 @@
       opacity: 1 !important;
       overflow: scroll;
     }
+
     .a-row {
       width: 100% !important;
       overflow: scroll !important;
       .card {
         margin: 0!important;
+        margin-bottom: 10px !important;
+      }
+    }
+
+    .a-1 {
+      .a-row {  
+        // fix
+        flex-flow: column;
+        flex-wrap: wrap;
+        align-content: none;
+      }
+    }
+    
+
+    .a-2 {
+      .a-row {
+        height: 430px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
       }
     }
     .target {
