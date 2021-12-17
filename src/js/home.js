@@ -262,7 +262,7 @@ $('.content-list').click(function () {
 
 $('.email-btn').click((e) => {
   let value = $(e.currentTarget).prev()[0].value
-  let myReg = /^[a-zA-Z0-9_-]+@([a-zA-Z0-9]+\.)+(com|cn|net|org)$/;
+  let myReg = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
   if (value) {
     if (myReg.test(value)) {
       $(e.currentTarget).prev().removeClass('email-error')
