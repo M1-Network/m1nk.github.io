@@ -282,5 +282,5 @@ $('.email-btn').click((e) => {
 
 
 $('.download').click(() => {
-  window.open('./M1 Network Project WhitePaper.pdf')
+  window.open('./download/whitepaper.pdf')
 })
