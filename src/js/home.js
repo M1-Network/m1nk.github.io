@@ -45,22 +45,22 @@ let advisorAndTeam = {
     list: [
       {
         title: 'Jeff.wu',
-        text: 'Ten years working experience in Bigdata and AI',
+        text: 'Ten years work experience in big data and AI',
         image: require('../images/avatar1.png')
       },
       {
         title: 'rich',
-        text: 'Ten years working experience in Cloud game platform',
+        text: 'Ten years work experience in cloud game platform',
         image: require('../images/avatar2.png')
       },
       {
         title: 'loewion',
-        text: 'Nine years working experience in Top Video platform',
+        text: 'Nine years work experience in top video platform',
         image: require('../images/avatar3.png')
       },
       {
         title: 'davkeor',
-        text: 'Ten years working experience in Smart Hardware',
+        text: 'Ten years work experience in smart hardware',
         image: require('../images/avatar4.png')
       }
     ]
@@ -70,12 +70,19 @@ let advisorAndTeam = {
     list: [
       {
         title: 'Erik Hoving',
-        text: 'More than 30 years work experience in telecommunications and consulting industries, senior advisor of Monitor Deloitte, member of the supervisory board of myTomorows, former group CTO of KPN, former CEO of Zenitel.',
+        text: `Senior advisor of Monitor Deloitte,
+        Member of the supervisory board of myTomorows,     
+        Former group CTO of KPN,
+        Former CEO of Zenitel
+        `,
         image: require('../images/Eriks.jpg')
       },
       {
         title: 'Thorsten Dirks',
-        text: '14 years work experience in telecommunications and aviation industries，founder of OIH-One GmbH, former CEO of Eurowings and board member of Lufthansa，former CEO of Telefónica Germany, former CEO of E-Plus Group.',
+        text: `Founder of OIH-One GmbH,
+        Former CEO of Eurowings and board member of Lufthansa,
+        Former CEO of Telefónica Germany,
+        Former CEO of E-Plus Group`,
         image: require('../images/ThorstenDirks.jpg')
       }
     ]
