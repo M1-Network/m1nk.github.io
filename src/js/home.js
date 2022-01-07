@@ -111,38 +111,46 @@ let advisorAndTeam = {
 let roadMapList = {
   top: [
     {
-      label: '2021 Q1',
-      info: 'M1 Network Project officially launched based on cloud rendering.'
+      label: '2022 Q1',
+      info: `Dehorizon integration and testnet launch.
+      Global deployment for 5 most gamefi populated spot.
+      First c# SDK release 
+      `
     },
     {
-      label: '2021 Q2',
-      info: 'M1 Network Project provided cloud rendering services for many game services.'
+      label: '2022 Q3',
+      info: `Js/c#/c++ SDK release to support more types of game.
+      2k video streaming on testnet.
+      `
     },
     {
-      label: '2021 Q3',
-      info: 'M1 Network Project built the first decentralized cloud rendering service based on blockchain technology.'
+      label: '2023 Q2',
+      info: `Testnet launching
+      premining program launched.
+      `
     },
     {
-      label: '2021 Q4',
-      info: 'M1 Network Project provided rendering services for many blockchain games and complete seed round financing.'
+      label: '2024 Q2',
+      info: 'Mainnet launching.'
     }
   ],
   bot: [
     {
-      label: '2022 Q1',
-      info: 'M1 Network Project publishes the M1 Network Project white paper for metaverse users.'
-    },
-    {
       label: '2022 Q2',
-      info: 'M1 Network Project releases a decentralized rendering container for metaverse users.'
-    },
-    {
-      label: '2022 Q3',
-      info: 'M1 Network Project issues M1 Network Project tokens for blockchain users.'
+      info: `Dehorizon integration and testnet launch.
+      Global deployment for 5 most gamefi populated spot.
+      First c# SDK release 
+      `
     },
     {
       label: '2022 Q4',
-      info: 'M1 Network Project provides decentralized cloud rendering services for all metaverse service developers.'
+      info: `Being able to support 1m enduser and most of existing gamefi application
+      Started researching on concensus algorithm.
+      `
+    },
+    {
+      label: '2023 Q4',
+      info: 'Testnet mining launching.'
     }
   ]
 }
@@ -151,8 +159,8 @@ let html = artTemplate('featuresTemp', featuresList);
 document.getElementById('features-list').innerHTML = html;
 
 // advisorsTeam
-let advisorsTemp = artTemplate('advisorsTemp', advisorAndTeam);
-document.getElementById('advisorAndTeam').innerHTML = advisorsTemp;
+// let advisorsTemp = artTemplate('advisorsTemp', advisorAndTeam);
+// document.getElementById('advisorAndTeam').innerHTML = advisorsTemp;
 
 // roadMap
 let roadMapListTemp = artTemplate('roadMapListTemp', roadMapList);
