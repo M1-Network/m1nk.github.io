@@ -151,8 +151,8 @@ let html = artTemplate('featuresTemp', featuresList);
 document.getElementById('features-list').innerHTML = html;
 
 // advisorsTeam
-// let advisorsTemp = artTemplate('advisorsTemp', advisorAndTeam);
-// document.getElementById('advisorAndTeam').innerHTML = advisorsTemp;
+let advisorsTemp = artTemplate('advisorsTemp', advisorAndTeam);
+document.getElementById('advisorAndTeam').innerHTML = advisorsTemp;
 
 // roadMap
 let roadMapListTemp = artTemplate('roadMapListTemp', roadMapList);
