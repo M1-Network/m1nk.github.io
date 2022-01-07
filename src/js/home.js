@@ -44,24 +44,43 @@ let advisorAndTeam = {
     title: 'Team',
     list: [
       {
-        title: 'Jeff.wu',
-        text: 'Ten years work experience in big data and AI',
-        image: require('../images/avatar1.png')
+        title: 'Richard',
+        text: `iMin Technology Pte Ltd Co-Founder 
+          Sunway International Pte Ltd
+          ZTE Singapore Pte Ltd  Managing Director
+          Beijing University of Technology
+          University College Dublin
+        `,
+        image: require('../images/ceo.png')
       },
       {
-        title: 'rich',
-        text: 'Ten years work experience in cloud game platform',
-        image: require('../images/avatar2.png')
+        title: 'Dan',
+        text: `MyGamez Ltd.  Advisor & Investor
+          Riot Games
+          Head of Operations - Riot China
+          Producer and Product Manager
+          Princeton University
+        `,
+        image: require('../images/cmo.png')
       },
       {
-        title: 'loewion',
-        text: 'Nine years work experience in top video platform',
-        image: require('../images/avatar3.png')
+        title: 'Loewion',
+        text: `Google Stadia  Project Manager
+          YoutubeMonetzation  Project Manager
+          Netflix  Senior Director Of Engineering
+          Massachusetts Institute of Technology
+          Nanyang Technological University
+        `,
+        image: require('../images/cto.png')
       },
       {
-        title: 'davkeor',
-        text: 'Ten years work experience in smart hardware',
-        image: require('../images/avatar4.png')
+        title: 'Eric',
+        text: `Member Of The Supervisory Board
+          KPN  Group Chief Tehnology Officer
+          Erasmus University Rotterdam  MBA
+          Technische Universiteit Delft
+        `,
+        image: require('../images/cio.png')
       }
     ]
   },
@@ -132,8 +151,8 @@ let html = artTemplate('featuresTemp', featuresList);
 document.getElementById('features-list').innerHTML = html;
 
 // advisorsTeam
-let advisorsTemp = artTemplate('advisorsTemp', advisorAndTeam);
-document.getElementById('advisorAndTeam').innerHTML = advisorsTemp;
+// let advisorsTemp = artTemplate('advisorsTemp', advisorAndTeam);
+// document.getElementById('advisorAndTeam').innerHTML = advisorsTemp;
 
 // roadMap
 let roadMapListTemp = artTemplate('roadMapListTemp', roadMapList);
