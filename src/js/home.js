@@ -210,9 +210,14 @@ $(window).scroll(function (event) {
   event.preventDefault();
 
   $('.menu-list').each(function (idx, $sec) {
-    handleMenuActive(`.section-${idx + 1}`, $(window).scrollTop(), function () {
-      $($sec).addClass("current").siblings().removeClass("current");
-    })
+    
+
+    if(idx != 4) {
+      handleMenuActive(`.section-${idx + 1}`, $(window).scrollTop(), function () {
+        $($sec).addClass("current").siblings().removeClass("current");
+      })
+    }
+    
   })
 
   p = $(this).scrollTop();
