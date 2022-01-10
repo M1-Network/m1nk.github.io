@@ -290,8 +290,9 @@ $(window).scroll(function (event) {
   event.preventDefault();
   let classArr = [
     '.section-2',
-    '.section-1',
     '.participants',
+    '.section-1',
+    
     '.section-3',
     '.section-4',
     '.section-6',
