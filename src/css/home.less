@@ -6,11 +6,31 @@
 @import "./header.less";
 @import "./teamAdvisors.less";
 @import "./roadMap.less";
+
+@import "./participants.less";
 .section {
   width: 100%;
   z-index: 10;
   // overflow: hidden;
+
+  .title {
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 46px;
+    font-family: Objectivity-Medium, Objectivity;
+    font-weight: 500;
+    margin-bottom: 59px;
+    word-wrap: break-word;
+  }
+
+  .card {
+    background: transparent;
+    border: transparent;
+  }
+  
 }
+
+
 // .section-1
 .section-1 {
   padding: 95px 0 90px 0;
@@ -21,14 +41,27 @@
     color: #FFFFFF;
     font-size: 46px;
     font-family: Objectivity-Medium, Objectivity;
-    text-align: center;
     font-weight: 500;
     margin-bottom: 59px;
   }
 
+  .col:nth-child(-n+3) {
+    margin-bottom: 98px;
+  }
+
+  .row {
+    position: relative;
+    &::before {
+      content: ' ';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      border: 1px dashed rgba(119, 126, 255, 0.67);
+      top: 40%;
+    }
+  }
+
   .card {
-    background: transparent;
-    border: transparent;
     p {
       line-height: 28px;
     }
@@ -37,42 +70,40 @@
       font-family: Objectivity-Medium, Objectivity;
       font-weight: 500;
       color: #FFFFFF;
-      margin-left: 133px;
+      height: 28px;
     }
     .card-text {
       font-size: 16px;
       font-family: PingFangSC-Light, PingFang SC;
       font-weight: 300;
       color: #B9B6DB;
-    }
-    .imgt { 
-      img {
-        margin-right: 29px;
+      position: relative;
+      max-width: 300px;
+      padding-left: 15px;
+      &::before {
+        content: ' ';
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #777EFF;
+        top: 12px;
+        left: 0;
       }
     }
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .section-1  {
+    .col:nth-child(-n+3) {
+      margin-bottom: 0px;
+    }
     .title {
       font-size: 30px;
     }
     .card {
       margin-bottom: 30px;
-      .card-title {
-        margin-left: 0;
-        text-align: center;
-      }
-      .card-text {
-        text-align: center;
-      }
-      .imgt {
-        flex-flow: column;
-        img {
-          margin: 0 auto;
-        } 
-      }
     }
   }
 }
@@ -87,8 +118,6 @@
     border-radius: 16px;
   }
   .card {
-    background: transparent;
-    border: transparent;
     .card-title {
       font-size: 46px;
       font-family: Objectivity-Medium, Objectivity;

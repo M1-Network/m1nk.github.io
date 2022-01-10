@@ -18,12 +18,16 @@
     {{each}}
     <div class="col">
       <div class="card display-f">
-        <div class="display-f align-c">
+        <div class="display-f">
+          {{if $value.image}}
+            <img src="{{$value.image}}" width="69" height="60" class="rounded" alt="...">
+          {{/if}}
           <div class="card-body">
             <p class="card-title">{{$value.title}}</p>
-            <div class="display-f imgt">
-              <img src="{{$value.image}}" width="104" height="104" class="rounded" alt="...">
-              <p class="card-text">{{$value.text}}</p>
+            <div class="display-f flex-col imgt">
+              {{each $value.textArr}}
+                <p class="card-text">{{ $value }}</p>
+              {{/each}}
             </div>
 
           </div>
@@ -31,6 +35,49 @@
       </div>
     </div>
     {{/each}}
+  </script>
+
+  <!-- participantsTemp -->
+  <script id="participantsTemp" type="text/html">
+
+    <!-- top -->
+    <div class="participants-top">
+      <p>Features</p>
+      <div class="line"></div>
+    </div>
+
+
+    {{each}}
+    <div class="col">
+      <div class="card va-card  display-f flex-col align-c">
+        {{each $value.content}}
+          <div class="content">
+            {{ $value }}
+          </div>
+        {{/each}}
+
+        <img src="{{$value.icon}}" width="94" height="18" class="rounded" alt="...">
+        
+        <div class="bcontent">
+          <p class="bcontent-title">{{ $value.bcontent.title }}</p>
+          <div class="block disply-f flex-wrap">
+            {{each $value.bcontent.textArr}}
+              <p class="text text-c">
+                {{ $value }}
+              </p>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+    
+    <!-- bottom -->
+    <div class="participants-bottom">
+      <img width="100%" src="<%= require('../images/border-s.png') %>" alt="">
+      <div class="line"></div>
+      <p>Values</p>
+    </div>
   </script>
 
   <!-- roadMap -->
@@ -125,10 +172,13 @@
         <img class="logo" src="<%= require('../images/logo.png') %>" alt="">
         <ul class="menu-container display-f">
           <li class="menu-list">
-            <a class="scroll" href="#Features">Features</a>
+            <a class="scroll" href="#M1">M1</a>
           </li>
           <li class="menu-list">
-            <a class="scroll" href="#M1">M1</a>
+            <a class="scroll" href="#Features">Features&Value</a>
+          </li>
+          <li class="menu-list">
+            <a class="scroll" href="#Participants">Participants&Incentives</a>
           </li>
           <li class="menu-list">
             <a class="scroll" href="#WhitePaper">WhitePaper</a>
@@ -179,7 +229,7 @@
         <div class="h-left_t">
           <p>See you in metaverse</p>
         </div>
-        <div class="h-left_b display-f aling-c">
+        <!-- <div class="h-left_b display-f aling-c">
           <a class="scroll" href="#M1">
             <div class="play-icon-box">
               <img class="play-icon" src="<%= require('../images/play.png') %>" alt="...">
@@ -192,7 +242,7 @@
             <p>ABOUT US</p>
             <p>Promotion video</p>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="h-right">
         <img class="banner-logo" src="<%= require('../images/big-logo.png') %>" alt="...">
@@ -211,16 +261,7 @@
       <img class="header-before" src="<%= require('../images/header-before.png') %>" alt="...">
     </div>
   </div>
- 
   
-  <!-- section-1 -->
-  <div id="Features" class="section section-1">
-    <div class="title">M1 Network Features</div>
-    <div class="container-lg">
-      <!-- art -->
-      <div id="features-list" class="row row-cols-lg-2 row-cols-1"></div>
-    </div>
-  </div>
 
   <!-- section-2 video -->
   <div id="M1" class="section section-2">
@@ -240,6 +281,28 @@
       </div>
     </div>
   </div>
+
+
+  <!-- participants -->
+  <div id="Participants" class="section participants">
+    <div class="container-lg">
+      <div class="title">Participants&Incentives</div>
+      <div id="participants-list" class="row row-cols-lg-3 row-cols-1"></div>
+    </div>
+  </div>
+  
+  <!-- section-1 -->
+  <div id="Features" class="section section-1">
+    <div class="container-lg">
+      <div class="title">Feature&Value</div>
+      <div id="features-list" class="row row-cols-lg-3 row-cols-1"></div>
+    </div>
+  </div>
+
+  
+
+
+  
 
   <!-- section-3  pdf -->
   <div id="WhitePaper" class="section section-3">

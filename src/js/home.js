@@ -8,34 +8,51 @@ import './drag.js'
 
 let featuresList = [
   {
-    title: 'High Efficiency',
-    text: 'M1 Network Project is committed to helping any blockchain establish its own metaverse ecology, allowing meta-universe players to quickly enter your metaverse civilization. M1 Network Project provides metaverse players with an interactive video channel that can be connected to metaverse through edge cloud rendering, and provides a basic metaverse ecology for blockchain projects, realizing the rapid development of the blockchain ecology.',
-    image: require('../images/Efficiency_icon.png')
+    title: 'Player',
+    textArr: [
+      'enjoy the metaverse',
+      'any device any where'
+    ],
+    image: require('../images/player.png')
   },
   {
-    title: 'Installation Free',
-    text: 'M1 Network Project provides containers for metaverse developers to deploy services. The interaction between the player and the service is realized through an interactive video stream. Therefore, metaverse players can enjoy services without installing any clients. Therefore, M1 Network Project provides free installation for any metaverse.',
-    image: require('../images/icon-1.png')
+    title: 'Developer',
+    textArr: [
+      'Creat great metaverse content and service for the globle users',
+    ],
+    image: require('../images/developer.png')
   },
   {
-    title: 'Low Delay',
-    text: "M1 Network Project manages metaverse containers through a huge network. When a metaverse player starts to play the metaverse, we will choose the nearest service node to provide the player with the metaverse rendering service. The metaverse player's operation and interaction with the metaverse can be controlled within 30ms. We provide low-latency metaverse services.",
-    image: require('../images/icon-2.png')
+    textArr: [
+      'Use M1 network to render game and service'
+    ]
   },
   {
-    title: 'Superior Quality',
-    text: "M1 Network Project mainly realizes metaverse experience and interaction through interactive video streams. M1 Network Project can provide users with 720P, 1080P and 4K resolutions, and can provide different experience versions of 30FPS, 60FPS, 90FPS and 120FPS.",
-    image: require('../images/icon-3.png')
+    title: 'Container',
+    textArr: [
+      'Provides computing power and network resources',
+      'Reward for providing standby and running services to users'
+    ],
+    image: require('../images/container.png')
   },
   {
-    title: 'Decentralization',
-    text: "M1 Network Project adopts decentralized management. M1 Network Project Container adopts P2P network to manage the edge scheduling of users and metaverse. Users contribute their own computing power to serve many other metaverse users. Combined with P2P scheduling capabilities, it achieves decentralized management of containers. M1 Network Project Token records transactions between containers and users based on blockchain technology.",
-    image: require('../images/icon-4.png')
+    title: 'Checker',
+    textArr: [
+      'Check the availability of the resources regularly',
+      'Resource rating score',
+      'Report resources'
+    ],
+    image: require('../images/checker.png')
   },
   {
-    title: 'High Fusion',
-    text: "M1 Network Project is committed to providing users and metaverse developers with a service to develop and connect to the metaverse. It provides basic visualization and interactive services for every metaverse. Through this service, metaverse developers can easily make their own metaverse ecology develop rapidly, make users try all metaverse services without a specific device.",
-    image: require('../images/Fusion_icon.png')
+    title: 'Indexer',
+    textArr: [
+      'Index by region',
+      'Classification sorting',
+      'Connect user requests',
+      'Data report'
+    ],
+    image: require('../images/indexer.png')
   }
 ]
 
@@ -154,9 +171,67 @@ let roadMapList = {
     }
   ]
 }
+
+let participants = [
+  {
+    content: [
+      'Support Adaptive video Format',
+      'Global deployment Edge service',
+      'Quick start in millisecond'
+    ],
+    icon: require('../images/triangle.png'),
+    bcontent: {
+      title: 'Accessibility',
+      textArr: [
+        'Any device',
+        'Any system',
+        'Any where',
+        'Instant play'
+      ]
+    }
+  },
+  {
+    content: [
+      'Ultra-low time-delay Real-time interaction',
+      'Full Game compatibility',
+      'SDK & Manage platform for developer'
+    ],
+    icon: require('../images/triangle.png'),
+    bcontent: {
+      title: 'Accessibility',
+      textArr: [
+        'Excellent experience',
+        'Any game',
+        'Easy to use and manage'
+      ]
+    }
+  },
+  {
+    content: [
+      'Cloud rendering',
+      'Encrypts transmission Anti-Cheating',
+      'Cryptographic ensured tokenomics'
+    ],
+    icon: require('../images/triangle.png'),
+    bcontent: {
+      title: 'Assurance',
+      textArr: [
+        'Prevent cheating',
+        'Asset security'
+      ]
+    }
+  }
+]
+
+
 // features
 let html = artTemplate('featuresTemp', featuresList);
 document.getElementById('features-list').innerHTML = html;
+
+
+// participants
+let participantshtml = artTemplate('participantsTemp', participants);
+document.getElementById('participants-list').innerHTML = participantshtml;
 
 // advisorsTeam
 // let advisorsTemp = artTemplate('advisorsTemp', advisorAndTeam);
@@ -165,6 +240,10 @@ document.getElementById('features-list').innerHTML = html;
 // roadMap
 let roadMapListTemp = artTemplate('roadMapListTemp', roadMapList);
 document.getElementById('roadMapList').innerHTML = roadMapListTemp;
+
+
+
+
 
 // menu active class style
 $('.menu-container').on('click', '.menu-list', function () {
@@ -204,20 +283,24 @@ function handleMenuActive(t, p, callback) {
     callback()
   }
 }
+
 let p = 0, t = 0;
 $(window).scroll(function (event) {
 
   event.preventDefault();
-
+  let classArr = [
+    '.section-2',
+    '.section-1',
+    '.participants',
+    '.section-3',
+    '.section-4',
+    '.section-6',
+    '.section-7'
+  ]
   $('.menu-list').each(function (idx, $sec) {
-    
-
-    if(idx != 4) {
-      handleMenuActive(`.section-${idx + 1}`, $(window).scrollTop(), function () {
-        $($sec).addClass("current").siblings().removeClass("current");
-      })
-    }
-    
+    handleMenuActive(`${classArr[idx]}`, $(window).scrollTop(), function () {
+      $($sec).addClass("current").siblings().removeClass("current");
+    })
   })
 
   p = $(this).scrollTop();
