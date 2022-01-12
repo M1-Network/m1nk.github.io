@@ -224,6 +224,55 @@ let participants = [
 ]
 
 
+if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iOS|iPad|Backerry|WebOS|Symbian|Windows Phone|Phone)/i))) {
+  roadMapList = {
+    top: [
+      {
+        label: '2022 Q1',
+        info: `Dehorizon integration and testnet launch.
+        Global deployment for 5 most gamefi populated spot.
+        First c# SDK release 
+        `
+      },
+      {
+        label: '2022 Q2',
+        info: `Dehorizon integration and testnet launch.
+        Global deployment for 5 most gamefi populated spot.
+        First c# SDK release 
+        `
+      },
+      {
+        label: '2022 Q3',
+        info: `Js/c#/c++ SDK release to support more types of game.
+        2k video streaming on testnet.
+        `
+      },
+      {
+        label: '2022 Q4',
+        info: `Being able to support 1m enduser and most of existing gamefi application
+        Started researching on concensus algorithm.
+        `
+      }  
+    ],
+    bot: [
+      {
+        label: '2023 Q2',
+        info: `Testnet launching
+        premining program launched.
+        `
+      },
+      {
+        label: '2023 Q4',
+        info: 'Testnet mining launching.'
+      },
+      {
+        label: '2024 Q2',
+        info: 'Mainnet launching.'
+      }
+    ]
+  }
+}
+
 // features
 let html = artTemplate('featuresTemp', featuresList);
 document.getElementById('features-list').innerHTML = html;
