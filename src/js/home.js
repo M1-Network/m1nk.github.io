@@ -81,7 +81,7 @@ let advisorAndTeam = {
         image: require('../images/cmo.png')
       },
       {
-        title: 'Loewion',
+        title: 'Leon',
         text: `Google Stadia  Project Manager
           YoutubeMonetzation  Project Manager
           Netflix  Senior Director Of Engineering
