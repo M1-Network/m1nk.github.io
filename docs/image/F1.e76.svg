@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <polygon id="path-1" points="10.9799197 4.5 24.7186241 4.5 24.7186241 30.4911884 10.9799197 30.4911884"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图20220208" transform="translate(-1193.000000, -5417.000000)">
+            <rect fill="#F7F5FA" x="0" y="0" width="1920" height="5712"></rect>
+            <rect id="矩形备份-11" fill="#777EFF" x="0" y="5253" width="1943" height="462"></rect>
+            <g id="编组-14" transform="translate(1167.159091, 5289.990637)">
+                <g id="编组" transform="translate(26.236312, 127.490637)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M24.7186241,8.86511411 L24.7186241,4.96320204 C24.7186241,4.96320204 19.5031839,3.26695044 16.6194228,6.36274295 C16.6194228,6.36274295 15.0925297,7.8042901 15.2198819,11.1547871 L15.2125475,14.419938 L10.9799197,14.419938 L10.9799197,19.1273029 L15.1352027,19.1273029 L15.1352027,30.4916551 L20.0966052,30.4916551 L20.0539322,19.2119821 L23.8704983,19.1693091 L24.7186241,14.3779318 L20.0966052,14.3779318 L20.0539322,11.0274348 C20.0539322,11.0274348 20.0966052,8.61040967 22.9803663,8.77976812 L24.7186241,8.86511411 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

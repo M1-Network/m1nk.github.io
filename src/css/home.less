@@ -15,8 +15,8 @@
 
   .title {
     width: 100%;
-    color: #FFFFFF;
-    font-size: 46px;
+    color: #0A033C;
+    font-size: 42px;
     font-family: Objectivity-Medium, Objectivity;
     font-weight: 500;
     margin-bottom: 59px;
@@ -34,19 +34,26 @@
 // .section-1
 .section-1 {
   padding: 95px 0 90px 0;
-  background: linear-gradient(180deg, rgba(17, 7, 49, 0.7), rgba(39, 17, 95, 0.7));
+  // background: linear-gradient(180deg, rgba(17, 7, 49, 0.7), rgba(39, 17, 95, 0.7));
   // opacity: 0.88;
-  .title {
-    width: 100%;
-    color: #FFFFFF;
-    font-size: 46px;
-    font-family: Objectivity-Medium, Objectivity;
-    font-weight: 500;
-    margin-bottom: 59px;
-  }
+  background: #EDEBFA;
 
   .features-image {
-    width: 69px;
+    min-width: 120px;
+    height: 120px;
+    background: #E8E3FC;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col:nth-child(3) {
+    .features-image {
+      background: none;
+      min-width: 0;
+      height: 0;
+    }
   }
 
   .col:nth-child(-n+3) {
@@ -70,17 +77,17 @@
       line-height: 28px;
     }
     .card-title {
-      font-size: 24px;
+      font-size: 22px;
       font-family: Objectivity-Medium, Objectivity;
       font-weight: 500;
-      color: #FFFFFF;
-      height: 28px;
+      color: #0A033C;
+      height: 24px;
     }
     .card-text {
       font-size: 16px;
       font-family: PingFangSC-Light, PingFang SC;
       font-weight: 300;
-      color: #B9B6DB;
+      color: #0A033C;
       position: relative;
       max-width: 300px;
       padding-left: 15px;
@@ -110,38 +117,47 @@
       margin-bottom: 30px;
     }
   }
+
+  .section-2 {
+    .section-2-content {
+      flex-flow: column;
+      align-items: center;
+      #videoplayer {
+        width: 100%;
+      }
+      .card-text { 
+        margin: 20px 0 0 0 !important;
+        width: 100% !important;
+      }
+    }
+  }
 }
 
 // .section-2
 .section-2 {
-  padding: 70px 0 81px 0;
-  background: linear-gradient(180deg, rgba(17, 7, 49, 0.7),rgba(83, 72, 246, 0.1));
+  padding: 70px 0 40px 0;
+  // background: linear-gradient(180deg, rgba(17, 7, 49, 0.7),rgba(83, 72, 246, 0.1));
   // opacity: 0.88;
   #videoplayer {
     background-color: rgba(153, 153, 153, 1);
     border-radius: 16px;
   }
-  .card {
-    .card-title {
-      font-size: 46px;
-      font-family: Objectivity-Medium, Objectivity;
-      font-weight: 500;
-      color: #FFFFFF;
-    }
-    .card-text {
-      font-size: 16px;
-      font-family: PingFangSC-Light, PingFang SC;
-      font-weight: 300;
-      color: #B9B6DB;
-      line-height: 28px;
-    }
+
+  .card-text {
+    font-size: 18px;
+    font-family: PingFangSC-Light, PingFang SC;
+    font-weight: 300;
+    color: #0A033C;
+    line-height: 28px;
+    width: 757px;
+    margin-left: 25px;
   }
 }
 
 // section-3
 .section-3 {
   padding: 93px 0 81px 0;
-  background: linear-gradient(180deg, rgba(17, 7, 49, 0.7), rgba(39, 17, 95, 0.5));
+  // background: linear-gradient(180deg, rgba(17, 7, 49, 0.7), rgba(39, 17, 95, 0.5));
   // opacity: 0.88;
   .btn {
     height: 74px;
@@ -174,15 +190,8 @@
 
 // section-4
 .section-4 {
-  padding: 90px 0;
-  background: linear-gradient(180deg, rgba(17, 7, 49, 0.7), rgba(39, 17, 95, 0.7));
-  .title {
-    font-size: 46px;
-    font-family: Objectivity-Medium, Objectivity;
-    font-weight: 500;
-    color: #FFFFFF;
-    margin-bottom: 54px;
-  }
+  padding: 90px 0 0 0;
+  // background: linear-gradient(180deg, rgba(17, 7, 49, 0.7), rgba(39, 17, 95, 0.7));
 }
 
 @media screen and (max-width: 800px) {
@@ -203,7 +212,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: linear-gradient(to right, #110731, rgba(17, 7, 49, 0));
+    // background: linear-gradient(to right, #110731, rgba(17, 7, 49, 0));
     // opacity: 0.7;
     z-index: 99;
     pointer-events: none;
@@ -215,7 +224,7 @@
     height: 100%;
     right: 0;
     top: 0;
-    background: linear-gradient(to left, #110731, rgba(17, 7, 49, 0));
+    // background: linear-gradient(to left, #110731, rgba(17, 7, 49, 0));
     // opacity: 0.7;
     z-index: 99;
     pointer-events: none;
@@ -225,7 +234,7 @@
 // Blockchain Technology
 .section-5 {
   padding: 90px 0;
-  background: linear-gradient(to bottom, rgba(17, 7, 49, 0.7), rgba(17, 7, 49, 0));
+  // background: linear-gradient(to bottom, rgba(17, 7, 49, 0.7), rgba(17, 7, 49, 0));
   // opacity: 0.88;
   .title {
     font-size: 46px;
@@ -249,7 +258,7 @@
 // section-6
 .section-6 {
   padding: 90px 0;
-  background: linear-gradient(180deg, rgba(17, 7, 49, 0.7), rgba(39, 17, 95, 0.79));
+  // background: linear-gradient(180deg, rgba(17, 7, 49, 0.7), rgba(39, 17, 95, 0.79));
   // opacity: 0.88;
   .title {
     font-size: 46px;
@@ -271,8 +280,9 @@
 
 // section-8
 .section-8 {
-  padding: 51px 0 27px 0;
+  padding: 100px 0;
   overflow: hidden;
+  background: #777EFF;
   .b-logo {
     width: 100%;
     margin-top: 50px;
@@ -293,7 +303,7 @@
     }
 
     a {
-      color: rgba(185, 182, 219, 1);
+      color: #fff;
       display: flex;
       align-items: center;
     }
@@ -356,20 +366,20 @@
 
 
 .downloadBox {
-  background: #190B45;
-  border-radius: 25px;
-  padding: 40px 40px;
   img {
     margin-bottom: 30px;
   }
   h5 {
-    color: #fff; 
+    color: #0A033C; 
     text-align: center;
     margin-top: 20px;
+    font-size: 42px;
     font-family: PingFangSC-Regular, PingFang SC;
   }
   h6 {
-    color: #fff; 
+    color: #0A033C; 
     margin-top: 60px;
+    font-size: 24px;
+    margin-bottom: 60px;
   }
 }

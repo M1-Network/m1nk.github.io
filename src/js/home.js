@@ -354,10 +354,15 @@ $(window).scroll(function (event) {
   })
 
   p = $(this).scrollTop();
+  if(p > 100) {
+    $('.menu-box').addClass('menu-bgcolor')
+  } else {
+    $('.menu-box').removeClass('menu-bgcolor')
+  }
 
   let ScrVal = $(window).scrollTop();
 
-  let McrVal = $(".section-1").offset().top
+  let McrVal = $(".section-2").offset().top
 
   let Mhval = $(".menu-box").height()
 

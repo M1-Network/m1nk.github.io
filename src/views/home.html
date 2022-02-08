@@ -44,13 +44,14 @@
 
     <!-- top -->
     <div class="participants-top">
-      <p>Features</p>
-      <div class="line"></div>
+      <p>FEATURES</p>
+      <img width="100%" src="<%= require('../images/border-t.png') %>" alt="">
+      <!-- <div class="line"></div> -->
     </div>
 
 
     {{each}}
-    <div class="col">
+    <div class="col display-f flex-cc">
       <div class="card va-card  display-f flex-col align-c">
         {{each $value.content}}
           <div class="content">
@@ -76,9 +77,9 @@
     
     <!-- bottom -->
     <div class="participants-bottom">
-      <img width="100%" src="<%= require('../images/border-s.png') %>" alt="">
-      <div class="line"></div>
-      <p>Values</p>
+      <img width="100%" src="<%= require('../images/border-b.png') %>" alt="">
+      <!-- <div class="line"></div> -->
+      <p>VALUES</p>
     </div>
   </script>
 
@@ -90,7 +91,7 @@
         <svg class="line" width="192px" height="113px" viewBox="0 0 192 113" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-            <g transform="translate(-483.000000, -4658.000000)" stroke="#3C3789" stroke-width="5">
+            <g transform="translate(-483.000000, -4658.000000)" stroke="#C8CAFF" stroke-width="5">
               <g transform="translate(109.170455, 4382.000000)">
                 <path
                   d="M377.627051,386.5 L484.192741,294.822269 C495.623085,284.988822 510.201151,279.581014 525.279262,279.581014 L562.409091,279.581014 L562.409091,279.581014"
@@ -111,7 +112,7 @@
         <svg class="line" width="192px" height="113px" viewBox="0 0 192 113" version="1.1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-            <g transform="translate(-483.000000, -4658.000000)" stroke="#3C3789" stroke-width="5">
+            <g transform="translate(-483.000000, -4658.000000)" stroke="#C8CAFF" stroke-width="5">
               <g transform="translate(109.170455, 4382.000000)">
                 <path
                   d="M377.627051,386.5 L484.192741,294.822269 C495.623085,284.988822 510.201151,279.581014 525.279262,279.581014 L562.409091,279.581014 L562.409091,279.581014"
@@ -229,9 +230,11 @@
     <div class="h-top display-f justify-c align-c">
       <div class="h-left">
         <div class="h-left_t">
-          <p>See you in the metaverse</p>
+          <p>See you</p>
+          <p>in the <span>metaverse</span></p>
+          <p>Decentralized real time rendering platform</p>
         </div>
-        <!-- <div class="h-left_b display-f aling-c">
+        <div class="h-left_b display-f aling-c">
           <a class="scroll" href="#M1">
             <div class="play-icon-box">
               <img class="play-icon" src="<%= require('../images/play.png') %>" alt="...">
@@ -244,31 +247,36 @@
             <p>ABOUT US</p>
             <p>Promotion video</p>
           </div>
-        </div> -->
+        </div>
       </div>
       <div class="h-right">
         <img class="banner-logo" src="<%= require('../images/big-logo.png') %>" alt="...">
       </div>
     </div>
-    <img class="header-after" src="<%= require('../images/header-after.png') %>" alt="...">
+    <!-- <img class="header-after" src="<%= require('../images/header-after.png') %>" alt="..."> -->
   </div>
 
   <!-- email -->
   
-  <!-- <div class="email display-f align-c">
-    <div class="container display-f align-c justify-fe">
-      <span>Subscribe to M1-Network for updates</span>
-      <input placeholder="Email" type="text" class="email-inp">
+  <div class="email display-f align-c">
+    <div class="container display-f align-c justify-sb">
+      <span>Email</span>
+      <input placeholder="Subscribe to M1-Network for updates" type="text" class="email-inp">
       <div class="email-btn display-f flex-cc">Subscribed</div>
-      <img class="header-before" src="<%= require('../images/header-before.png') %>" alt="...">
+      <!-- <img class="header-before" src="<%= require('../images/header-before.png') %>" alt="..."> -->
     </div>
-  </div> -->
+  </div>
   
 
   <!-- section-2 video -->
   <div id="M1" class="section section-2">
     <div class="container">
-      <div class="row row-cols-xl-2 row-cols-1">
+      <div class="title text-c">M1 Introduction</div>
+      <div class="section-2-content display-f">
+        <div id="videoplayer"></div>
+        <p class="card-text">M1 network is a decentralized cloud real-time rendering platform for gamefi, virtual live broadcasts, and panoramic social scenes. It naturally supports the data design of the blockchain, and will become the core infrastructure of the metaverse through a decentralized real-time visualization network. M1 Network is a project that helps every chain and every user quickly realize and experience the high-definition full-realistic visualization metaverse service. It is committed to providing each chain with a high-definition, full-realistic metaverse ecology, and helping each chain to quickly form its own cosmic civilization.</p>
+      </div>
+      <!-- <div class="row row-cols-xl-2 row-cols-1">
         <div class="col display-f justify-c align-c">
           <div id="videoplayer"></div>
         </div>
@@ -280,7 +288,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -309,11 +317,10 @@
   <!-- section-3  pdf -->
   <div id="WhitePaper" class="section section-3">
     <div class="container">
-      <div class="row row-cols-md-2 row-cols-1">
+      <div class="row row-cols-md-1 row-cols-1">
         <div class="col display-f justify-c">
           <!-- swiper -->
           <div class="downloadBox display-f flex-col flex-cc">
-            <img width="200" src="<%= require('../images/big-logo.png') %>" alt="">
             <h5>M1 Network Project Whitepaper</h5>
             <h5>Beta 0.1</h5>
             <h6>author:Leon</h6>
@@ -348,64 +355,91 @@
   </div>
 
   <!-- section-4 -->
-  <div id="Advisors" class="section section-4">
+  <div id="Advisors" class="section section-4 team">
     <!-- art -->
     <!-- <div id="advisorAndTeam" class="a-container"></div> -->
 
     <!-- fix card -->
     <div class="container">
-      <div class="title">Team</div>
-      <div class="row">
+      <div class="title text-c">Team</div>
+      <div class="row" style="margin-top: 110px;">
         <div class="col">
           <div class="card team-card border-white mb-3 align-c">
-            <img src="<%= require('../images/ceo.png') %>" width="95px" class="rounded-circle" alt="...">
-            <div>
+            
+            <div class="team-content">
+              <img src="<%= require('../images/ceo.png') %>" width="279px" alt="...">
               <h5 class="card-title text-c">CEO Richard</h5>
-              <p class="card-text text-c">iMin Technology Pte Ltd Co-Founder 
-                Sunway International Pte Ltd
-                ZTE Singapore Pte Ltd  Managing Director
-                Beijing University of Technology
-                University College Dublin</p>
+              <div class="card-content">
+                <p class="team-deep">iMin Technology Pte Ltd</p>
+                <p class="team-simple">Co-Founder </p>
+                <p class="team-deep">Sunway International Pte Ltd</p>
+                <p class="team-simple">CEO</p>
+                <p class="team-deep">ZTE Singapore Pte Ltd  </p>
+                <p class="team-simple">Managing Director</p>
+                <div class="team-b">
+                  <p class="team-blue">Beijing University of Technology</p>
+                  <p class="team-blue">University College Dublin</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card team-card border-white mb-3 align-c">
-            <img src="<%= require('../images/cmo.png') %>" width="95px" class="rounded-circle" alt="...">
-            <div>
-              <h5 class="card-title text-c">CMO Dan</h5>
-              <p class="card-text text-c">MyGamez Ltd.  Advisor & Investor
-                Riot Games
-                Head of Operations - Riot China
-                Producer and Product Manager
-                Princeton University</p>
+            <div class="team-content">
+              <img src="<%= require('../images/cto.png') %>" width="279px" class="rounded-circle" alt="...">
+              <h5 class="card-title text-c">CTO Tony</h5>
+              <div class="card-content">
+                <p class="team-deep">Tencent IEG</p>
+                <p class="team-simple">Director of cloud gaming develop</p>
+                <p class="team-deep">TakeTwo Interactive </p>
+                <p class="team-simple">Leader Engineer</p>
+                <div class="team-b">
+                  <p class="team-blue">Massachusetts Institute of Technology Master of Engineering</p>
+                  <p class="team-blue" style="margin-top: 17px;">Nanyang Technological<br/>University</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card team-card border-white mb-3 align-c">
-            <div style="width: 95px; height: 95px; overflow: hidden; border-radius: 50%;">
-              <img src="<%= require('../images/cto.png') %>" width="95px" alt="...">
-            </div>
-            <div>
-              <h5 class="card-title text-c">CTO Leon</h5>
-              <p class="card-text text-c">Google Stadia  Project Manager
-                YoutubeMonetzation  Project Manager
-                Netflix  Senior Director Of Engineering
-                Massachusetts Institute of Technology
-                Nanyang Technological University</p>
+            
+            <div class="team-content">
+              <img src="<%= require('../images/cmo.png') %>" width="279px" class="rounded-circle" alt="...">
+              <h5 class="card-title text-c">CBO Dan</h5>
+              <div class="card-content">
+                <p class="team-deep">IVC</p>
+                <p class="team-simple">Venture Partner</p>
+                <p class="team-deep">YGG SEA</p>
+                <p class="team-simple">Chief Investment Officer</p>
+                <p class="team-deep">MyGames Ltd</p>
+                <p class="team-simple">Board Member & Advisor</p>
+                <p class="team-deep">Riot Games: China</p>
+                <p class="team-simple">Board Member & Advisor </p>
+                <div class="team-b">
+                  <p class="team-blue">Princeton University</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        
         <div class="col">
           <div class="card team-card border-white mb-3 align-c">
-            <img src="<%= require('../images/cio.png') %>" width="95px" class="rounded-circle" alt="...">
-            <div>
-              <h5 class="card-title text-c">CIO Eric</h5>
-              <p class="card-text text-c">Member Of The Supervisory Board
-                KPN  Group Chief Tehnology Officer
-                Erasmus University Rotterdam  MBA
-                Technische Universiteit Delft</p>
+            <div class="team-content">
+              <img src="<%= require('../images/cio.png') %>" width="279px" class="rounded-circle" alt="...">
+              <h5 class="card-title text-c">CSO Erik</h5>
+              <div class="card-content">
+                <p class="team-deep">myTomorrows</p>
+                <p class="team-simple">Member of The Supervisory Board</p>
+                <p class="team-deep">KPN</p>
+                <p class="team-simple">KPN Group Chief Technology Officer</p>
+                <div class="team-b">
+                  <p class="team-blue">Erasmus University Rotterdam  MBA</p>
+                  <p class="team-blue">Technische Universiteit Delft</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -477,11 +511,11 @@
   <!-- section-7 email-->
   <div class="section section-7">
     <div class="email display-f flex-cc">
-      <div class="container display-f flex-cc">
-        <span>Subscribe to M1-Network for updates</span>
-        <input placeholder="Email" class="email-inp">
+      <div class="container display-f align-c justify-sb">
+        <span>Email</span>
+        <input placeholder="Subscribe to M1-Network for updates" class="email-inp">
         <div class="email-btn display-f flex-cc">Subscribed</div>
-        <img class="before" src="<%= require('../images/before.png') %>" alt="...">
+        
       </div>
     </div>
   </div>
@@ -497,34 +531,34 @@
           <div class="row row-cols-2">
             <div class="col display-f justify-fe">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item list-title">Tell Me</li>
+                <!-- <li class="list-group-item list-title">Tell Me</li> -->
                 <li class="list-group-item">
                   <a target="_black" href="https://twitter.com/meta1_network"><img width="30px" height="30px"
-                      src="<%= require('../images/T.svg') %>" alt="">Twitter</a>
+                      src="<%= require('../images/T1.svg') %>" alt="">Twitter</a>
                 </li>
                 <li class="list-group-item">
                   <a target="_black" href="https://www.facebook.com/M1Network1"><img width="30px" height="30px"
-                      src="<%= require('../images/F.svg') %>" alt="">Facebook</a>
+                      src="<%= require('../images/F1.svg') %>" alt="">Facebook</a>
                 </li>
                 <li class="list-group-item">
                   <a target="_black" href="https://t.me/M1Network_official">
-                    <img width="30px" height="30px" src="<%= require('../images/te.svg') %>" alt="">Telegram
+                    <img width="30px" height="30px" src="<%= require('../images/te1.svg') %>" alt="">Telegram
                   </a>
                 </li>
                 <li class="list-group-item">
                   <a target="_black" href="https://www.reddit.com/user/M1Network"><img width="30px" height="30px"
-                      src="<%= require('../images/r.svg') %>" alt="">Reddit</a>
+                      src="<%= require('../images/r1.svg') %>" alt="">Reddit</a>
                 </li>
                 <li class="list-group-item">
                   <a target="_black" href="https://medium.com/@M1Network">
-                    <img width="30px" height="30px" src="<%= require('../images/m.svg') %>" alt="">Medium
+                    <img width="30px" height="30px" src="<%= require('../images/m1.svg') %>" alt="">Medium
                   </a>
                 </li>
               </ul>
             </div>
             <div class="col display-f justify-fs">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item list-title">M1 Network</li>
+                <!-- <li class="list-group-item list-title">M1 Network</li> -->
                 <li class="list-group-item">
                   <a class="scroll" href="#M1">About</a>
                 </li>

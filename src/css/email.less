@@ -1,13 +1,24 @@
 // email
 .email {
-  height: 80px;
-  background-color: rgba(17, 7, 49, 1);
+  margin: 20px 0;
+  // background-color: rgba(17, 7, 49, 1);
   position: relative;
+  .container {
+    height: 60px;
+    width: 732px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 24px 0px rgba(110, 107, 164, 0.22);
+    border-radius: 30px;
+  }
   span {
     font-size: 18px;
-    font-family: PingFangSC-Regular, PingFang SC;
+    font-family: Objectivity-Medium, Objectivity;
     font-weight: 400;
-    color: #EDF1FF;
+    color: #777EFF;
+    display: block;
+    width: 116px;
+    text-align: center;
+    border-right: 1px solid #DADADA;
   }
   .form-control {
     width: 325px;
@@ -20,15 +31,14 @@
     border: none;
     background: transparent;
     border-radius: 0;
-    border-bottom: 1px solid #777EFF;
     color: #777EFF;
     outline: none;
-    margin:0 30px 0 30px;
+    margin:0 30px 0 -10px;
     position: relative;
     transition: all 0.4s;
     padding: 4px 0;
     &::-webkit-input-placeholder {
-      color: #777EFF;
+      color: rgba(93, 90, 111, 0.6);
     }
     &.email-error {
       border-bottom: 1px solid red;
@@ -39,7 +49,7 @@
     height: 40px;
     background: #777EFF;
     border-radius: 29px;
-    color: rgba(231, 225, 225, 1);
+    color:#FFFFFF;
     font-size: 18px;
     text-align: center;
     font-weight: 500;
@@ -79,6 +89,9 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .container {
+    width: 94% !important;
+  }
   .email {
     span {
       display: none;

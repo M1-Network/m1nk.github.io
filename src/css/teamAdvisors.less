@@ -125,6 +125,10 @@
 
 
 // fix card
+
+.team {
+  background: #EDEBFA;
+}
 .team-card {
   // height: 182px;
   // width: 126px;
@@ -134,19 +138,63 @@
   background: transparent;
   border: transparent;
   margin: 0 auto;
+
+  img {
+    margin-top: -90px;
+    z-index: 999;
+  }
+  
   .card-title {
     margin-top: 0.5rem;
-    font-size: 20px;
+    font-size: 24px;
     font-family: Objectivity-Medium, Objectivity;
     font-weight: 500;
-    color: #FFFFFF;
+    color: #0A033C;
     white-space: nowrap;
+    margin-top: -20px;
   }
   .card-text {
     font-size: 14px;
     font-family: PingFangSC-Light, PingFang SC;
     font-weight: 300;
-    color: #B9B6DB;
+    // color: #B9B6DB;
     line-height: 24px;
   }
+
+  .card-content {
+    text-align: center;
+    margin-top: 20px;
+    p {
+      margin-bottom: 2px;
+    }
+    .team-deep {
+      color: #0A033C;
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+    }
+    .team-simple {
+      font-family: PingFangSC-Light, PingFang SC;
+      color: #0A033C;
+      font-size: 14px;
+    }
+    .team-b {
+      margin-top: 28px;
+      .team-blue {
+        color: #6D6CF7;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-size: 14px;
+      }
+    }
+    
+  }
+  .team-content {
+    width: 277px;
+    height: 414px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 20px 24px 0px rgba(110, 107, 164, 0.22);
+    border-radius: 31px;
+    margin-bottom: 80px;
+  }
 }
+
+

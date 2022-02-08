@@ -17,8 +17,8 @@ $(".scroll").click(function (event) {
 function onYouTubeIframeAPIReady() {
   window.YT.ready(function () {
     player = new window.YT.Player('videoplayer', {
-      height: '274',
-      width: '480',
+      height: '250',
+      width: '417',
       videoId: '08-5p_9ExvA',
       events: {
         'onReady': onPlayerReady,
