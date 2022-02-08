@@ -129,54 +129,40 @@ let roadMapList = {
   top: [
     {
       label: '2022 Q1',
-      info: [
-        `First AAA blockchain game integration and Testnet launch.`,
-        `Global nodes deployment in 7 most GameFi populated locations`
-      ]
+      label1: "First AAA blockchain game integration and Testnet launch.",
+      text1: "Global nodes deployment in 7 most GameFi populated locations"
     },
     {
       label: '2022 Q3',
-      info: [
-        'Js/c#/c++ SDK release to support more types of game.',
-        '2k video streaming on Testnet'
-      ]
+      label1:'Js/c#/c++ SDK release to support more types of game.',
+      text1:  '2k video streaming on Testnet'
     },
     {
       label: '2023 Q2',
-      info: [
-        'Testnet launch with test token mining.',
-        '21 nodes will be deployed on the most populated GameFi locations'
-      ]
+      label1: 'Testnet launch with test token mining.',
+      text1: '21 nodes will be deployed on the most populated GameFi locations'
     },
     {
       label: '2024 Q2',
-      info: [
-        'Meta game platform launching.',
-        'Meta1 mainnet Launching with official token launching event'
-      ]
+      label1: 'Meta game platform launching.',
+      text1: 'Meta1 mainnet Launching with official token launching event'
     }
   ],
   bot: [
     {
       label: '2022 Q2',
-      info: [
-        'Deploy Web browser based container, enabling support for Decentraland and Sandbox.',
-        'Deploy nodes in 10+ locations for better performance'
-      ]
+      label1: 'Deploy Web browser based container, enabling support for Decentraland and Sandbox.',
+      text1: 'Deploy nodes in 10+ locations for better performance'
     },
     {
       label: '2022 Q4',
-      info: [
-        'Enable support for M1 end users and most existing GameFi application.',
-        'First implementation of consensus algorithm'
-      ]
+      label1: 'Enable support for M1 end users and most existing GameFi application.',
+      text1: 'First implementation of consensus algorithm'
     },
     {
       label: '2023 Q4',
-      info: [
-        'Crypto wallet launching.',
-        'Meta1 market place & staking launching'
-      ]
+      label1: 'Crypto wallet launching.',
+      text1: 'Meta1 market place & staking launching'
     }
   ]
 }
@@ -238,45 +224,40 @@ if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iOS|iPad|Backerry|WebOS
     top: [
       {
         label: '2022 Q1',
-        info: `Dehorizon integration and testnet launch.
-        Global deployment for 5 most gamefi populated spot.
-        First c# SDK release 
-        `
-      },
-      {
-        label: '2022 Q2',
-        info: `Dehorizon integration and testnet launch.
-        Global deployment for 5 most gamefi populated spot.
-        First c# SDK release 
-        `
+        text: "First AAA blockchain game integration and Testnet launch.",
+        text1: "Global nodes deployment in 7 most GameFi populated locations"
       },
       {
         label: '2022 Q3',
-        info: `Js/c#/c++ SDK release to support more types of game.
-        2k video streaming on testnet.
-        `
+        text:'Js/c#/c++ SDK release to support more types of game.',
+        text1:  '2k video streaming on Testnet'
       },
-      {
-        label: '2022 Q4',
-        info: `Being able to support 1m enduser and most of existing gamefi application
-        Started researching on concensus algorithm.
-        `
-      }  
-    ],
-    bot: [
       {
         label: '2023 Q2',
-        info: `Testnet launching
-        premining program launched.
-        `
-      },
-      {
-        label: '2023 Q4',
-        info: 'Testnet mining launching.'
+        text: 'Testnet launch with test token mining.',
+        text1: '21 nodes will be deployed on the most populated GameFi locations'
       },
       {
         label: '2024 Q2',
-        info: 'Mainnet launching.'
+        text: 'Meta game platform launching.',
+        text1: 'Meta1 mainnet Launching with official token launching event'
+      }
+    ],
+    bot: [
+      {
+        label: '2022 Q2',
+        text: 'Deploy Web browser based container, enabling support for Decentraland and Sandbox.',
+        text1: 'Deploy nodes in 10+ locations for better performance'
+      },
+      {
+        label: '2022 Q4',
+        text: 'Enable support for M1 end users and most existing GameFi application.',
+        text1: 'First implementation of consensus algorithm'
+      },
+      {
+        label: '2023 Q4',
+        text: 'Crypto wallet launching.',
+        text1: 'Meta1 market place & staking launching'
       }
     ]
   }
