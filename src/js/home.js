@@ -129,44 +129,54 @@ let roadMapList = {
   top: [
     {
       label: '2022 Q1',
-      info: `First AAA blockchain game integration and Testnet launch.
-      Global nodes deployment in 7 most GameFi populated locations
-      `
+      info: [
+        'First AAA blockchain game integration and Testnet launch.',
+        'Global nodes deployment in 7 most GameFi populated locations'
+      ]
     },
     {
       label: '2022 Q3',
-      info: `Js/c#/c++ SDK release to support more types of game.
-      2k video streaming on Testnet.
-      `
+      info: [
+        'Js/c#/c++ SDK release to support more types of game.',
+        '2k video streaming on Testnet'
+      ]
     },
     {
       label: '2023 Q2',
-      info: `Testnet launch with test 
-      token mining.
-      21 nodes will be deployed on the most populated GameFi locations
-      `
+      info: [
+        'Testnet launch with test token mining.',
+        '21 nodes will be deployed on the most populated GameFi locations'
+      ]
     },
     {
       label: '2024 Q2',
-      info: 'Meta game platform launching. Meta1 mainnet Launching with official token launching event'
+      info: [
+        'Meta game platform launching.',
+        'Meta1 mainnet Launching with official token launching event'
+      ]
     }
   ],
   bot: [
     {
       label: '2022 Q2',
-      info: `Deploy Web browser based container, enabling support for Decentraland and Sandbox.
-      Deploy nodes in 10+ locations for better performance
-      `
+      info: [
+        'Deploy Web browser based container, enabling support for Decentraland and Sandbox.',
+        'Deploy nodes in 10+ locations for better performance'
+      ]
     },
     {
       label: '2022 Q4',
-      info: `Enable support for M1 end users and most existing GameFi application.
-      First implementation of consensus algorithm
-      `
+      info: [
+        'Enable support for M1 end users and most existing GameFi application.',
+        'First implementation of consensus algorithm'
+      ]
     },
     {
       label: '2023 Q4',
-      info: 'Crypto wallet launching. Meta1 market place & staking launching'
+      info: [
+        'Crypto wallet launching.',
+        'Meta1 market place & staking launching'
+      ]
     }
   ]
 }

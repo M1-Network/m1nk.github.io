@@ -102,7 +102,12 @@
           </g>
         </svg>
         <p class="label display-f flex-cc">{{$value.label}}</p>
-        <p class="content-text">{{$value.info}}</p>
+        <div class="content-text">
+          {{each $value.info}}
+            <p>{{ $value }}</p>
+          {{/each}}
+        </div>
+        <!-- <p >{{$value.info}}</p> -->
       </div>
       {{/each}}
     </div>
@@ -123,7 +128,11 @@
           </g>
         </svg>
         <p class="label display-f flex-cc">{{$value.label}}</p>
-        <p class="content-text">{{$value.info}}</p>
+        <div class="content-text">
+          {{each $value.info}}
+            <p>{{ $value }}</p>
+          {{/each}}
+        </div>
       </div>
       {{/each}}
     </div>
