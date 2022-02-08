@@ -130,8 +130,8 @@ let roadMapList = {
     {
       label: '2022 Q1',
       info: [
-        'First AAA blockchain game integration and Testnet launch.',
-        'Global nodes deployment in 7 most GameFi populated locations'
+        `First AAA blockchain game integration and Testnet launch.`,
+        `Global nodes deployment in 7 most GameFi populated locations`
       ]
     },
     {
