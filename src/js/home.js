@@ -129,45 +129,44 @@ let roadMapList = {
   top: [
     {
       label: '2022 Q1',
-      info: `Dehorizon integration and testnet launch.
-      Global deployment for 5 most gamefi populated spot.
-      First c# SDK release 
+      info: `First AAA blockchain game integration and Testnet launch.
+      Global nodes deployment in 7 most GameFi populated locations
       `
     },
     {
       label: '2022 Q3',
       info: `Js/c#/c++ SDK release to support more types of game.
-      2k video streaming on testnet.
+      2k video streaming on Testnet.
       `
     },
     {
       label: '2023 Q2',
-      info: `Testnet launching
-      premining program launched.
+      info: `Testnet launch with test 
+      token mining.
+      21 nodes will be deployed on the most populated GameFi locations
       `
     },
     {
       label: '2024 Q2',
-      info: 'Mainnet launching.'
+      info: 'Meta game platform launching. Meta1 mainnet Launching with official token launching event'
     }
   ],
   bot: [
     {
       label: '2022 Q2',
-      info: `Dehorizon integration and testnet launch.
-      Global deployment for 5 most gamefi populated spot.
-      First c# SDK release 
+      info: `Deploy Web browser based container, enabling support for Decentraland and Sandbox.
+      Deploy nodes in 10+ locations for better performance
       `
     },
     {
       label: '2022 Q4',
-      info: `Being able to support 1m enduser and most of existing gamefi application
-      Started researching on concensus algorithm.
+      info: `Enable support for M1 end users and most existing GameFi application.
+      First implementation of consensus algorithm
       `
     },
     {
       label: '2023 Q4',
-      info: 'Testnet mining launching.'
+      info: 'Crypto wallet launching. Meta1 market place & staking launching'
     }
   ]
 }
@@ -198,7 +197,7 @@ let participants = [
     ],
     icon: require('../images/triangle.png'),
     bcontent: {
-      title: 'Accessibility',
+      title: 'Availability',
       textArr: [
         'Excellent experience',
         'Any game',
