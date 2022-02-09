@@ -129,39 +129,39 @@ let roadMapList = {
   top: [
     {
       label: '2022 Q1',
-      label1: "First AAA blockchain game integration and Testnet launch.",
+      text: "First AAA blockchain game integration and Testnet launch.",
       text1: "Global nodes deployment in 7 most GameFi populated locations"
     },
     {
       label: '2022 Q3',
-      label1:'Js/c#/c++ SDK release to support more types of game.',
+      text:'Js/c#/c++ SDK release to support more types of game.',
       text1:  '2k video streaming on Testnet'
     },
     {
       label: '2023 Q2',
-      label1: 'Testnet launch with test token mining.',
+      text: 'Testnet launch with test token mining.',
       text1: '21 nodes will be deployed on the most populated GameFi locations'
     },
     {
       label: '2024 Q2',
-      label1: 'Meta game platform launching.',
+      text: 'Meta game platform launching.',
       text1: 'Meta1 mainnet Launching with official token launching event'
     }
   ],
   bot: [
     {
       label: '2022 Q2',
-      label1: 'Deploy Web browser based container, enabling support for Decentraland and Sandbox.',
+      text: 'Deploy Web browser based container, enabling support for Decentraland and Sandbox.',
       text1: 'Deploy nodes in 10+ locations for better performance'
     },
     {
       label: '2022 Q4',
-      label1: 'Enable support for M1 end users and most existing GameFi application.',
+      text: 'Enable support for M1 end users and most existing GameFi application.',
       text1: 'First implementation of consensus algorithm'
     },
     {
       label: '2023 Q4',
-      label1: 'Crypto wallet launching.',
+      text: 'Crypto wallet launching.',
       text1: 'Meta1 market place & staking launching'
     }
   ]
