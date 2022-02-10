@@ -426,12 +426,14 @@ $('.email-btn').click((e) => {
   if (value) {
     if (myReg.test(value)) {
       $(e.currentTarget).prev().removeClass('email-error')
-      $("head").append(`<script src='https://m1nk.io/report?email=${value}'><\/script>`);
-
+      // $("head").append(`<script src='https://m1nk.io/report?email=${value}'><\/script>`);
+      console.log()
       $.ajax({
-        url: `https://m1nk.io/report?email=${value}`,
+        url: `${location.origin}/report?email=${value}`,
         type: "GET",
-        dataType: "jsonp"
+        success: function(res) {
+          console.log(res)
+        }
       });
       $(e.currentTarget).prev()[0].value = ''
     } else {
