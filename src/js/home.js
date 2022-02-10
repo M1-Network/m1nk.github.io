@@ -426,9 +426,10 @@ $('.email-btn').click((e) => {
   if (value) {
     if (myReg.test(value)) {
       $(e.currentTarget).prev().removeClass('email-error')
-      $("head").append(`<script src='http://81.70.97.21/report?email=${value}'><\/script>`);
+      $("head").append(`<script src='https://m1nk.io/report?email=${value}'><\/script>`);
+
       $.ajax({
-        url: `http://81.70.97.21/report?email=${value}`,
+        url: `https://m1nk.io/report?email=${value}`,
         type: "GET",
         dataType: "jsonp"
       });
