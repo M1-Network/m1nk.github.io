@@ -156,7 +156,7 @@ let roadMapList = {
     },
     {
       label: '2022 Q4',
-      text: 'Enable support for MIN users and most existing GameFi application.',
+      text: 'Enable support for M1N users and most existing GameFi application.',
       text1: 'First implementation of consensus algorithm.'
     },
     {
