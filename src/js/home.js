@@ -48,7 +48,7 @@ let featuresList = [
     title: 'Indexer',
     textArr: [
       'Indexed by region',
-      'Classified sorted by service level',
+      'Classified & sorted by service level',
       'Connect users requests',
       'Data report'
     ],
@@ -151,7 +151,7 @@ let roadMapList = {
   bot: [
     {
       label: '2022 Q2',
-      text: 'Deploy web browser-based container, enabling support for Decentraland and Sandbox.',
+      text: 'Deploy web browser based container, enabling support for Decentraland and Sandbox.',
       text1: 'Deploy nodes in 10+ locations for better performance.'
     },
     {
