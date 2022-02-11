@@ -218,51 +218,6 @@ let participants = [
   }
 ]
 
-
-if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iOS|iPad|Backerry|WebOS|Symbian|Windows Phone|Phone)/i))) {
-  roadMapList = {
-    top: [
-      {
-        label: '2022 Q1',
-        text: "First AAA blockchain game integration and Testnet launch.",
-        text1: "Global nodes deployment in 7 most GameFi populated locations"
-      },
-      {
-        label: '2022 Q3',
-        text:'Js/c#/c++ SDK release to support more types of game.',
-        text1:  '2k video streaming on Testnet'
-      },
-      {
-        label: '2023 Q2',
-        text: 'Testnet launch with test token mining.',
-        text1: '21 nodes will be deployed on the most populated GameFi locations'
-      },
-      {
-        label: '2024 Q2',
-        text: 'Meta game platform launching.',
-        text1: 'Meta1 mainnet Launching with official token launching event'
-      }
-    ],
-    bot: [
-      {
-        label: '2022 Q2',
-        text: 'Deploy Web browser based container, enabling support for Decentraland and Sandbox.',
-        text1: 'Deploy nodes in 10+ locations for better performance.'
-      },
-      {
-        label: '2022 Q4',
-        text: 'Enable support for M1 end users and most existing GameFi application.',
-        text1: 'First implementation of consensus algorithm.'
-      },
-      {
-        label: '2023 Q4',
-        text: 'Crypto wallet launching.',
-        text1: 'Meta1 market place & staking launching.'
-      }
-    ]
-  }
-}
-
 // features
 let html = artTemplate('featuresTemp', featuresList);
 document.getElementById('features-list').innerHTML = html;
