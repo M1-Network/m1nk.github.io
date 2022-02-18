@@ -145,7 +145,7 @@ let roadMapList = {
     {
       label: '2024 Q2',
       text: 'Meta game platform launch.',
-      text1: 'Meta 1 mainnet Launch with official token launch event.'
+      text1: 'Meta 1 mainnet launch with official token launch event.'
     }
   ],
   bot: [
