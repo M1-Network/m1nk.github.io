@@ -48,7 +48,9 @@ let featuresList = [
     title: 'Indexer',
     textArr: [
       'Indexed by region',
-      'Classify & sort by service level'
+      'Classify & sort by service level',
+      'Connect users requests',
+      'Data report'
     ],
     image: require('../images/indexer.png')
   }
