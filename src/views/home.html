@@ -20,9 +20,7 @@
       <div class="card display-f">
         <div class="display-f">
           <div class="features-image">
-          {{if $value.image}}
             <img src="{{$value.image}}" width="69" height="60" class="rounded" alt="...">
-          {{/if}}
           </div>
           <div class="card-body">
             <p class="card-title">{{$value.title}}</p>
@@ -181,7 +179,7 @@
         <img class="logo" src="<%= require('../images/logo.png') %>" alt="">
         <ul class="menu-container display-f">
           <li class="menu-list">
-            <a class="scroll" href="#M1">M1N</a>
+            <a class="scroll" href="#M1">About</a>
           </li>
           <li class="menu-list">
             <a class="scroll" href="#Participants">Features&Values</a>
@@ -190,13 +188,13 @@
             <a class="scroll" href="#Features">Participants&Incentives</a>
           </li>
           <li class="menu-list">
-            <a class="scroll" href="#WhitePaper">White Paper</a>
+            <a class="scroll" href="#WhitePaper">Whitepaper</a>
           </li>
           <li class="menu-list">
             <a class="scroll" href="#Advisors">Team</a>
           </li>
           <li class="menu-list">
-            <a class="scroll" href="#RoadMap">Road Map</a>
+            <a class="scroll" href="#RoadMap">Roadmap</a>
           </li>
           <!-- <li class="menu-list">
             <a target="_black" href="https://blog.m1nk.io/">Blog</a>
@@ -233,7 +231,7 @@
 
   <!-- header -->
   <div class="header">
-    <div class="container h-top display-f justify-c align-c">
+    <div class="container h-top display-f align-c">
       <div class="h-left">
         <div class="h-left_t">
           <p>See you</p>
@@ -277,16 +275,23 @@
   <!-- section-2 video -->
   <div id="M1" class="section section-2">
     <div class="container">
-      <div class="title text-c">Meta 1 network Introduction</div>
-      <div class="section-2-content display-f">
-        <div class="video">
-          <div id="videoplayer"></div>
+      <div class="section-2-content">
+        <div class="title text-c m-title">Meta 1 network Introduction</div>
+        <div class="videobox display-f">
+          <div class="video">
+            <div id="videoplayer"></div>
+          </div>
+          <div>
+            <div class="title pc-title">Meta 1 network Introduction</div>
+            <p class="card-text">
+              Meta 1 network (M1 network/M1N) is a decentralized cloud rendering platform for GameFi, virtual live streaming and panoramic social scenes. It naturally supports the data design of the blockchain where every chain and every user can quickly realize and experience the high-definition and full-realistic visualization metaverse service. It will be the infrastructure of metaverse in Web3.</br>
+            </p>
+          </div>
         </div>
-        
-        <p class="card-text">
-          M1 network is a decentralized cloud rendering platform for GameFi, virtual live streaming and panoramic social scenes. It naturally supports the data design of the blockchain and will be the infrastructure for the high-definition and full-realistic visualization of metaverse in Web3.</br>
-          M1 network is a project that helps every chain and every user quickly realize and experience the high-definition and full-realistic visualization metaverse service. It is committed to providing each chain with a high-definition and full-realistic metaverse ecology, and helping them quickly form their own cosmic civilization.
-        </p>
+        <div class="card-b">
+          <p>The development of the metaverse until today is inseparable from the decentralized thought and its core economic system. In the future, every chain may derive its own metaverse ecology and civilization. M1N project is committed to assisting every chain in achieving that. We also provide every user pass-through service in metaverse through the edge cloud rendering container. Players can switch services among different metaverses in M1N by using their own tokens.</p>
+          <p style="margin-top: 20px">M1N takes you into the metaverse era of high-definition and full-realistic visualization.</p>
+        </div>
       </div>
       <!-- <div class="row row-cols-xl-2 row-cols-1">
         <div class="col display-f justify-c align-c">
@@ -333,7 +338,7 @@
         <div class="col display-f justify-c">
           <!-- swiper -->
           <div class="downloadBox display-f flex-col flex-cc">
-            <h5>M1 network Project White Paper</h5>
+            <h5>M1 network Project Whitepaper</h5>
             <h5>Beta 0.2</h5>
             <h6>author: loew</h6>
           </div>
@@ -360,7 +365,7 @@
           </div> -->
         </div>
         <div class="col text-c display-f flex-cc">
-          <div class="btn download display-f flex-cc">Download White Paper</div>
+          <div class="btn download display-f flex-cc">Download Whitepaper</div>
         </div>
       </div>
     </div>
@@ -520,7 +525,7 @@
 
   <!-- section-6 -->
   <div id="RoadMap" class="section section-6">
-    <div class="title text-c">Project Road Map</div>
+    <div class="title text-c">Project Roadmap</div>
     <div class="roadMap-container display-f align-c">
       <div class="start display-f flex-cc">START</div>
       <!-- art -->
@@ -583,17 +588,20 @@
                   <a class="scroll" href="#M1">About</a>
                 </li>
                 <li class="list-group-item">
-                  <a class="scroll" href="#Participants">Features</a>
-                </li>
-                <li class="list-group-item">
-                  <a class="scroll" href="#WhitePaper">White Paper</a>
-                </li>
-                <li class="list-group-item">
-                  <a class="scroll" href="#M1">Watch Video</a>
+                  <a class="scroll" href="#WhitePaper">Whitepaper</a>
                 </li>
                 <li class="list-group-item">
                   <a class="scroll" href="#Advisors">Team</a>
                 </li>
+                <li class="list-group-item">
+                  <a class="scroll" href="#RoadMap">Roadmap</a>
+                </li>
+                <li class="list-group-item">
+                  <a class="scroll" href="#M1">Watch Video</a>
+                </li>
+                <!-- <li class="list-group-item">
+                  <a class="scroll" href="#Participants">Features</a>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -632,16 +640,16 @@
   <div class="model">
     <div class="container display-f flex-col justify-c">
       <ul class="model-ul">
-        <li><a class="scroll" href="#M1">M1N</a></li>
+        <li><a class="scroll" href="#M1">About</a></li>
         <li>
           <a class="scroll" href="#Participants">Features&Values</a>
         </li>
         <li>
           <a class="scroll" href="#Features">Participants&Incentives</a>
         </li>
-        <li><a class="scroll" href="#WhitePaper">White Paper</a></li>
+        <li><a class="scroll" href="#WhitePaper">Whitepaper</a></li>
         <li><a class="scroll" href="#Advisors">Team</a></li>
-        <li><a class="scroll" href="#RoadMap">Road Map</a></li>
+        <li><a class="scroll" href="#RoadMap">Roadmap</a></li>
         <!-- <li><a target="_black" href="https://blog.m1nk.io/">Blog</a></li> -->
       </ul>
       <div class="link">

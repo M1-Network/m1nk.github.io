@@ -18,7 +18,7 @@ let featuresList = [
   {
     title: 'Developer',
     textArr: [
-      'Creat great metaverse content and service for the globle users',
+      'Creat great metaverse content and service for the global users',
     ],
     image: require('../images/developer.png')
   },
@@ -30,7 +30,7 @@ let featuresList = [
   {
     title: 'Container',
     textArr: [
-      'Provides computing power and network resources',
+      'Provide computing power and network resources',
       'Receive rewards for providing standby and running services to user'
     ],
     image: require('../images/container.png')
@@ -48,9 +48,7 @@ let featuresList = [
     title: 'Indexer',
     textArr: [
       'Indexed by region',
-      'Classified & sorted by service level',
-      'Connect users requests',
-      'Data report'
+      'Classify & sort by service level'
     ],
     image: require('../images/indexer.png')
   }
@@ -129,40 +127,40 @@ let roadMapList = {
   top: [
     {
       label: '2022 Q1',
-      text: "First AAA GameFi integration and Testnet launch.",
+      text: "First AAA GameFi integration and testnet launch.",
       text1: "Global nodes deployment in 7 most GameFi populated locations."
     },
     {
       label: '2022 Q3',
       text:'Js/c#/c++ SDK release to support more types of game.',
-      text1:  '2k video streaming on Testnet.'
+      text1:  '2k video streaming on testnet.'
     },
     {
       label: '2023 Q2',
       text: 'Testnet launch with test token mining.',
-      text1: '21 nodes will be deployed on the most populated GameFi locations.'
+      text1: '21 nodes deployment in the most populated locations.'
     },
     {
       label: '2024 Q2',
-      text: 'Meta game platform launching.',
-      text1: 'Meta1 mainnet Launching with official token launching event.'
+      text: 'Meta game platform launch.',
+      text1: 'Meta 1 mainnet Launch with official token launch event.'
     }
   ],
   bot: [
     {
       label: '2022 Q2',
-      text: 'Deploy web browser based container, enabling support for Decentraland and Sandbox.',
-      text1: 'Deploy nodes in 10+ locations for better performance.'
+      text: 'Web browser based container deployment, enabling support for Decentraland and Sandbox.',
+      text1: 'Nodes deployment in 10+ locations for better performance.'
     },
     {
       label: '2022 Q4',
-      text: 'Enable support for M1N users and most existing GameFi application.',
+      text: 'Enabling support for M1N users and most of existing GameFi applications.',
       text1: 'First implementation of consensus algorithm.'
     },
     {
       label: '2023 Q4',
-      text: 'Crypto wallet launching.',
-      text1: 'Meta1 market place & staking launching.'
+      text: 'Crypto wallet launch.',
+      text1: 'Meta 1 market place & staking launch.'
     }
   ]
 }
@@ -170,7 +168,7 @@ let roadMapList = {
 let participants = [
   {
     content: [
-      'Support adaptive video format',
+      'Adaptive video format support',
       'Global deployment Edge service',
       'Quick start in millisecond'
     ],
@@ -205,7 +203,7 @@ let participants = [
     content: [
       'Cloud rendering',
       'Encrypted transmission Anti-Cheating',
-      'Cryptography-ensured tokenomics'
+      'Cryptographic tokenomics'
     ],
     icon: require('../images/triangle.png'),
     bcontent: {

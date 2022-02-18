@@ -45,7 +45,7 @@
     }
   }
   .email-btn {
-    min-width: 115px;
+    width: 115px;
     height: 40px;
     background: #777EFF;
     border-radius: 29px;
@@ -70,31 +70,44 @@
   }
 }
 // xiaoyu 1024px
-@media screen and (max-width: 1024px) {
-  .email {
-    justify-content: space-around;
-    .email-btn {
-      font-size: 16px;
-      margin:0 20px;
-    }
-    span {
-      // display: none;
-      font-size: 14px;
-    }
-    .email-inp {
-      flex: 1;
-      margin: 0 !important;
-      margin-left: 20px !important;
-    }
-  }
-}
+// @media screen and (max-width: 1024px) {
+//   .email {
+//     justify-content: space-around;
+//     .email-btn {
+//       font-size: 16px;
+//       margin:0 20px;
+//     }
+//     span {
+//       // display: none;
+//       font-size: 14px;
+//     }
+//     .email-inp {
+//       flex: 1;
+//       margin: 0 !important;
+//       margin-left: 20px !important;
+//     }
+//   }
+// }
+
 @media screen and (max-width: 700px) {
   .container {
     width: 94% !important;
+
   }
   .email {
     span {
-      display: none;
+      width: 22% !important;
+    }
+    
+    .email-inp {
+      width: 48%;
+      margin: 0 0 0 5px !important;
+    }
+
+    .email-btn {
+      width: 25%;
+      font-size: 14px;
+      margin: 0 !important;
     }
   }
 }
