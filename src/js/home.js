@@ -47,7 +47,7 @@ let featuresList = [
   {
     title: 'Indexer',
     textArr: [
-      'Indexed by region',
+      'Index by region',
       'Classify & sort by service level',
       'Connect users requests',
       'Data report'
